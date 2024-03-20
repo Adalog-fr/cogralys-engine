@@ -1,0 +1,24 @@
+T1 : search instantiations (ada.unchecked_deallocation);
+T2 : search instantiations (ada.unchecked_deallocation, standard.natural);
+T3 : search instantiations (ada.unchecked_deallocation, standard.integer);
+T4 : search instantiations (ada.unchecked_deallocation, standard.string, <>);
+T5 : check  instantiations (ada.unchecked_deallocation, standard.string, t_instantiations.string_access);
+T6 : check  instantiations (ada.unchecked_conversion, <>, t_instantiations.Integer_Access);
+T7 : check  instantiations (ada.unchecked_conversion, <>, digits);
+T8 : check  instantiations (ada.unchecked_deallocation, t_instantiations.Tagged_T'class);
+T9 : check  instantiations (ada.unchecked_conversion, private);
+T10: check  instantiations (ada.unchecked_conversion, new);
+
+Local_Instantiation : check instantiations (local ada.unchecked_deallocation);
+Block_Instantiation : check instantiations (block ada.unchecked_deallocation);
+Local_Instantiation : search instantiations (local ada.unchecked_conversion);
+
+Repeat1 : check instantiations (t_instantiations.G1, =);
+Repeat2 : check instantiations (t_instantiations.G1, <>, =);
+Repeat3 : check instantiations (block t_instantiations.G1, =);
+Repeat4 : check instantiations (t_instantiations.g2, =,<>,=);
+Repeat5 : check instantiations (t_instantiations.g2, =,t_instantiations.proc1,=);
+Repeat6 : check instantiations (t_instantiations.G3, =, =);
+Repeat7 : check instantiations (t_instantiations.G4, =, <>, =);
+
+GenGen : check instantiations (t_instantiations.gp.gpgp);

@@ -1,0 +1,25 @@
+check silent_exceptions
+          (raise,
+           return,
+           requeue,
+           t_silent_exceptions.P,
+           t_silent_exceptions.F,
+           t_silent_exceptions.Genfunc,
+           t_silent_exceptions.Genproc,
+           t_silent_exceptions.Genpack2
+);
+Only_Procedure: search silent_exceptions
+        (not standard,
+         with standard.constraint_error,
+         not ada.io_exceptions.use_error,
+         ada.exceptions.raise_exception,
+         t_silent_exceptions.P,
+         t_silent_exceptions.Genproc
+        );
+No_SP_Call: count silent_exceptions
+         (t_silent_exceptions.P,
+          t_silent_exceptions.F,
+          t_silent_exceptions.Genfunc,
+          t_silent_exceptions.Genproc,
+          t_silent_exceptions.Genpack2
+);

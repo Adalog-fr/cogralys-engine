@@ -1,0 +1,532 @@
+t_style.adb:1:10: Found: Casing: Wrong casing of "Text_io", should be "Text_IO" or "Text_Io"
+t_style.adb:1:10: Replace:1:16
+!Text_IO
+t_style-no_default_in.adb:3:31: Found: No_Default_In: default IN mode used for parameter
+t_style-no_default_in.adb:3:31: Insert
+!in 
+t_style-no_default_in.adb:13:28: Found: No_Default_In: default IN mode used for parameter
+t_style-no_default_in.adb:13:28: Insert
+!in 
+t_style-no_default_in.adb:15:44: Found: No_Default_In: default IN mode used for parameter
+t_style-no_default_in.adb:15:44: Insert
+!in 
+t_style-no_default_in.adb:26:13: Found: No_Default_In: default IN mode used for parameter
+t_style-no_default_in.adb:26:13: Insert
+!in 
+t_style-no_default_in.adb:27:29: Found: No_Default_In: default IN mode used for parameter
+t_style-no_default_in.adb:27:29: Insert
+!in 
+t_style-no_default_in.adb:30:29: Found: No_Default_In: default IN mode used for parameter
+t_style-no_default_in.adb:30:29: Insert
+!in 
+t_style-no_default_in.adb:33:26: Found: No_Default_In: default IN mode used for parameter
+t_style-no_default_in.adb:33:26: Insert
+!in 
+t_style-no_default_in.adb:37:29: Found: No_Default_In: default IN mode used for parameter
+t_style-no_default_in.adb:37:29: Insert
+!in 
+t_style-casing.adb:1:6: Found: Casing: Wrong casing of "X_STYLE_CASING", should be "X_Style_Casing"
+t_style-casing.adb:1:6: Replace:1:19
+!X_Style_Casing
+t_style-casing.adb:1:21: Found: Casing: Wrong casing of "CHILD_1", should be "Child_1"
+t_style-casing.adb:1:21: Replace:1:27
+!Child_1
+t_style-casing.adb:1:29: Found: Casing: Wrong casing of "CHILD_2", should be "Child_2"
+t_style-casing.adb:1:29: Replace:1:35
+!Child_2
+t_style-casing.adb:6:11: Found: Casing: Wrong casing of "Page", should be "PAGE"
+t_style-casing.adb:6:11: Replace:6:14
+!PAGE
+t_style-casing.adb:9:19: Found: Casing: Wrong casing of "FOO", should be "Foo"
+t_style-casing.adb:9:19: Replace:9:21
+!Foo
+t_style-casing.adb:10:50: Found: Casing: Wrong casing of "FOO", should be "Foo"
+t_style-casing.adb:10:50: Replace:10:52
+!Foo
+t_style-casing.adb:11:13: Found: Casing: Wrong casing of "foo", should be "Foo"
+t_style-casing.adb:11:13: Replace:11:15
+!Foo
+t_style-casing.adb:14:8: Found: Casing: Wrong casing of "foo", should be "Foo"
+t_style-casing.adb:14:8: Replace:14:10
+!Foo
+t_style-casing.adb:13:14: Found: Casing: Wrong casing of "i", should be "I"
+t_style-casing.adb:13:14: Replace:13:14
+!I
+t_style-casing.adb:17:13: Found: Casing: Wrong casing of ""aNd"", should be ""and""
+t_style-casing.adb:17:13: Replace:17:17
+!"and"
+t_style-casing.adb:20:8: Found: Casing: Wrong casing of ""AND"", should be ""and""
+t_style-casing.adb:20:8: Replace:20:12
+!"and"
+t_style-casing.adb:24:11: Found: Casing: Wrong casing of "SIZE", should be "Size"
+t_style-casing.adb:24:11: Replace:24:14
+!Size
+t_style-casing.adb:24:26: Found: Casing: Wrong casing of "Word_SIZE", should be "Word_Size"
+t_style-casing.adb:24:26: Replace:24:34
+!Word_Size
+t_style-casing.adb:25:26: Found: Casing: Wrong casing of "AA", should be "Aa"
+t_style-casing.adb:25:26: Replace:25:27
+!Aa
+t_style-casing.adb:25:32: Found: Casing: Wrong casing of "BB", should be "Bb"
+t_style-casing.adb:25:32: Replace:25:33
+!Bb
+t_style-casing.adb:31:27: Found: Casing: Wrong casing of "PRE'Class", should be "Pre'Class"
+t_style-casing.adb:31:27: Replace:31:35
+!Pre'Class
+t_style-casing.adb:36:33: Found: Casing: Wrong casing of exponent, should be 'E'
+t_style-casing.adb:36:33: Replace:36:33
+!E
+t_style-casing.adb:37:25: Found: Casing: Wrong casing of exponent, should be 'E'
+t_style-casing.adb:37:25: Replace:37:25
+!E
+t_style-casing.adb:39:33: Found: Casing: Wrong casing of extended digit(s), should be 1AB.0C
+t_style-casing.adb:39:33: Replace:39:38
+!1AB.0C
+t_style-casing.adb:40:26: Found: Casing: Wrong casing of extended digit(s), should be 1ABC
+t_style-casing.adb:40:26: Replace:40:29
+!1ABC
+t_style-casing.adb:48:34: Found: Casing: Wrong casing of "image", should be "Image"
+t_style-casing.adb:48:34: Replace:48:38
+!Image
+t_style-casing.adb:48:41: Found: Casing: Wrong casing of "INT", should be "Int"
+t_style-casing.adb:48:41: Replace:48:43
+!Int
+t_style-casing.adb:49:4: Found: Casing: Wrong casing of "INT", should be "Int"
+t_style-casing.adb:49:4: Replace:49:6
+!Int
+t_style-casing.adb:49:11: Found: Casing: Wrong casing of "FOo", should be "Foo"
+t_style-casing.adb:49:11: Replace:49:13
+!Foo
+t_style-casing.adb:49:16: Found: Casing: Wrong casing of "INt", should be "Int"
+t_style-casing.adb:49:16: Replace:49:18
+!Int
+t_style-casing.adb:50:8: Found: Casing: Wrong casing of "TEXT_IO", should be "Text_IO" or "Text_Io"
+t_style-casing.adb:50:8: Replace:50:14
+!Text_IO
+t_style-casing.adb:50:41: Found: Casing: Wrong casing of "InT", should be "Int"
+t_style-casing.adb:50:41: Replace:50:43
+!Int
+t_style-casing.adb:53:12: Error: Multiple_Keyword: "loop" does not start line
+t_style-casing.adb:53:12: Insert
+!
+!   
+t_style-casing.adb:56:22: Found: Casing: Wrong casing of "DIM", should be "Dim"
+t_style-casing.adb:56:22: Replace:56:24
+!Dim
+t_style-casing.adb:59:7: Error: Exposed: character literal 'a' not in allowed construct
+t_style-casing.adb:66:9: Found: Casing: Wrong casing of ""AND"", should be ""and""
+t_style-casing.adb:66:9: Replace:66:13
+!"and"
+t_style-casing.adb:2:1: Found: Casing: Wrong casing of "WITH", should be "with"
+t_style-casing.adb:2:1: Replace:2:4
+!with
+t_style-casing.adb:26:16: Found: Casing: Wrong casing of "Access", should be "access"
+t_style-casing.adb:26:16: Replace:26:21
+!access
+t_style-casing.adb:26:23: Found: Casing: Wrong casing of "All", should be "all"
+t_style-casing.adb:26:23: Replace:26:25
+!all
+t_style-casing.adb:29:18: Found: Casing: Wrong casing of "ABSTRACT", should be "abstract"
+t_style-casing.adb:29:18: Replace:29:25
+!abstract
+t_style-casing.adb:30:7: Found: Casing: Wrong casing of "Not", should be "not"
+t_style-casing.adb:30:7: Replace:30:9
+!not
+t_style-casing.adb:30:11: Found: Casing: Wrong casing of "OVERRIDING", should be "overriding"
+t_style-casing.adb:30:11: Replace:30:20
+!overriding
+t_style-casing.adb:31:10: Found: Casing: Wrong casing of "IS", should be "is"
+t_style-casing.adb:31:10: Replace:31:11
+!is
+t_style-casing.adb:35:12: Found: Casing: Wrong casing of "ALIASED", should be "aliased"
+t_style-casing.adb:35:12: Replace:35:18
+!aliased
+t_style-casing.adb:42:17: Found: Casing: Wrong casing of "Synchronized", should be "synchronized"
+t_style-casing.adb:42:17: Replace:42:28
+!synchronized
+t_style-casing.adb:42:30: Found: Casing: Wrong casing of "Interface", should be "interface"
+t_style-casing.adb:42:30: Replace:42:38
+!interface
+t_style-casing.adb:43:12: Found: Casing: Wrong casing of "constanT", should be "constant"
+t_style-casing.adb:43:12: Replace:43:19
+!constant
+t_style-casing.adb:44:24: Found: Casing: Wrong casing of "For", should be "for"
+t_style-casing.adb:44:24: Replace:44:26
+!for
+t_style-casing.adb:44:28: Found: Casing: Wrong casing of "Some", should be "some"
+t_style-casing.adb:44:28: Replace:44:31
+!some
+t_style-casing.adb:47:11: Found: Casing: Wrong casing of "Abs", should be "abs"
+t_style-casing.adb:47:11: Replace:47:13
+!abs
+t_style-casing.adb:53:12: Found: Casing: Wrong casing of "LOOP", should be "loop"
+t_style-casing.adb:53:12: Replace:53:15
+!loop
+t_style-casing.adb:54:7: Found: Casing: Wrong casing of "Null", should be "null"
+t_style-casing.adb:54:7: Replace:54:10
+!null
+t_style-casing.adb:55:4: Found: Casing: Wrong casing of "END", should be "end"
+t_style-casing.adb:55:4: Replace:55:6
+!end
+t_style-casing.adb:55:8: Found: Casing: Wrong casing of "LOOP", should be "loop"
+t_style-casing.adb:55:8: Replace:55:11
+!loop
+t_style-casing.adb:60:6: Found: Casing: Wrong casing of "NULL", should be "null"
+t_style-casing.adb:60:6: Replace:60:9
+!null
+t_style-casing.adb:61:4: Found: Casing: Wrong casing of "eND", should be "end"
+t_style-casing.adb:61:4: Replace:61:6
+!end
+t_style-casing.adb:61:8: Found: Casing: Wrong casing of "If", should be "if"
+t_style-casing.adb:61:8: Replace:61:9
+!if
+t_style-casing.adb:64:11: Found: Casing: Wrong casing of "AND", should be "and"
+t_style-casing.adb:64:11: Replace:64:13
+!and
+t_style-no_closing_name.adb:3:4: Error: No_Closing_Name: name not repeated at the end
+t_style-no_closing_name.adb:8:7: Insert
+! P
+t_style-no_closing_name.adb:10:4: Found: No_Closing_Name: name not repeated at the end
+t_style-no_closing_name.adb:12:7: Insert
+! Pack
+t_style-no_closing_name.adb:14:4: Found: No_Closing_Name: name not repeated at the end
+t_style-no_closing_name.adb:17:7: Insert
+! Pack
+t_style-no_closing_name.adb:19:4: Found: No_Closing_Name: name not repeated at the end
+t_style-no_closing_name.adb:22:7: Insert
+! Gen
+t_style-no_closing_name.adb:24:4: Found: No_Closing_Name: name not repeated at the end
+t_style-no_closing_name.adb:25:7: Insert
+! T1
+t_style-no_closing_name.adb:26:4: Found: No_Closing_Name: name not repeated at the end
+t_style-no_closing_name.adb:29:7: Insert
+! T1
+t_style-no_closing_name.adb:37:4: Found: No_Closing_Name: name not repeated at the end
+t_style-no_closing_name.adb:38:7: Insert
+! T3
+t_style-no_closing_name.adb:39:4: Found: No_Closing_Name: name not repeated at the end
+t_style-no_closing_name.adb:42:7: Insert
+! T3
+t_style-renamed_entity.adb:23:7: Error: Renamed_Entity: I has been renamed at t_style-renamed_entity.adb:20:7
+t_style-renamed_entity.adb:23:7: Replace:23:7
+!RenI
+t_style-renamed_entity.adb:24:7: Error: Renamed_Entity: Pack has been renamed at t_style-renamed_entity.adb:19:7
+t_style-renamed_entity.adb:24:7: Replace:24:10
+!RenPack
+t_style-renamed_entity.adb:24:17: Error: Renamed_Entity: F has been renamed at t_style-renamed_entity.adb:18:7
+t_style-renamed_entity.adb:24:17: Replace:24:17
+!RenF
+t_style-literals.adb:6:31: Error: Literals: number representation does not follow convention
+t_style-literals.adb:8:31: Error: Literals: number representation does not follow convention
+t_style-literals.adb:12:31: Error: Literals: number representation does not follow convention
+t_style-literals.adb:18:31: Error: Literals: number representation does not follow convention
+t_style-literals.adb:22:31: Error: Literals: number representation does not follow convention
+t_style-literals.adb:30:32: Error: Not_Base_7: based representation not allowed
+t_style-literals.adb:31:31: Error: Not_Base_13: based representation not allowed
+t_style-literals.adb:38:31: Error: Base_16_Literals: number representation does not follow convention
+t_style-literals.adb:40:32: Error: Not_Base_7: based representation not allowed
+t_style-literals.adb:43:31: Error: Base_16_Literals: number representation does not follow convention
+t_style-exposed_literal.adb:37:29: Error: Exposed: real literal 3.0 not in allowed construct
+t_style-exposed_literal.adb:44:33: Error: Exposed: real literal 3.0 not in allowed construct
+t_style-exposed_literal.adb:50:9: Error: Exposed: integer literal 2 not in allowed construct
+t_style-exposed_literal.adb:56:21: Error: Exposed: real literal 2.0 not in allowed construct
+t_style-exposed_literal.adb:57:22: Error: Exposed: real literal -2.0 not in allowed construct
+t_style-exposed_literal.adb:64:12: Error: Exposed: string literal "12345" not in allowed construct
+t_style-exposed_literal.adb:65:14: Error: Exposed: string literal "12345" not in allowed construct
+t_style-exposed_literal.adb:66:12: Error: Exposed: character literal 'A' not in allowed construct
+t_style-exposed_literal.adb:69:11: Error: Exposed: integer literal 5 not in allowed construct
+t_style-exposed_literal.adb:75:9: Error: Exposed: integer literal 2 not in allowed construct
+t_style-exposed_literal.adb:76:10: Error: Exposed: integer literal 9_223_372_036_854_775_807 not in allowed construct
+t_style-exposed_literal.adb:77:10: Error: Exposed: integer literal -9_223_372_036_854_775_808 not in allowed construct
+t_style-exposed_literal.adb:80:18: Error: Exposed: integer literal 10 not in allowed construct
+t_style-multiple_elements.adb:3:15: Error: Multiple_Pragma: pragma does not start line
+t_style-multiple_elements.adb:3:15: Insert
+!
+!
+t_style-multiple_elements.adb:3:43: Error: Multiple_Clause: use clause does not start line and does not come after matching with clause
+t_style-multiple_elements.adb:3:43: Insert
+!
+!               
+t_style-multiple_elements.adb:4:18: Error: Multiple_Clause: use clause does not start line and Text_IO is not part of the preceding with clause
+t_style-multiple_elements.adb:4:14: Insert
+!
+! 
+t_style-multiple_elements.adb:5:23: Error: Multiple_Clause: use clause does not start line and Text_IO is not part of the preceding with clause
+t_style-multiple_elements.adb:5:19: Insert
+!
+! 
+t_style-multiple_elements.adb:7:69: Error: Multiple_Clause: use clause does not start line and Ada.Strings.Unbounded is not part of the preceding with clause
+t_style-multiple_elements.adb:7:46: Insert
+!
+! 
+t_style-multiple_elements.adb:7:92: Error: Multiple_Clause: use clause does not start line and Text_IO is not part of the preceding with clause
+t_style-multiple_elements.adb:7:46: Insert
+!
+! 
+t_style-multiple_elements.adb:8:90: Error: Multiple_Clause: use clause does not start line and does not come after matching with clause
+t_style-multiple_elements.adb:8:90: Insert
+!
+!                                              
+t_style-multiple_elements.adb:12:26: Error: Multiple_Decl: declaration does not start line
+t_style-multiple_elements.adb:12:26: Insert
+!
+!   
+t_style-multiple_elements.adb:14:12: Error: Multiple_Decl: declaration does not start line
+t_style-multiple_elements.adb:14:12: Insert
+!
+!     
+t_style-multiple_elements.adb:16:21: Error: Multiple_Clause: clause does not start line
+t_style-multiple_elements.adb:16:21: Insert
+!
+!   
+t_style-multiple_elements.adb:19:23: Error: Multiple_Pragma: pragma does not start line
+t_style-multiple_elements.adb:19:23: Insert
+!
+!   
+t_style-multiple_elements.adb:23:19: Error: Multiple_Keyword: "begin" does not start line
+t_style-multiple_elements.adb:23:19: Insert
+!
+!   
+t_style-multiple_elements.adb:24:13: Error: Multiple_Keyword: "end" does not start line
+t_style-multiple_elements.adb:24:13: Insert
+!
+!   
+t_style-multiple_elements.adb:27:7: Error: Multiple_Keyword: "is" does not start line
+t_style-multiple_elements.adb:27:7: Insert
+!
+!   
+t_style-multiple_elements.adb:27:10: Error: Multiple_Keyword: "begin" does not start line
+t_style-multiple_elements.adb:27:10: Insert
+!
+!   
+t_style-multiple_elements.adb:29:4: Error: Multiple_Keyword: closing keywords of declaration split
+t_style-multiple_elements.adb:46:19: Error: Multiple_Handler: "exception" does not start line
+t_style-multiple_elements.adb:46:19: Insert
+!
+!   
+t_style-multiple_elements.adb:48:16: Error: Multiple_Handler: "when" does not start line
+t_style-multiple_elements.adb:48:16: Insert
+!
+!         
+t_style-multiple_elements.adb:49:17: Error: Multiple_Keyword: "end" does not start line
+t_style-multiple_elements.adb:49:17: Insert
+!
+!   
+t_style-multiple_elements.adb:49:17: Error: Multiple_Keyword: closing keywords of declaration split
+t_style-multiple_elements.adb:36:18: Error: Multiple_Keyword: "end" does not start line
+t_style-multiple_elements.adb:36:18: Insert
+!
+!      
+t_style-multiple_elements.adb:41:7: Error: Multiple_Keyword: closing keywords of statement split
+t_style-multiple_elements.adb:44:21: Error: Multiple_Keyword: "do" does not start line
+t_style-multiple_elements.adb:44:21: Insert
+!
+!      
+t_style-multiple_elements.adb:47:32: Error: Multiple_Stmts: statement does not start line
+t_style-multiple_elements.adb:47:32: Insert
+!
+!      
+t_style-multiple_elements.adb:52:20: Error: Multiple_Stmts: statement does not start line
+t_style-multiple_elements.adb:52:20: Insert
+!
+!   
+t_style-multiple_elements.adb:53:41: Error: Multiple_Keyword: "end" does not start line
+t_style-multiple_elements.adb:53:41: Insert
+!
+!   
+t_style-multiple_elements.adb:53:4: Error: Compound: Statement has less than 3 lines
+t_style-multiple_elements.adb:53:26: Error: Multiple_Stmts: statement does not start line
+t_style-multiple_elements.adb:53:26: Insert
+!
+!   
+t_style-multiple_elements.adb:57:17: Error: Multiple_Keyword: "when" does not start line
+t_style-multiple_elements.adb:57:17: Insert
+!
+!   
+t_style-multiple_elements.adb:57:38: Error: Multiple_Keyword: "end" does not start line
+t_style-multiple_elements.adb:57:38: Insert
+!
+!   
+t_style-multiple_elements.adb:55:22: Error: Multiple_Stmts: statement does not start line
+t_style-multiple_elements.adb:55:22: Insert
+!
+!      
+t_style-multiple_elements.adb:57:32: Error: Multiple_Stmts: statement does not start line
+t_style-multiple_elements.adb:57:32: Insert
+!
+!         
+t_style-multiple_elements.adb:59:12: Error: Multiple_Keyword: "then" does not start line
+t_style-multiple_elements.adb:59:12: Insert
+!
+!   
+t_style-multiple_elements.adb:61:13: Error: Multiple_Keyword: "elsif/else" does not start line
+t_style-multiple_elements.adb:61:13: Insert
+!
+!   
+t_style-multiple_elements.adb:62:27: Error: Multiple_Keyword: "then" does not start line
+t_style-multiple_elements.adb:62:27: Insert
+!
+!   
+t_style-multiple_elements.adb:66:13: Error: Multiple_Keyword: "elsif/else" does not start line
+t_style-multiple_elements.adb:66:13: Insert
+!
+!   
+t_style-multiple_elements.adb:67:19: Error: Multiple_Keyword: "end" does not start line
+t_style-multiple_elements.adb:67:19: Insert
+!
+!   
+t_style-multiple_elements.adb:67:19: Error: Multiple_Keyword: closing keywords of statement split
+t_style-multiple_elements.adb:72:9: Error: Multiple_Keyword: "end" does not start line
+t_style-multiple_elements.adb:72:9: Insert
+!
+!   
+t_style-multiple_elements.adb:70:10: Error: Multiple_Stmts: statement does not start line
+t_style-multiple_elements.adb:70:10: Insert
+!
+!   
+t_style-multiple_elements.adb:74:35: Error: Multiple_Keyword: "end" does not start line
+t_style-multiple_elements.adb:74:35: Insert
+!
+!   
+t_style-multiple_elements.adb:74:4: Error: Compound: Statement has less than 3 lines
+t_style-multiple_elements.adb:74:10: Error: Multiple_Stmts: statement does not start line
+t_style-multiple_elements.adb:74:10: Insert
+!
+!   
+t_style-multiple_elements.adb:74:18: Error: Multiple_Keyword: "begin" does not start line
+t_style-multiple_elements.adb:74:18: Insert
+!
+!   
+t_style-multiple_elements.adb:74:30: Error: Multiple_Keyword: "end" does not start line
+t_style-multiple_elements.adb:74:30: Insert
+!
+!   
+t_style-multiple_elements.adb:74:10: Error: Compound: Statement has less than 3 lines
+t_style-multiple_elements.adb:74:24: Error: Multiple_Stmts: statement does not start line
+t_style-multiple_elements.adb:74:24: Insert
+!
+!   
+t_style-parameter_order.adb:4:24: Found: No_Default_In: default IN mode used for parameter
+t_style-parameter_order.adb:4:24: Insert
+!in 
+t_style-parameter_order.adb:14:24: Found: No_Default_In: default IN mode used for parameter
+t_style-parameter_order.adb:14:24: Insert
+!in 
+t_style-parameter_order.adb:25:18: Error: order_regular: subprogram parameter out of order
+t_style-parameter_order.adb:39:18: Error: order_regular: subprogram parameter out of order
+t_style-parameter_order.adb:68:7: Error: order_generic: generic formal parameter out of order
+t_style-parameter_order.adb:69:7: Error: order_generic: generic formal parameter out of order
+t_style-parameter_order.adb:70:7: Error: order_generic: generic formal parameter out of order
+t_style-parameter_order.adb:71:45: Found: No_Default_In: default IN mode used for parameter
+t_style-parameter_order.adb:71:45: Insert
+!in 
+t_style-parameter_order.adb:71:41: Error: order_regular: subprogram parameter out of order
+t_style-parameter_order.adb:72:45: Found: No_Default_In: default IN mode used for parameter
+t_style-parameter_order.adb:72:45: Insert
+!in 
+t_style.adb:37:15: Error: Multiple_Keyword: "when" does not start line
+t_style.adb:37:15: Insert
+!
+!   
+t_style.adb:38:16: Error: Multiple_Keyword: "end" does not start line
+t_style.adb:38:16: Insert
+!
+!   
+t_style.adb:37:4: Error: Compound: Statement has less than 4 lines
+t_style.adb:41:13: Error: Multiple_Keyword: "end" does not start line
+t_style.adb:41:13: Insert
+!
+!   
+t_style.adb:40:4: Error: Compound: Statement has less than 3 lines
+x_style_casing.ads:3:5: Found: Casing: Wrong casing of "X_STYLE_CASING", should be "X_Style_Casing"
+x_style_casing.ads:3:5: Replace:3:18
+!X_Style_Casing
+x_style_casing.adb:1:14: Found: Casing: Wrong casing of "X_STYLE_CASING", should be "X_Style_Casing"
+x_style_casing.adb:1:14: Replace:1:27
+!X_Style_Casing
+x_style_casing.adb:6:8: Found: Casing: Wrong casing of "PROC", should be "Proc"
+x_style_casing.adb:6:8: Replace:6:11
+!Proc
+x_style_casing-child_1.ads:1:9: Found: Casing: Wrong casing of "X_STYLE_CASING", should be "X_Style_Casing"
+x_style_casing-child_1.ads:1:9: Replace:1:22
+!X_Style_Casing
+x_style_casing-child_1.ads:3:20: Found: Casing: Wrong casing of "CHILD_1", should be "Child_1"
+x_style_casing-child_1.ads:3:20: Replace:3:26
+!Child_1
+x_style_casing-child_1.adb:1:29: Found: Casing: Wrong casing of "CHILD_1", should be "Child_1"
+x_style_casing-child_1.adb:1:29: Replace:1:35
+!Child_1
+x_style_casing-child_1.adb:36:5: Found: Casing: Wrong casing of "X_STYLE_CASING", should be "X_Style_Casing"
+x_style_casing-child_1.adb:36:5: Replace:36:18
+!X_Style_Casing
+x_style_casing-child_1.adb:8:11: Found: Casing: Wrong casing of "BlOck1", should be "BLock1" or "Block1"
+x_style_casing-child_1.adb:8:11: Replace:8:16
+!BLock1
+x_style_casing-child_1.adb:12:16: Found: Casing: Wrong casing of "LOop1", should be "LoOp1" or "Loop1"
+x_style_casing-child_1.adb:12:16: Replace:12:20
+!LoOp1
+x_style_casing-child_1.adb:10:29: Error: Exposed: integer literal 10 not in allowed construct
+x_style_casing-child_1.adb:17:8: Found: Casing: Wrong casing of "TTt", should be "TTT" or "Ttt"
+x_style_casing-child_1.adb:17:8: Replace:17:10
+!TTT
+x_style_casing-child_1.adb:19:14: Found: Casing: Wrong casing of "TtT", should be "TTT" or "Ttt"
+x_style_casing-child_1.adb:19:14: Replace:19:16
+!TTT
+x_style_casing-child_1.adb:24:8: Found: Casing: Wrong casing of "TTt", should be "TTT" or "Ttt"
+x_style_casing-child_1.adb:24:8: Replace:24:10
+!TTT
+x_style_casing-child_1.adb:21:14: Found: Casing: Wrong casing of "ENTER", should be "Enter"
+x_style_casing-child_1.adb:21:14: Replace:21:18
+!Enter
+x_style_casing-child_1.adb:23:11: Found: Casing: Wrong casing of "ENTER", should be "Enter"
+x_style_casing-child_1.adb:23:11: Replace:23:15
+!Enter
+x_style_casing-child_1.adb:28:8: Found: Casing: Wrong casing of "PtP", should be "PTP" or "Ptp"
+x_style_casing-child_1.adb:28:8: Replace:28:10
+!PTP
+x_style_casing-child_1.adb:30:19: Found: Casing: Wrong casing of "PtP", should be "PTP" or "Ptp"
+x_style_casing-child_1.adb:30:19: Replace:30:21
+!PTP
+x_style_casing-child_1.adb:35:8: Found: Casing: Wrong casing of "PTp", should be "PTP" or "Ptp"
+x_style_casing-child_1.adb:35:8: Replace:35:10
+!PTP
+x_style_casing-child_1.adb:31:13: Found: Casing: Wrong casing of "ENT", should be "Ent"
+x_style_casing-child_1.adb:31:13: Replace:31:15
+!Ent
+x_style_casing-child_1.adb:34:11: Found: Casing: Wrong casing of "ENT", should be "Ent"
+x_style_casing-child_1.adb:34:11: Replace:34:13
+!Ent
+x_style_casing-child_1-child_2.ads:1:9: Found: Casing: Wrong casing of "X_STYLE_CASING", should be "X_Style_Casing"
+x_style_casing-child_1-child_2.ads:1:9: Replace:1:22
+!X_Style_Casing
+x_style_casing-child_1-child_2.ads:1:24: Found: Casing: Wrong casing of "CHILD_1", should be "Child_1"
+x_style_casing-child_1-child_2.ads:1:24: Replace:1:30
+!Child_1
+x_style_casing-child_1-child_2.ads:3:28: Found: Casing: Wrong casing of "child_2", should be "Child_2"
+x_style_casing-child_1-child_2.ads:3:28: Replace:3:34
+!Child_2
+x_style_casing-child_1-child_2.ads:3:20: Found: Casing: Wrong casing of "child_1", should be "Child_1"
+x_style_casing-child_1-child_2.ads:3:20: Replace:3:26
+!Child_1
+x_style_casing-child_1-child_2.ads:3:5: Found: Casing: Wrong casing of "X_STYLE_CASING", should be "X_Style_Casing"
+x_style_casing-child_1-child_2.ads:3:5: Replace:3:18
+!X_Style_Casing
+x_style_casing-child_1-child_2.adb:1:37: Found: Casing: Wrong casing of "CHILD_2", should be "Child_2"
+x_style_casing-child_1-child_2.adb:1:37: Replace:1:43
+!Child_2
+x_style_casing-child_1-child_2.adb:8:20: Found: Casing: Wrong casing of "CHILD_1", should be "Child_1"
+x_style_casing-child_1-child_2.adb:8:20: Replace:8:26
+!Child_1
+x_style_casing-child_1-child_2.adb:8:5: Found: Casing: Wrong casing of "X_STYLE_CASING", should be "X_Style_Casing"
+x_style_casing-child_1-child_2.adb:8:5: Replace:8:18
+!X_Style_Casing
+x_style_casing-child_1-child_2.adb:3:14: Found: Casing: Wrong casing of "p2", should be "P2"
+x_style_casing-child_1-child_2.adb:3:14: Replace:3:15
+!P2
+x_style_casing-child_1-child_2.adb:6:8: Found: Casing: Wrong casing of "p2", should be "P2"
+x_style_casing-child_1-child_2.adb:6:8: Replace:6:9
+!P2
+x_style2.ads:1:15: Error: Multiple_Decl: declaration does not start line
+x_style2.ads:1:15: Insert
+!
+!

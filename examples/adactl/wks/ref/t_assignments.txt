@@ -1,0 +1,103 @@
+t_assignments-type_test.adb:29:7: Error: Ancestor: Assignment to variable of type T_ASSIGNMENTS.TYPE_TEST.T
+t_assignments-type_test.adb:30:7: Error: Direct: Assignment to variable of type T_ASSIGNMENTS.TYPE_TEST.D1
+t_assignments-type_test.adb:30:7: Error: Ancestor: Assignment to variable of type derived from T_ASSIGNMENTS.TYPE_TEST.T
+t_assignments-type_test.adb:31:7: Error: Ancestor: Assignment to variable of type derived from T_ASSIGNMENTS.TYPE_TEST.T
+t_assignments-type_test.adb:32:7: Error: Ancestor: Assignment to variable of type derived from T_ASSIGNMENTS.TYPE_TEST.T
+t_assignments-type_test.adb:43:7: Error: Ancestor: Assignment to variable of type T_ASSIGNMENTS.TYPE_TEST.TAGGED_T
+t_assignments-type_test.adb:44:7: Error: Direct: Assignment to variable of type T_ASSIGNMENTS.TYPE_TEST.TAGGED_D1
+t_assignments-type_test.adb:44:7: Error: Ancestor: Assignment to variable of type derived from T_ASSIGNMENTS.TYPE_TEST.TAGGED_T
+t_assignments-type_test.adb:45:7: Error: Ancestor: Assignment to variable of type derived from T_ASSIGNMENTS.TYPE_TEST.TAGGED_T
+t_assignments-type_test.adb:46:7: Error: Ancestor: Assignment to variable of type T_ASSIGNMENTS.TYPE_TEST.TAGGED_T
+t_assignments-type_test.adb:55:7: Error: Component: Assignment to component of variable of type derived from ADA.STREAMS.STREAM_ELEMENT_ARRAY
+t_assignments-type_test.adb:56:7: Found: whole_stream: Assignment to variable of type derived from ADA.STREAMS.STREAM_ELEMENT_ARRAY
+t_assignments-type_test.adb:64:7: Found: Component_Ances: Assignment to component of variable of type T_ASSIGNMENTS.TYPE_TEST.REC_T
+t_assignments-type_test.adb:65:7: Found: Component: Assignment to component of variable of type T_ASSIGNMENTS.TYPE_TEST.REC_D1
+t_assignments-type_test.adb:65:7: Found: Component_Ances: Assignment to component of variable of type derived from T_ASSIGNMENTS.TYPE_TEST.REC_T
+t_assignments-sliding.adb:24:13: Error: Sliding: Lower bound (2) does not match assigned variable (1)
+t_assignments-sliding.adb:26:13: Error: Sliding: Lower bound (2) does not match assigned variable (1)
+t_assignments-sliding.adb:30:13: Error: Sliding: Lower bound (2) does not match assigned variable (1)
+t_assignments-sliding.adb:31:13: Error: Sliding: Lower bound (1) does not match assigned variable (2)
+t_assignments-sliding.adb:33:13: Error: Sliding: Lower bound (2) does not match assigned variable (1)
+t_assignments-sliding.adb:35:13: Error: Sliding: Lower bound (2) does not match assigned variable (1)
+t_assignments-sliding.adb:37:13: Error: Sliding: Lower bound (2) does not match assigned variable (1)
+t_assignments-sliding.adb:38:13: Error: Sliding: Lower bound (1) does not match assigned variable (2)
+t_assignments-sliding.adb:41:26: Error: Sliding: Lower bound (2) does not match assigned variable (1)
+t_assignments-sliding.adb:54:13: Error: Sliding: Lower bound of dimension 1 (2) does not match assigned variable (1)
+t_assignments-sliding.adb:55:13: Error: Sliding: Lower bound of dimension 1 (1) does not match assigned variable (2)
+t_assignments-sliding.adb:55:13: Error: Sliding: Lower bound of dimension 2 (1) does not match assigned variable (2)
+t_assignments-groupable_repeated.adb:39:4: Error: Repeated: variable already assigned in same group at t_assignments-groupable_repeated.adb:33:4
+t_assignments-groupable_repeated.adb:55:4: Error: Repeated: variable already assigned in same group at t_assignments-groupable_repeated.adb:54:4
+t_assignments-groupable_repeated.adb:58:4: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated.M, ratio: 75 (>=75)
+t_assignments-groupable_repeated.adb:47:4: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated.M(1,1), given: 2 (>=2), missing: 1 (<=1)
+t_assignments-groupable_repeated.adb:37:4: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated.R, given: 3 (>=2), missing: 0 (<=1)
+t_assignments-groupable_repeated.adb:37:4: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated.R, ratio: 100 (>=75)
+t_assignments-groupable_repeated.adb:44:4: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated.T, given: 5 (>=2), missing: 0 (<=1)
+t_assignments-groupable_repeated.adb:44:4: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated.T, ratio: 100 (>=75)
+t_assignments-groupable_repeated.adb:72:4: Error: Repeated: variable already assigned in same group at t_assignments-groupable_repeated.adb:64:4
+t_assignments-groupable_repeated.adb:73:4: Error: Repeated: variable already assigned in same group at t_assignments-groupable_repeated.adb:65:4
+t_assignments-groupable_repeated.adb:74:4: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated.R, given: 3 (>=2), missing: 0 (<=1)
+t_assignments-groupable_repeated.adb:74:4: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated.R, ratio: 100 (>=75)
+t_assignments-groupable_repeated.adb:84:4: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated.Rr.Z, given: 2 (>=2), missing: 1 (<=1)
+t_assignments-groupable_repeated.adb:83:4: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated.Rr.Z(1), given: 2 (>=2), missing: 1 (<=1)
+t_assignments-groupable_repeated.adb:85:4: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated.Rr.Z(2), given: 2 (>=2), missing: 1 (<=1)
+t_assignments-groupable_repeated.adb:95:4: Error: Small_Rec: too many assignments to components of T_Assignments.Groupable_Repeated.Sr, total: 2 (<=2)
+t_assignments-groupable_repeated.adb:113:7: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.D, given: 3 (>=2), missing: 0 (<=1)
+t_assignments-groupable_repeated.adb:113:7: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.D, ratio: 100 (>=75)
+t_assignments-groupable_repeated.adb:117:7: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.Ds, given: 3 (>=2), missing: 0 (<=1)
+t_assignments-groupable_repeated.adb:117:7: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.Ds, ratio: 100 (>=75)
+t_assignments-groupable_repeated.adb:109:7: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.S, given: 3 (>=2), missing: 0 (<=1)
+t_assignments-groupable_repeated.adb:109:7: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.S, ratio: 100 (>=75)
+t_assignments-groupable_repeated.adb:153:7: Error: Repeated: variable already assigned in same group at t_assignments-groupable_repeated.adb:151:7
+t_assignments-groupable_repeated.adb:154:7: Error: Repeated: variable already assigned in same group at t_assignments-groupable_repeated.adb:151:7
+t_assignments-groupable_repeated.adb:155:7: Error: Repeated: variable already assigned in same group at t_assignments-groupable_repeated.adb:151:7
+t_assignments-groupable_repeated.adb:156:7: Error: Repeated: variable already assigned in same group at t_assignments-groupable_repeated.adb:151:7
+t_assignments-groupable_repeated.adb:172:7: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.V1, ratio: 100 (>=75)
+t_assignments-groupable_repeated.adb:172:7: Error: Small_Rec: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.V1, total: 1 (<=2)
+t_assignments-groupable_repeated.adb:174:7: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.V2, given: 2 (>=2), missing: 0 (<=1)
+t_assignments-groupable_repeated.adb:174:7: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.V2, ratio: 100 (>=75)
+t_assignments-groupable_repeated.adb:174:7: Error: Small_Rec: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.V2, total: 2 (<=2)
+t_assignments-groupable_repeated.adb:191:13: Error: Repeated: variable already assigned in same group at t_assignments-groupable_repeated.adb:190:13
+t_assignments-groupable_repeated.adb:194:13: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated._Anonymous_.Prot.F3, given: 2 (>=2), missing: 1 (<=1)
+t_assignments-groupable_repeated.adb:216:10: Found: Groupable1: too many assignments to components of T_Assignments.Groupable_Repeated.Case_Tagged.P.X, given: 2 (>=2), missing: 0 (<=1)
+t_assignments-groupable_repeated.adb:216:10: Error: Groupable2: too many assignments to components of T_Assignments.Groupable_Repeated.Case_Tagged.P.X, ratio: 100 (>=75)
+t_assignments-groupable_repeated.adb:216:10: Error: Small_Rec: too many assignments to components of T_Assignments.Groupable_Repeated.Case_Tagged.P.X, total: 2 (<=2)
+t_assignments-access_duplication.adb:13:20: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:18:24: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:37:18: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:81:68: Found: Dup_Controlled: Duplication of controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:82:27: Found: Dup_Controlled: Duplication of controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:89:23: Found: Dup_Controlled: Duplication of controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:127:26: Error: Proc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:9:21
+t_assignments-access_duplication.adb:135:10: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:136:18: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:138:14: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:139:14: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:145:10: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:146:21: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:147:17: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:148:17: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:154:15: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:155:26: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:156:11: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:157:11: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:159:22: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:164:13: Error: Acc_Dup: Possible duplication of not controlled access value
+t_assignments-access_duplication.adb:165:13: Error: Acc_Dup: Possible duplication of not controlled access value
+t_assignments-access_duplication.adb:173:20: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:179:29: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:182:11: Error: Acc_Dup: Possible duplication of not controlled access value
+t_assignments-access_duplication.adb:183:22: Error: Acc_Dup: Possible duplication of not controlled access value
+t_assignments-access_duplication.adb:186:12: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:187:17: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:188:12: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:189:12: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:63:12 instantiated at t_assignments-access_duplication.adb:69:4
+t_assignments-access_duplication.adb:192:13: Found: Dup_Controlled: Duplication of controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:193:13: Found: Dup_Controlled: Duplication of controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:196:13: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:197:13: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:198:13: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:199:13: Error: Acc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:5:16
+t_assignments-access_duplication.adb:204:18: Error: Proc_Dup: Duplication of not controlled access defined at t_assignments-access_duplication.adb:9:21
+
+Counts summary:
+Fully_Assigned: 9

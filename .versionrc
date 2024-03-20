@@ -1,0 +1,15 @@
+{
+    "types": [
+        {"type":"feat","section":"Features"},
+        {"type":"fix","section":"Bug Fixes"},
+        {"type":"test","section":"Tests", "hidden": true},
+        {"type":"build","section":"Build System", "hidden": true},
+        {"type":"ci","hidden":true}
+    ],
+    "bumpFiles": [
+        {
+            "filename": "src/atgb_version.ads",
+            "updater": ".release/atgb_version-updater.js"
+        }
+    ]
+}

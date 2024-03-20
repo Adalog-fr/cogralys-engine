@@ -1,0 +1,1 @@
+bash: /mnt/hgfs/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/bin/atgdb : impossible d'exécuter le fichier binaire : Erreur de format pour exec()

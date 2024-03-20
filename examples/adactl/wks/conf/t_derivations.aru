@@ -1,0 +1,33 @@
+"from Integer":  check  Derivations (from, standard.integer);
+                 check  derivations (From, T_derivations.From.T3);
+                 check  derivations (From, T_derivations.From.T4);
+                 search derivations (from, range, ());
+"from Standard": search derivations (from, Standard);
+                 check  derivations (from, T_derivations.From.S3);
+                 check  derivations (from, T_derivations.From.I1);
+                 check  derivations (from, T_derivations.From.I2);
+                 check  derivations (from, T_derivations.From.Ilim);
+                 search derivations (from, task, protected);
+                 search derivations (from, tagged, interface);
+                 search derivations (from, private);
+
+check  derivations (max_parents, 2);
+search derivations (max_parents, 1);
+
+Tagged_Spec:   check  derivations (indicator, tagged,                   declaration);
+Tagged_Body:   check  derivations (indicator, tagged,   not_overriding, body_forbidden);
+Untagged_Spec: check  derivations (indicator, untagged,                 declaration);
+Untagged_Body: search derivations (indicator, untagged, overriding,     body_required);
+
+-- Max depth
+check derivations (max_depth, tagged 4);
+search derivations (max_depth, tagged 2);
+C_Depth : count derivations (max_depth, tagged 3);
+search derivations (max_depth, untagged 1);
+-- Task
+search derivations (max_depth, task 0);
+check derivations (max_depth, task 1);
+-- Protected
+search derivations (max_depth, protected 3);
+check derivations (max_depth, protected 1);
+C_Depth_Task : count derivations (max_depth, task 2);

@@ -1,0 +1,1 @@
+MATCH (e:AN_OBJECT_RENAMING_DECLARATION)<-[:IS_ENCLOSED_IN { index: 3 }]-(elt) RETURN e, elt;

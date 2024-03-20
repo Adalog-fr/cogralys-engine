@@ -1,0 +1,12 @@
+{
+  "name": "GNAT Pro 22.0w with ASIS support",
+  "build": { "dockerfile": "Dockerfile" },
+  "extensions": ["adacore.ada", "webfreak.debug"],
+  "remoteEnv": {
+    "GPR_PROJECT_PATH": "lib/Asiscomps:lib/Comps:lib/Dotenv:lib/EVIL:${containerEnv:GPR_PROJECT_PATH}"
+  },
+  "mounts": [
+      "source=atgdb-bashhistory,target=/commandhistory,type=volume",
+      "source=atgdb-src,target=/examples,type=volume"
+  ]
+}

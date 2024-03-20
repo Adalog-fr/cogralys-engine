@@ -1,0 +1,85 @@
+t_unsafe_paired_calls-simple.adb:20:4: Error: No_Parameter: construct must have exception handlers
+t_unsafe_paired_calls-simple.adb:41:7: Error: No_Parameter: construct must have exception handlers
+t_unsafe_paired_calls-simple.adb:97:7: Error: No_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-simple.adb:98:4: Error: No_Parameter: construct must have exception handlers
+t_unsafe_paired_calls-simple.adb:102:7: Error: No_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:109:10: Error: No_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:116:4: Error: No_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-simple.adb:117:7: Error: No_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-simple.adb:123:7: Error: No_Parameter: opening call to T_Unsafe_Paired_Calls.P is not the first statement
+t_unsafe_paired_calls-simple.adb:124:7: Error: No_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:127:13: Error: No_Parameter: Invalid placement of opening call to T_Unsafe_Paired_Calls.P: call in disallowed structured statement
+t_unsafe_paired_calls-simple.adb:129:13: Error: No_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:138:4: Error: No_Parameter: construct must have exception handlers
+t_unsafe_paired_calls-simple.adb:144:4: Error: No_Parameter: construct must have a "when others" exception handler
+t_unsafe_paired_calls-simple.adb:147:7: Error: No_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-simple.adb:148:10: Error: No_Parameter: opening call to T_Unsafe_Paired_Calls.P is not directly in a handled sequence of statements
+t_unsafe_paired_calls-simple.adb:156:7: Error: No_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-simple.adb:165:7: Error: No_Parameter: handler must have only one closing call matching T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-simple.adb:173:10: Error: No_Parameter: nested call to T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-simple.adb:210:4: Error: In_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P (different or non static lock value)
+t_unsafe_paired_calls-simple.adb:211:7: Error: In_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P (different or non static lock value)
+t_unsafe_paired_calls-simple.adb:209:7: Error: In_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:212:10: Error: In_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:219:4: Error: In_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P with lock value 1
+t_unsafe_paired_calls-simple.adb:220:7: Error: In_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P with lock value 1
+t_unsafe_paired_calls-simple.adb:218:7: Error: No_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:221:10: Error: No_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:228:4: Error: In_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P with lock value 1
+t_unsafe_paired_calls-simple.adb:229:7: Error: In_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P with lock value 1
+t_unsafe_paired_calls-simple.adb:227:7: Error: In_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:230:10: Error: In_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:251:10: Error: In_Parameter: nested call to T_Unsafe_Paired_Calls.P with lock value 1
+t_unsafe_paired_calls-simple.adb:280:4: Error: InOut_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Simple.S1
+t_unsafe_paired_calls-simple.adb:281:7: Error: InOut_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Simple.S1
+t_unsafe_paired_calls-simple.adb:279:7: Error: InOut_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:282:10: Error: InOut_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:289:4: Error: InOut_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Simple.R1.F
+t_unsafe_paired_calls-simple.adb:290:7: Error: InOut_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Simple.R1.F
+t_unsafe_paired_calls-simple.adb:288:7: Error: InOut_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:291:10: Error: InOut_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:299:7: Error: InOut_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Simple.S1
+t_unsafe_paired_calls-simple.adb:300:10: Error: InOut_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-simple.adb:321:10: Error: InOut_Parameter: nested call to T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Simple.S1
+t_unsafe_paired_calls-simple.adb:351:4: Found: Multiple: sequence must end with closing call matching T_Unsafe_Paired_Calls.MultP2
+t_unsafe_paired_calls-simple.adb:350:7: Found: Multiple: closing call to T_Unsafe_Paired_Calls.MultV1 has no matching opening call at start of sequence
+t_unsafe_paired_calls-nesting.adb:39:4: Error: No_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-nesting.adb:40:7: Error: No_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-nesting.adb:33:10: Error: No_Parameter: Invalid placement of opening call to T_Unsafe_Paired_Calls.P: call in disallowed structured statement
+t_unsafe_paired_calls-nesting.adb:37:10: Error: No_Parameter: No matching opening block for closing call to T_Unsafe_Paired_Calls.V
+t_unsafe_paired_calls-nesting.adb:41:10: Error: No_Parameter: No matching opening block for closing call to T_Unsafe_Paired_Calls.V
+t_unsafe_paired_calls-nesting.adb:47:10: Error: No_Parameter: Invalid placement of opening call to T_Unsafe_Paired_Calls.P: if condition is not a boolean constant
+t_unsafe_paired_calls-nesting.adb:51:10: Error: No_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-nesting.adb:55:10: Error: No_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-nesting.adb:65:10: Error: No_Parameter: Disallowed statements after closing call to T_Unsafe_Paired_Calls.V
+t_unsafe_paired_calls-nesting.adb:86:7: Error: No_Parameter: handler must have only one closing call matching T_Unsafe_Paired_Calls.P
+t_unsafe_paired_calls-nesting.adb:156:7: Error: InOut_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Nesting.S1
+t_unsafe_paired_calls-nesting.adb:157:10: Error: InOut_Parameter: handler must have only one closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Nesting.S1
+t_unsafe_paired_calls-nesting.adb:176:10: Error: InOut_Parameter: handler must have only one closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Nesting.S1
+t_unsafe_paired_calls-nesting.adb:199:10: Error: InOut_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Nesting.S1
+t_unsafe_paired_calls-nesting.adb:208:10: Error: InOut_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P with lock variable T_Unsafe_Paired_Calls.Nesting.S1
+t_unsafe_paired_calls-nesting.adb:156:7: Error: In_Parameter: sequence must end with closing call matching T_Unsafe_Paired_Calls.P with lock value 1
+t_unsafe_paired_calls-nesting.adb:157:10: Error: In_Parameter: handler must have only one closing call matching T_Unsafe_Paired_Calls.P with lock value 1
+t_unsafe_paired_calls-nesting.adb:199:10: Error: In_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P with lock value 1
+t_unsafe_paired_calls-nesting.adb:208:10: Error: In_Parameter: handler must have a closing call matching T_Unsafe_Paired_Calls.P with lock value 1
+t_unsafe_paired_calls-nesting.adb:151:16: Error: InOut_Parameter: No matching opening block for closing call to T_Unsafe_Paired_Calls.V
+t_unsafe_paired_calls-nesting.adb:153:16: Error: In_Parameter: No matching opening block for closing call to T_Unsafe_Paired_Calls.V
+t_unsafe_paired_calls-nesting.adb:188:19: Error: In_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-nesting.adb:193:19: Error: InOut_Parameter: No matching opening block for closing call to T_Unsafe_Paired_Calls.V
+t_unsafe_paired_calls-nesting.adb:195:19: Error: In_Parameter: No matching opening block for closing call to T_Unsafe_Paired_Calls.V
+t_unsafe_paired_calls-nesting.adb:202:19: Error: InOut_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-nesting.adb:204:19: Error: In_Parameter: closing call to T_Unsafe_Paired_Calls.V has no matching opening call at start of sequence
+t_unsafe_paired_calls-nesting.adb:210:16: Error: InOut_Parameter: No matching opening block for closing call to T_Unsafe_Paired_Calls.V
+t_unsafe_paired_calls-nesting.adb:212:16: Error: In_Parameter: No matching opening block for closing call to T_Unsafe_Paired_Calls.V
+t_unsafe_paired_calls-breaks.adb:21:10: Error: Breaks: Closing block followed by breaking statement that does not leave scope of T_Unsafe_Paired_Calls.Breaks.P1
+t_unsafe_paired_calls-breaks.adb:44:13: Error: Breaks: Closing block followed by breaking statement that does not leave scope of T_Unsafe_Paired_Calls.Breaks.P1
+t_unsafe_paired_calls-breaks.adb:79:13: Error: Breaks: Closing block followed by breaking statement that does not leave scope of T_Unsafe_Paired_Calls.Breaks.P2
+t_unsafe_paired_calls-breaks.adb:77:13: Error: Breaks: Closing block followed by breaking statement that does not leave scope of T_Unsafe_Paired_Calls.Breaks.P1
+t_unsafe_paired_calls-breaks.adb:105:13: Error: Breaks: Closing call to T_Unsafe_Paired_Calls.Breaks.V1 is nested within another statement
+t_unsafe_paired_calls-breaks.adb:107:13: Error: Breaks: closing call to T_Unsafe_Paired_Calls.Breaks.V2 has no matching opening call at start of sequence
+t_unsafe_paired_calls-breaks.adb:109:10: Error: Breaks: Statement not preceded by closing block matching T_Unsafe_Paired_Calls.Breaks.P1
+t_unsafe_paired_calls-breaks.adb:129:13: Error: Breaks: sequence must end with closing call matching T_Unsafe_Paired_Calls.Breaks.P2
+t_unsafe_paired_calls-breaks.adb:122:16: Error: Breaks: Closing block followed by breaking statement that does not leave scope of T_Unsafe_Paired_Calls.Breaks.P2
+t_unsafe_paired_calls-breaks.adb:129:13: Error: Breaks: Statement not preceded by closing block matching T_Unsafe_Paired_Calls.Breaks.P2
+t_unsafe_paired_calls-breaks.adb:170:13: Error: Breaks: Statement not preceded by closing block matching T_Unsafe_Paired_Calls.Breaks.P1
+t_unsafe_paired_calls-breaks.adb:173:13: Error: Breaks: Statement not preceded by closing block matching T_Unsafe_Paired_Calls.Breaks.P2

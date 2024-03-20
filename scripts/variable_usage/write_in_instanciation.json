@@ -1,0 +1,699 @@
+
+[
+  {
+    "keys": [
+      "p",
+      "VARIABLE_LOCATION",
+      "v"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 954,
+          "high": 0
+        },
+        "labels": [
+          "A_DECLARATION",
+          "A_FORMAL_PACKAGE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_FORMAL_PACKAGE_DECLARATION"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "with package P1 is new Gen (0);"
+        }
+      },
+      {
+        "identity": {
+          "low": 953,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 89,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 595,
+          "high": 0
+        },
+        "labels": [
+          "AN_ORDINARY_TRAIT",
+          "A_DECLARATION",
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_VARIABLE_DECLARATION",
+            "AN_ORDINARY_TRAIT"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "Y2 : Integer;"
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "p": 0,
+      "VARIABLE_LOCATION": 1,
+      "v": 2
+    }
+  },
+  {
+    "keys": [
+      "p",
+      "VARIABLE_LOCATION",
+      "v"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 954,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_FORMAL_PACKAGE_DECLARATION",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_FORMAL_PACKAGE_DECLARATION"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "with package P1 is new Gen (0);"
+        }
+      },
+      {
+        "identity": {
+          "low": 953,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 89,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 654,
+          "high": 0
+        },
+        "labels": [
+          "AN_ORDINARY_TRAIT",
+          "A_DECLARATION",
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_VARIABLE_DECLARATION",
+            "AN_ORDINARY_TRAIT"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "Y4 : Integer;"
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "p": 0,
+      "VARIABLE_LOCATION": 1,
+      "v": 2
+    }
+  },
+  {
+    "keys": [
+      "p",
+      "VARIABLE_LOCATION",
+      "v"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 954,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_FORMAL_PACKAGE_DECLARATION",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_FORMAL_PACKAGE_DECLARATION"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "with package P1 is new Gen (0);"
+        }
+      },
+      {
+        "identity": {
+          "low": 953,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 89,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 587,
+          "high": 0
+        },
+        "labels": [
+          "AN_ORDINARY_TRAIT",
+          "A_DECLARATION",
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_VARIABLE_DECLARATION",
+            "AN_ORDINARY_TRAIT"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "Y1 : Integer := 0;"
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "p": 0,
+      "VARIABLE_LOCATION": 1,
+      "v": 2
+    }
+  },
+  {
+    "keys": [
+      "p",
+      "VARIABLE_LOCATION",
+      "v"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 954,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_FORMAL_PACKAGE_DECLARATION",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_FORMAL_PACKAGE_DECLARATION"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "with package P1 is new Gen (0);"
+        }
+      },
+      {
+        "identity": {
+          "low": 953,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 89,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 601,
+          "high": 0
+        },
+        "labels": [
+          "AN_ORDINARY_TRAIT",
+          "A_DECLARATION",
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_VARIABLE_DECLARATION",
+            "AN_ORDINARY_TRAIT"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "Y3 : Integer := 0;"
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "p": 0,
+      "VARIABLE_LOCATION": 1,
+      "v": 2
+    }
+  },
+  {
+    "keys": [
+      "p",
+      "VARIABLE_LOCATION",
+      "v"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 954,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_FORMAL_PACKAGE_DECLARATION",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_FORMAL_PACKAGE_DECLARATION"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "with package P1 is new Gen (0);"
+        }
+      },
+      {
+        "identity": {
+          "low": 953,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 89,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 595,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_VARIABLE_DECLARATION",
+          "AN_ORDINARY_TRAIT",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_VARIABLE_DECLARATION",
+            "AN_ORDINARY_TRAIT"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "Y2 : Integer;"
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "p": 0,
+      "VARIABLE_LOCATION": 1,
+      "v": 2
+    }
+  },
+  {
+    "keys": [
+      "p",
+      "VARIABLE_LOCATION",
+      "v"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 954,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_FORMAL_PACKAGE_DECLARATION",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_FORMAL_PACKAGE_DECLARATION"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "with package P1 is new Gen (0);"
+        }
+      },
+      {
+        "identity": {
+          "low": 953,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 89,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 654,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_VARIABLE_DECLARATION",
+          "AN_ORDINARY_TRAIT",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_VARIABLE_DECLARATION",
+            "AN_ORDINARY_TRAIT"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "Y4 : Integer;"
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "p": 0,
+      "VARIABLE_LOCATION": 1,
+      "v": 2
+    }
+  },
+  {
+    "keys": [
+      "p",
+      "VARIABLE_LOCATION",
+      "v"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 954,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_FORMAL_PACKAGE_DECLARATION",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_FORMAL_PACKAGE_DECLARATION"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "with package P1 is new Gen (0);"
+        }
+      },
+      {
+        "identity": {
+          "low": 953,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 89,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 587,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_VARIABLE_DECLARATION",
+          "AN_ORDINARY_TRAIT",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_VARIABLE_DECLARATION",
+            "AN_ORDINARY_TRAIT"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "Y1 : Integer := 0;"
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "p": 0,
+      "VARIABLE_LOCATION": 1,
+      "v": 2
+    }
+  },
+  {
+    "keys": [
+      "p",
+      "VARIABLE_LOCATION",
+      "v"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 954,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_FORMAL_PACKAGE_DECLARATION",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_FORMAL_PACKAGE_DECLARATION"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "with package P1 is new Gen (0);"
+        }
+      },
+      {
+        "identity": {
+          "low": 953,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 89,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 601,
+          "high": 0
+        },
+        "labels": [
+          "Element",
+          "A_VARIABLE_DECLARATION",
+          "AN_ORDINARY_TRAIT",
+          "A_DECLARATION"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "kinds": [
+            "Element",
+            "A_DECLARATION",
+            "A_VARIABLE_DECLARATION",
+            "AN_ORDINARY_TRAIT"
+          ],
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "Y3 : Integer := 0;"
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "p": 0,
+      "VARIABLE_LOCATION": 1,
+      "v": 2
+    }
+  }
+]

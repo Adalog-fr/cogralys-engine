@@ -1,0 +1,17 @@
+No_Parameter: check unsafe_paired_calls (t_unsafe_paired_calls{}.p{}, t_unsafe_paired_calls{}.v{});
+In_Parameter: check unsafe_paired_calls (t_unsafe_paired_calls{}.p{standard.character; standard.integer},
+                                         t_unsafe_paired_calls{}.v{standard.character; standard.integer},
+                                         standard.integer);
+In_Parameter: check unsafe_paired_calls (t_unsafe_paired_calls{}.p{t_unsafe_paired_calls{}.Acc},
+                                         t_unsafe_paired_calls{}.v{t_unsafe_paired_calls{}.Acc},
+                                         t_unsafe_paired_calls{}.Acc);
+InOut_Parameter: check unsafe_paired_calls (t_unsafe_paired_calls{}.p{t_unsafe_paired_calls{}.sema},
+                                            t_unsafe_paired_calls{}.v{t_unsafe_paired_calls{}.sema},
+                                            t_unsafe_paired_calls{}.sema);
+
+Multiple : search unsafe_paired_calls (t_unsafe_paired_calls{}.MultP1{}, t_unsafe_paired_calls{}.MultV1{});
+Multiple : search unsafe_paired_calls (t_unsafe_paired_calls{}.MultP1{}, t_unsafe_paired_calls{}.MultV2{});
+Multiple : search unsafe_paired_calls (t_unsafe_paired_calls{}.MultP2{}, t_unsafe_paired_calls{}.MultV2{});
+
+Breaks: check unsafe_paired_calls (t_unsafe_paired_calls.breaks.p1,t_unsafe_paired_calls.breaks.v1),
+        check unsafe_paired_calls (t_unsafe_paired_calls.breaks.p2,t_unsafe_paired_calls.breaks.v2);

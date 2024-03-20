@@ -1,0 +1,1937 @@
+[
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 10635,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage.Guards",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "I : Integer := 0;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 10751,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage.Guards",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "I := 0;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 10750,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 19,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                "line": {
+                  "low": 33,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 10751,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage.Guards",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "I := 0;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 14949,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 10751,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 10750,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 10750,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 19,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                    "line": {
+                      "low": 33,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ],
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 10778,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage.Guards",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "I := 0;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 10777,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 19,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                "line": {
+                  "low": 38,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 10778,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage.Guards",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "I := 0;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 14993,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 10778,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 10777,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 10777,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 19,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                    "line": {
+                      "low": 38,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 10634,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+          "line": {
+            "low": 4,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  },
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 10643,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage.Guards",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "J : Integer;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 10795,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage.Guards",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "J := Boolean'Pos (F (0));"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 10794,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 19,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                "line": {
+                  "low": 43,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 10795,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage.Guards",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "J := Boolean'Pos (F (0));"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 15017,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 10795,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 10794,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 10794,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 19,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                    "line": {
+                      "low": 43,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 10642,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+          "line": {
+            "low": 5,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  },
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 10649,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage.Guards",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "K : Integer;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 10851,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage.Guards",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "K := G (J + L);"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 10850,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 16,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                "line": {
+                  "low": 48,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 10851,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage.Guards",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "K := G (J + L);"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 15136,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 10851,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 10850,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 10850,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 16,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                    "line": {
+                      "low": 48,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 10648,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+          "line": {
+            "low": 6,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  },
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 10661,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage.Guards",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "M : Integer := 0;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 10930,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage.Guards",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "M := 0;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 10929,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 19,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                "line": {
+                  "low": 61,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 10930,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage.Guards",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "M := 0;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 15247,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 10930,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 10929,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 10929,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 19,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                    "line": {
+                      "low": 61,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 10660,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+          "line": {
+            "low": 8,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  },
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 10669,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage.Guards",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "N : Integer := 0;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 10952,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage.Guards",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "N := 1;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 10951,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 28,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                "line": {
+                  "low": 65,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 10952,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage.Guards",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "N := 1;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 15276,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 10952,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 10951,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 10951,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 28,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+                    "line": {
+                      "low": 65,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 10668,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage-guards.adb",
+          "line": {
+            "low": 9,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  },
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 11477,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "YY : Integer;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 11487,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "YY := 0;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 11486,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 7,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                "line": {
+                  "low": 77,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 11487,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "YY := 0;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 16030,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 11487,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 11486,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 11486,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 7,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                    "line": {
+                      "low": 77,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ],
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 11492,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "YY := 2;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 11491,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 7,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                "line": {
+                  "low": 78,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 11492,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "YY := 2;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 16037,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 11492,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 11491,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 11491,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 7,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                    "line": {
+                      "low": 78,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 11476,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 73,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  },
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 11272,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "A1, A2 : Integer;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 11605,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "A2 := C;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 11604,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 4,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                "line": {
+                  "low": 107,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 11605,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "A2 := C;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 16199,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 11605,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 11604,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 11604,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 4,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                    "line": {
+                      "low": 107,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ],
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 11610,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "A2 := I2;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 11609,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 4,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                "line": {
+                  "low": 108,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 11610,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "A2 := I2;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 16207,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 11610,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 11609,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 11609,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 4,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                    "line": {
+                      "low": 108,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 11271,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 41,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  },
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 12057,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "I : Integer;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 12066,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "I := F1;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 12065,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 7,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                "line": {
+                  "low": 213,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 12066,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "I := F1;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 16824,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 12066,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 12065,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 12065,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 7,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                    "line": {
+                      "low": 213,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 12056,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 210,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  },
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 12038,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "AP : Acc_Proc;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 12072,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "Ap := P2'Access;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 12071,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 7,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                "line": {
+                  "low": 214,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 12072,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "Ap := P2'Access;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 16834,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 12072,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 12071,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 12071,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 7,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                    "line": {
+                      "low": 214,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 12037,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 207,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  },
+  {
+    "keys": [
+      "v",
+      "WRITE_VARIABLE",
+      "VARIABLE_LOCATION"
+    ],
+    "length": 3,
+    "_fields": [
+      {
+        "identity": {
+          "low": 12046,
+          "high": 0
+        },
+        "labels": [
+          "A_VARIABLE_DECLARATION",
+          "Element"
+        ],
+        "properties": {
+          "is_part_of_inherited": false,
+          "kind": "A_VARIABLE_DECLARATION",
+          "element_kind": "A_DECLARATION",
+          "enclosing_unit": "T_Usage",
+          "is_part_of_instance": false,
+          "is_part_of_implicit": false,
+          "special_case": "NOT_A_SPECIAL_CASE",
+          "content": "AF : System.Address;"
+        }
+      },
+      [
+        [
+          {
+            "start": {
+              "identity": {
+                "low": 12080,
+                "high": 0
+              },
+              "labels": [
+                "AN_ASSIGNMENT_STATEMENT",
+                "Element"
+              ],
+              "properties": {
+                "is_part_of_inherited": false,
+                "kind": "AN_ASSIGNMENT_STATEMENT",
+                "element_kind": "A_STATEMENT",
+                "enclosing_unit": "T_Usage",
+                "is_part_of_instance": false,
+                "is_part_of_implicit": false,
+                "special_case": "NOT_A_SPECIAL_CASE",
+                "content": "Af := F2'Address;"
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 12079,
+                "high": 0
+              },
+              "labels": [
+                "Location"
+              ],
+              "properties": {
+                "column": {
+                  "low": 7,
+                  "high": 0
+                },
+                "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                "line": {
+                  "low": 215,
+                  "high": 0
+                }
+              }
+            },
+            "segments": [
+              {
+                "start": {
+                  "identity": {
+                    "low": 12080,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Element",
+                    "AN_ASSIGNMENT_STATEMENT"
+                  ],
+                  "properties": {
+                    "is_part_of_inherited": false,
+                    "kind": "AN_ASSIGNMENT_STATEMENT",
+                    "element_kind": "A_STATEMENT",
+                    "enclosing_unit": "T_Usage",
+                    "is_part_of_instance": false,
+                    "is_part_of_implicit": false,
+                    "special_case": "NOT_A_SPECIAL_CASE",
+                    "content": "Af := F2'Address;"
+                  }
+                },
+                "relationship": {
+                  "identity": {
+                    "low": 16845,
+                    "high": 0
+                  },
+                  "start": {
+                    "low": 12080,
+                    "high": 0
+                  },
+                  "end": {
+                    "low": 12079,
+                    "high": 0
+                  },
+                  "type": "LOCATED_IN",
+                  "properties": {}
+                },
+                "end": {
+                  "identity": {
+                    "low": 12079,
+                    "high": 0
+                  },
+                  "labels": [
+                    "Location"
+                  ],
+                  "properties": {
+                    "column": {
+                      "low": 7,
+                      "high": 0
+                    },
+                    "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+                    "line": {
+                      "low": 215,
+                      "high": 0
+                    }
+                  }
+                }
+              }
+            ],
+            "length": 1
+          }
+        ]
+      ],
+      {
+        "identity": {
+          "low": 12045,
+          "high": 0
+        },
+        "labels": [
+          "Location"
+        ],
+        "properties": {
+          "column": {
+            "low": 7,
+            "high": 0
+          },
+          "filename": "/Volumes/Data/programmation_pro/These/asis-to-graphdb/Asis_To_GraphDB/examples/adactl/wks/t_usage.adb",
+          "line": {
+            "low": 208,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "v": 0,
+      "WRITE_VARIABLE": 1,
+      "VARIABLE_LOCATION": 2
+    }
+  }
+]

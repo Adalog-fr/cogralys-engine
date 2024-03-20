@@ -1,0 +1,2201 @@
++-A_CLAUSE:                  with Ada.Float_Text_IO; (A_WITH_CLAUSE)
+| +-AN_EXPRESSION:           Ada.Float_Text_IO (A_SELECTED_COMPONENT)
+| | +-AN_EXPRESSION:         Ada (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float_Text_IO (AN_IDENTIFIER)
++-A_CLAUSE:                  with Ada.Numerics.Elementary_Functions; (A_WITH_CLAUSE)
+| +-AN_EXPRESSION:           Ada.Numerics.Elementary_Functions (A_SELECTED_COMPONENT)
+| | +-AN_EXPRESSION:         Ada.Numerics (A_SELECTED_COMPONENT)
+| | | +-AN_EXPRESSION:       Ada (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Numerics (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Elementary_Functions (AN_IDENTIFIER)
++-A_CLAUSE:                  with Ada.Text_IO; (A_WITH_CLAUSE)
+| +-AN_EXPRESSION:           Ada.Text_IO (A_SELECTED_COMPONENT)
+| | +-AN_EXPRESSION:         Ada (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Text_IO (AN_IDENTIFIER)
++-A_CLAUSE:                  with LSE.Utils.Coordinate_2D; (A_WITH_CLAUSE)
+| +-AN_EXPRESSION:           LSE.Utils.Coordinate_2D (A_SELECTED_COMPONENT)
+| | +-AN_EXPRESSION:         LSE.Utils (A_SELECTED_COMPONENT)
+| | | +-AN_EXPRESSION:       LSE (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Utils (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Coordinate_2D (AN_IDENTIFIER)
++-A_CLAUSE:                  with LSE.Utils.Coordinate_2D_Ptr; (A_WITH_CLAUSE)
+| +-AN_EXPRESSION:           LSE.Utils.Coordinate_2D_Ptr (A_SELECTED_COMPONENT)
+| | +-AN_EXPRESSION:         LSE.Utils (A_SELECTED_COMPONENT)
+| | | +-AN_EXPRESSION:       LSE (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Utils (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Coordinate_2D_Ptr (AN_IDENTIFIER)
++-A_CLAUSE:                  with LSE.Utils.Utils; (A_WITH_CLAUSE)
+| +-AN_EXPRESSION:           LSE.Utils.Utils (A_SELECTED_COMPONENT)
+| | +-AN_EXPRESSION:         LSE.Utils (A_SELECTED_COMPONENT)
+| | | +-AN_EXPRESSION:       LSE (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Utils (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Utils (AN_IDENTIFIER)
++-A_DECLARATION:             package body LSE.Model.IO.Turtle is (A_PACKAGE_BODY_DECLARATION)
+|                            
+|                               function Initialize return Instance
+|                               is
+|                                  This : Instance;
+|                               begin
+|                                  return This;
+|                               end Initialize;
+|                            
+|                               procedure Set_Width (This : out Instance; Value : Positive)
+|                               is
+|                               begin
+|                                  This.Width := Value;
+|                               end Set_Width;
+|                            
+|                               procedure Set_Height (This : out Instance; Value : Positive)
+|                               is
+|                               begin
+|                                  This.Height := Value;
+|                               end Set_Height;
+|                            
+|                               procedure Set_Background_Color (This : out Instance;
+|                                                               Value : String)
+|                               is
+|                               begin
+|                                  This.Background_Color := To_Unbounded_String (Value);
+|                               end Set_Background_Color;
+|                            
+|                               procedure Set_Foreground_Color (This : out Instance; Value : String)
+|                               is
+|                               begin
+|                                  This.Foreground_Color := To_Unbounded_String (Value);
+|                               end Set_Foreground_Color;
+|                            
+|                               procedure Set_Angle (This : out Instance;
+|                                                    Value : LSE.Utils.Angle.Angle)
+|                               is
+|                               begin
+|                                  This.Angle := Value;
+|                               end Set_Angle;
+|                            
+|                               function Get_Width (This : Instance) return Positive
+|                               is
+|                               begin
+|                                  return This.Width;
+|                               end Get_Width;
+|                            
+|                               function Get_Height (This : Instance) return Positive
+|                                    is
+|                               begin
+|                                  return This.Height;
+|                               end Get_Height;
+|                            
+|                               function Get_Background_Color (This : Instance) return String
+|                               is
+|                               begin
+|                                  return To_String (This.Background_Color);
+|                               end Get_Background_Color;
+|                            
+|                               function Get_Foreground_Color (This : Instance) return String
+|                               is
+|                               begin
+|                                  return To_String (This.Foreground_Color);
+|                               end Get_Foreground_Color;
+|                            
+|                               function Get_Offset_X (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Offset_X;
+|                               end Get_Offset_X;
+|                            
+|                               function Get_Offset_Y (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Offset_Y;
+|                               end Get_Offset_Y;
+|                            
+|                               function Get_Max_X (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Max_X;
+|                               end Get_Max_X;
+|                            
+|                               function Get_Max_Y (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Max_Y;
+|                               end Get_Max_Y;
+|                            
+|                               function Get_Min_X (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Min_X;
+|                               end Get_Min_X;
+|                            
+|                               function Get_Min_Y (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Min_Y;
+|                               end Get_Min_Y;
+|                            
+|                               procedure Set_Max_X (This : out Instance; Value : Float)
+|                               is
+|                               begin
+|                                  This.Max_X := Value;
+|                               end Set_Max_X;
+|                            
+|                               procedure Set_Max_Y (This : out Instance; Value : Float)
+|                               is
+|                               begin
+|                                  This.Max_Y := Value;
+|                               end Set_Max_Y;
+|                            
+|                               procedure Set_Min_X (This : out Instance; Value : Float)
+|                               is
+|                               begin
+|                                  This.Min_X := Value;
+|                               end Set_Min_X;
+|                            
+|                               procedure Set_Min_Y (This : out Instance; Value : Float)
+|                               is
+|                               begin
+|                                  This.Min_Y := Value;
+|                               end Set_Min_Y;
+|                            
+|                               function Get_Margin_Top (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Margin_Top;
+|                               end Get_Margin_Top;
+|                            
+|                               function Get_Margin_Right (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Margin_Right;
+|                               end Get_Margin_Right;
+|                            
+|                               function Get_Margin_Bottom (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Margin_Bottom;
+|                               end Get_Margin_Bottom;
+|                            
+|                               function Get_Margin_Left (This : Instance) return Float
+|                               is
+|                               begin
+|                                  return This.Margin_Left;
+|                               end Get_Margin_Left;
+|                            
+|                               function Get_Medium (This : Instance)
+|                                                  return LSE.Model.IO.Drawing_Area.Drawing_Area_Ptr.Holder
+|                               is
+|                               begin
+|                                  return This.Medium;
+|                               end Get_Medium;
+|                            
+|                               procedure Set_Margin_Top (This : out Instance; Value : Natural)
+|                               is
+|                               begin
+|                                  This.Margin_Top := Float (Value);
+|                               end Set_Margin_Top;
+|                            
+|                               procedure Set_Margin_Right (This : out Instance; Value : Natural)
+|                               is
+|                               begin
+|                                  This.Margin_Right := Float (Value);
+|                               end Set_Margin_Right;
+|                            
+|                               procedure Set_Margin_Bottom (This : out Instance; Value : Natural)
+|                               is
+|                               begin
+|                                  This.Margin_Bottom := Float (Value);
+|                               end Set_Margin_Bottom;
+|                            
+|                               procedure Set_Margin_Left (This : out Instance; Value : Natural)
+|                               is
+|                               begin
+|                                  This.Margin_Left := Float (Value);
+|                               end Set_Margin_Left;
+|                            
+|                               procedure Set_Margin (This : out Instance; Value : Natural)
+|                               is
+|                               begin
+|                                  This.Margin_Top    := Float (Value);
+|                                  This.Margin_Right  := Float (Value);
+|                                  This.Margin_Bottom := Float (Value);
+|                                  This.Margin_Left   := Float (Value);
+|                               end Set_Margin;
+|                            
+|                               procedure Set_Medium (This  : out Instance;
+|                                                Value : LSE.Model.IO.Drawing_Area.Drawing_Area_Ptr.Holder)
+|                               is
+|                               begin
+|                                  This.Medium := Value;
+|                               end Set_Medium;
+|                            
+|                               procedure Set_Dry_Run (This : out Instance; Value : Boolean)
+|                               is
+|                               begin
+|                                  This.Dry_Run := Value;
+|                               end Set_Dry_Run;
+|                            
+|                               procedure Put (This : Instance)
+|                               is
+|                                  use Ada.Text_IO;
+|                                  use Ada.Float_Text_IO;
+|                               begin
+|                                  Put_Line ("Turtle:");
+|                                  Put_Line ("    Width            :" & Positive'Image (This.Width));
+|                                  Put_Line ("    Height           :" & Positive'Image (This.Height));
+|                                  Put_Line ("    Background_Color : " & To_String (This.Background_Color));
+|                                  Put_Line ("    Foreground_Color : " & To_String (This.Foreground_Color));
+|                                  Put ("    Line_Size        : ");
+|                                  Put (Item => This.Line_Size, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                                  Put ("    Angle            :");
+|                                  Put (Item => This.Angle, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Max_X            :");
+|                                  Put (Item => This.Max_X, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Max_Y            :");
+|                                  Put (Item => This.Max_Y, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Min_X            :");
+|                                  Put (Item => This.Min_X, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Min_Y            :");
+|                                  Put (Item => This.Min_Y, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Ratio            :");
+|                                  Put (Item => This.Ratio, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Offset_X         :");
+|                                  Put (Item => This.Offset_X, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Offset_Y         :");
+|                                  Put (Item => This.Offset_Y, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Margin_Top       :");
+|                                  Put (Item => This.Margin_Top, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Margin_Right     :");
+|                                  Put (Item => This.Margin_Right, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Margin_Bottom    :");
+|                                  Put (Item => This.Margin_Bottom, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                            
+|                                  Put ("    Margin_Left      :");
+|                                  Put (Item => This.Margin_Left, Aft => 2, Exp => 0);
+|                                  New_Line;
+|                               end Put;
+|                            
+|                               procedure Make_Offset (This : in out Instance)
+|                               is
+|                                  Boxed_Width : constant Float :=
+|                                    Float (This.Width) - This.Margin_Right - This.Margin_Left;
+|                                  Boxed_Height : constant Float :=
+|                                    Float (This.Height) - This.Margin_Top - This.Margin_Bottom;
+|                               begin
+|                                  if This.Max_X - This.Min_X = 0.0 or This.Max_Y - This.Min_Y = 0.0
+|                                  then
+|                                     raise Divide_By_Zero;
+|                                  end if;
+|                            
+|                                  if Boxed_Width / (This.Max_X - This.Min_X) <=
+|                                    Boxed_Height / (This.Max_Y - This.Min_Y)
+|                                  then
+|                                     --  X has the smallest delta
+|                                     This.Ratio := Boxed_Width / (This.Max_X - This.Min_X);
+|                                  else
+|                                     --  Y has the smallest delta
+|                                     This.Ratio := Boxed_Height / (This.Max_Y - This.Min_Y);
+|                                  end if;
+|                            
+|                                  This.Offset_X := Boxed_Width / 2.0 -
+|                                    ((This.Ratio * This.Max_X
+|                                     -  This.Ratio * This.Min_X) / 2.0
+|                                     + This.Ratio * This.Min_X);
+|                            
+|                                  This.Offset_Y := Boxed_Height / 2.0 -
+|                                    ((This.Ratio * This.Max_Y
+|                                     - This.Ratio * This.Min_Y) / 2.0
+|                                     + This.Ratio * This.Min_Y);
+|                               end Make_Offset;
+|                            
+|                               procedure Configure (This : in out Instance)
+|                               is
+|                               begin
+|                                  if not This.Dry_Run then
+|                                     This.Make_Offset;
+|                                  end if;
+|                                  This.Stack_Angle.Clear;
+|                                  This.Stack_Coordinate.Clear;
+|                            
+|                                  if This.Dry_Run then
+|                                     This.Max_X := 0.0;
+|                                     This.Max_Y := 0.0;
+|                                     This.Min_X := 0.0;
+|                                     This.Min_Y := 0.0;
+|                                  else
+|                                     --  Configure the medium
+|                                     This.Medium.Reference.Configure (This);
+|                                  end if;
+|                            
+|                                  This.Stack_Angle.Append (LSE.Utils.Angle.To_Angle (90.0));
+|                                  This.Stack_Coordinate.Append (
+|                                                                LSE.Utils.Coordinate_2D_Ptr.To_Holder (
+|                                                                  LSE.Utils.Coordinate_2D.Initialize));
+|                               end Configure;
+|                            
+|                               procedure Draw (This : in out Instance)
+|                               is
+|                               begin
+|                                  if not This.Dry_Run then
+|                                     This.Medium.Reference.Draw;
+|                                  end if;
+|                               end Draw;
+|                            
+|                               procedure Forward (This : in out Instance; Trace : Boolean := False)
+|                               is
+|                            
+|                                  ------------------------
+|                                  --  Methods prototype --
+|                                  ------------------------
+|                            
+|                                  --  Callback of Update_Element of Stack_Coordinate
+|                                  procedure Update (Item : in out LSE.Utils.Coordinate_2D_Ptr.Holder);
+|                            
+|                                  --  Update all corners of the L-System edges
+|                                  procedure Update_Corners (This : in out Instance);
+|                            
+|                                  -----------------------------
+|                                  --  Declaration of methods --
+|                                  -----------------------------
+|                            
+|                                  procedure Update (Item : in out LSE.Utils.Coordinate_2D_Ptr.Holder)
+|                                  is
+|                                     use Ada.Numerics.Elementary_Functions;
+|                            
+|                                     Copy : LSE.Utils.Coordinate_2D_Ptr.Holder := Item;
+|                            
+|                                     X    : constant Float := This.Ratio *
+|                                       This.Line_Size * Cos (This.Stack_Angle.Last_Element, Degrees_Cycle);
+|                                     Y    : constant Float := This.Ratio *
+|                                       This.Line_Size * Sin (This.Stack_Angle.Last_Element, Degrees_Cycle);
+|                                  begin
+|                                     Copy.Reference.Set_X (X);
+|                                     Copy.Reference.Set_Y (Y);
+|                            
+|                                     Item.Move (Copy);
+|                                  end Update;
+|                            
+|                                  procedure Update_Corners (This : in out Instance)
+|                                  is
+|                                     X, Y : Float := 0.0;
+|                                  begin
+|                                     for H : LSE.Utils.Coordinate_2D_Ptr.Holder
+|                                       of reverse This.Stack_Coordinate
+|                                     loop
+|                                        X := X + H.Reference.Get_X;
+|                                        Y := Y + H.Reference.Get_Y;
+|                                     end loop;
+|                            
+|                                     if X < This.Min_X then
+|                                        This.Min_X := X;
+|                                     elsif X > This.Max_X then
+|                                        This.Max_X := X;
+|                                     end if;
+|                            
+|                                     if Y < This.Min_Y then
+|                                        This.Min_Y := Y;
+|                                     elsif Y > This.Max_Y then
+|                                        This.Max_Y := Y;
+|                                     end if;
+|                                  end Update_Corners;
+|                            
+|                                  ---------------
+|                                  -- Variables --
+|                                  ---------------
+|                            
+|                                  Copy   : LSE.Utils.Coordinate_2D_Ptr.Holder :=
+|                                    This.Stack_Coordinate.Last_Element.Copy;
+|                               begin  -- Forward
+|                                  This.Stack_Coordinate.Update_Element
+|                                    (Index   => This.Stack_Coordinate.Last_Index,
+|                                     Process => Update'Access);
+|                            
+|                                  if not This.Dry_Run then
+|                                     This.Medium.Reference.Forward
+|                                       (This.Stack_Coordinate.Last_Element.Element, Trace);
+|                                  end if;
+|                            
+|                                  Copy.Reference.Set_X (This.Stack_Coordinate.Last_Element.Element.Get_X +
+|                                                          Copy.Reference.Get_X);
+|                                  Copy.Reference.Set_Y (This.Stack_Coordinate.Last_Element.Element.Get_Y +
+|                                                          Copy.Reference.Get_Y);
+|                            
+|                                  This.Stack_Coordinate.Delete_Last;
+|                            
+|                                  This.Stack_Coordinate.Append (Copy);
+|                            
+|                                  if This.Dry_Run then
+|                                     Update_Corners (This);
+|                                  end if;
+|                               end Forward;
+|                            
+|                               procedure Rotate_Clockwise (This  : in out Instance)
+|                               is
+|                               begin
+|                                  This.Stack_Angle.Replace_Element
+|                                    (This.Stack_Angle.Last,
+|                                     To_Angle (This.Stack_Angle.Last_Element - This.Angle));
+|                            
+|                                  if not This.Dry_Run then
+|                                     This.Medium.Reference.Rotate_Clockwise;
+|                                  end if;
+|                               end Rotate_Clockwise;
+|                            
+|                               procedure Rotate_Anticlockwise (This  : in out Instance)
+|                               is
+|                               begin
+|                                  This.Stack_Angle.Replace_Element
+|                                    (This.Stack_Angle.Last,
+|                                     To_Angle (This.Stack_Angle.Last_Element + This.Angle));
+|                            
+|                                  if not This.Dry_Run then
+|                                     This.Medium.Reference.Rotate_Anticlockwise;
+|                                  end if;
+|                               end Rotate_Anticlockwise;
+|                            
+|                               procedure UTurn (This : in out Instance)
+|                               is
+|                               begin
+|                                  This.Stack_Angle.Replace_Element
+|                                    (This.Stack_Angle.Last,
+|                                     To_Angle (This.Stack_Angle.Last_Element + 180.0));
+|                            
+|                                  if not This.Dry_Run then
+|                                     This.Medium.Reference.UTurn;
+|                                  end if;
+|                               end UTurn;
+|                            
+|                               procedure Position_Save (This : in out Instance)
+|                               is
+|                               begin
+|                                  This.Stack_Coordinate.Append (LSE.Utils.Coordinate_2D_Ptr.To_Holder (
+|                                                                LSE.Utils.Coordinate_2D.Initialize));
+|                                  This.Stack_Angle.Append (LSE.Utils.Angle.To_Angle (
+|                                                           This.Stack_Angle.Last_Element));
+|                            
+|                                  if not This.Dry_Run then
+|                                     This.Medium.Reference.Position_Save;
+|                                  end if;
+|                               end Position_Save;
+|                            
+|                               procedure Position_Restore (This : in out Instance)
+|                               is
+|                                  use LSE.Utils.Utils;
+|                            
+|                                  Item : LSE.Utils.Coordinate_2D_Ptr.Holder;
+|                                  X  : Fixed_Point;
+|                                  Y  : Fixed_Point;
+|                               begin
+|                                  Item := This.Stack_Coordinate.Last_Element;
+|                                  X := -Fixed_Point (Item.Element.Get_X);
+|                                  Y := -Fixed_Point (Item.Element.Get_Y);
+|                            
+|                                  This.Stack_Angle.Delete_Last;
+|                                  This.Stack_Coordinate.Delete_Last;
+|                            
+|                                  if not This.Dry_Run then
+|                                     This.Medium.Reference.Position_Restore (X, Y);
+|                                  end if;
+|                               end Position_Restore;
+|                            
+|                            end LSE.Model.IO.Turtle;
+| +-A_DEFINING_NAME:         LSE.Model.IO.Turtle (A_DEFINING_EXPANDED_NAME)
+| | +-AN_EXPRESSION:         LSE.Model.IO (A_SELECTED_COMPONENT)
+| | | +-AN_EXPRESSION:       LSE.Model (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     LSE (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Model (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       IO (AN_IDENTIFIER)
+| | +-A_DEFINING_NAME:       Turtle (A_DEFINING_IDENTIFIER)
+| +-A_DECLARATION:           function Initialize return Instance (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                             This : Instance;
+| |                          begin
+| |                             return This;
+| |                          end Initialize;
+| | +-A_DEFINING_NAME:       Initialize (A_DEFINING_IDENTIFIER)
+| | +-AN_EXPRESSION:         Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance; (A_VARIABLE_DECLARATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-A_DEFINITION:        Instance (A_SUBTYPE_INDICATION)
+| | | | +-AN_EXPRESSION:     Instance (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Width (This : out Instance; Value : Positive) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Width := Value;
+| |                          end Set_Width;
+| | +-A_DEFINING_NAME:       Set_Width (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Positive (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Positive (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Width := Value; (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Width (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Width (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Height (This : out Instance; Value : Positive) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Height := Value;
+| |                          end Set_Height;
+| | +-A_DEFINING_NAME:       Set_Height (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Positive (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Positive (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Height := Value; (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Height (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Height (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Background_Color (This : out Instance; (A_PROCEDURE_BODY_DECLARATION)
+| |                                                          Value : String)
+| |                          is
+| |                          begin
+| |                             This.Background_Color := To_Unbounded_String (Value);
+| |                          end Set_Background_Color;
+| | +-A_DEFINING_NAME:       Set_Background_Color (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : String (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       String (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Background_Color := To_Unbounded_String (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Background_Color (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Background_Color (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       To_Unbounded_String (Value) (A_FUNCTION_CALL)
+| | | | +-AN_EXPRESSION:     To_Unbounded_String (AN_IDENTIFIER)
+| | | | +-AN_ASSOCIATION:    Value (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Foreground_Color (This : out Instance; Value : String) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Foreground_Color := To_Unbounded_String (Value);
+| |                          end Set_Foreground_Color;
+| | +-A_DEFINING_NAME:       Set_Foreground_Color (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : String (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       String (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Foreground_Color := To_Unbounded_String (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Foreground_Color (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Foreground_Color (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       To_Unbounded_String (Value) (A_FUNCTION_CALL)
+| | | | +-AN_EXPRESSION:     To_Unbounded_String (AN_IDENTIFIER)
+| | | | +-AN_ASSOCIATION:    Value (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Angle (This : out Instance; (A_PROCEDURE_BODY_DECLARATION)
+| |                                               Value : LSE.Utils.Angle.Angle)
+| |                          is
+| |                          begin
+| |                             This.Angle := Value;
+| |                          end Set_Angle;
+| | +-A_DEFINING_NAME:       Set_Angle (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : LSE.Utils.Angle.Angle (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       LSE.Utils.Angle.Angle (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     LSE.Utils.Angle (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   LSE.Utils (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: LSE (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Utils (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Angle (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Angle (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Angle := Value; (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Angle (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Angle (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Width (This : Instance) return Positive (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Width;
+| |                          end Get_Width;
+| | +-A_DEFINING_NAME:       Get_Width (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Positive (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Width; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Width (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Width (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Height (This : Instance) return Positive (A_FUNCTION_BODY_DECLARATION)
+| |                               is
+| |                          begin
+| |                             return This.Height;
+| |                          end Get_Height;
+| | +-A_DEFINING_NAME:       Get_Height (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Positive (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Height; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Height (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Height (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Background_Color (This : Instance) return String (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return To_String (This.Background_Color);
+| |                          end Get_Background_Color;
+| | +-A_DEFINING_NAME:       Get_Background_Color (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         String (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return To_String (This.Background_Color); (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       To_String (This.Background_Color) (A_FUNCTION_CALL)
+| | | | +-AN_EXPRESSION:     To_String (AN_IDENTIFIER)
+| | | | +-AN_ASSOCIATION:    This.Background_Color (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   This.Background_Color (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Background_Color (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Foreground_Color (This : Instance) return String (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return To_String (This.Foreground_Color);
+| |                          end Get_Foreground_Color;
+| | +-A_DEFINING_NAME:       Get_Foreground_Color (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         String (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return To_String (This.Foreground_Color); (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       To_String (This.Foreground_Color) (A_FUNCTION_CALL)
+| | | | +-AN_EXPRESSION:     To_String (AN_IDENTIFIER)
+| | | | +-AN_ASSOCIATION:    This.Foreground_Color (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   This.Foreground_Color (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Foreground_Color (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Offset_X (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Offset_X;
+| |                          end Get_Offset_X;
+| | +-A_DEFINING_NAME:       Get_Offset_X (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Offset_X; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Offset_X (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Offset_X (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Offset_Y (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Offset_Y;
+| |                          end Get_Offset_Y;
+| | +-A_DEFINING_NAME:       Get_Offset_Y (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Offset_Y; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Offset_Y (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Offset_Y (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Max_X (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Max_X;
+| |                          end Get_Max_X;
+| | +-A_DEFINING_NAME:       Get_Max_X (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Max_X; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Max_X (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Max_X (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Max_Y (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Max_Y;
+| |                          end Get_Max_Y;
+| | +-A_DEFINING_NAME:       Get_Max_Y (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Max_Y; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Max_Y (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Max_Y (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Min_X (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Min_X;
+| |                          end Get_Min_X;
+| | +-A_DEFINING_NAME:       Get_Min_X (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Min_X; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Min_X (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Min_X (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Min_Y (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Min_Y;
+| |                          end Get_Min_Y;
+| | +-A_DEFINING_NAME:       Get_Min_Y (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Min_Y; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Min_Y (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Min_Y (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Max_X (This : out Instance; Value : Float) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Max_X := Value;
+| |                          end Set_Max_X;
+| | +-A_DEFINING_NAME:       Set_Max_X (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Float (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Max_X := Value; (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Max_X (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Max_X (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Max_Y (This : out Instance; Value : Float) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Max_Y := Value;
+| |                          end Set_Max_Y;
+| | +-A_DEFINING_NAME:       Set_Max_Y (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Float (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Max_Y := Value; (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Max_Y (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Max_Y (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Min_X (This : out Instance; Value : Float) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Min_X := Value;
+| |                          end Set_Min_X;
+| | +-A_DEFINING_NAME:       Set_Min_X (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Float (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Min_X := Value; (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Min_X (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Min_X (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Min_Y (This : out Instance; Value : Float) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Min_Y := Value;
+| |                          end Set_Min_Y;
+| | +-A_DEFINING_NAME:       Set_Min_Y (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Float (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Min_Y := Value; (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Min_Y (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Min_Y (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Margin_Top (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Margin_Top;
+| |                          end Get_Margin_Top;
+| | +-A_DEFINING_NAME:       Get_Margin_Top (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Margin_Top; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Top (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Top (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Margin_Right (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Margin_Right;
+| |                          end Get_Margin_Right;
+| | +-A_DEFINING_NAME:       Get_Margin_Right (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Margin_Right; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Right (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Right (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Margin_Bottom (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Margin_Bottom;
+| |                          end Get_Margin_Bottom;
+| | +-A_DEFINING_NAME:       Get_Margin_Bottom (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Margin_Bottom; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Bottom (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Bottom (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Margin_Left (This : Instance) return Float (A_FUNCTION_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             return This.Margin_Left;
+| |                          end Get_Margin_Left;
+| | +-A_DEFINING_NAME:       Get_Margin_Left (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         Float (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Margin_Left; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Left (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Left (AN_IDENTIFIER)
+| +-A_DECLARATION:           function Get_Medium (This : Instance) (A_FUNCTION_BODY_DECLARATION)
+| |                                             return LSE.Model.IO.Drawing_Area.Drawing_Area_Ptr.Holder
+| |                          is
+| |                          begin
+| |                             return This.Medium;
+| |                          end Get_Medium;
+| | +-A_DEFINING_NAME:       Get_Medium (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-AN_EXPRESSION:         LSE.Model.IO.Drawing_Area.Drawing_Area_Ptr.Holder (A_SELECTED_COMPONENT)
+| | | +-AN_EXPRESSION:       LSE.Model.IO.Drawing_Area.Drawing_Area_Ptr (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     LSE.Model.IO.Drawing_Area (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   LSE.Model.IO (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: LSE.Model (A_SELECTED_COMPONENT)
+| | | | | | | +-AN_EXPRESSION:         LSE (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Model (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: IO (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Drawing_Area (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Drawing_Area_Ptr (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Holder (AN_IDENTIFIER)
+| | +-A_STATEMENT:           return This.Medium; (A_RETURN_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Medium (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Medium (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Margin_Top (This : out Instance; Value : Natural) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Margin_Top := Float (Value);
+| |                          end Set_Margin_Top;
+| | +-A_DEFINING_NAME:       Set_Margin_Top (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Natural (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Natural (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Margin_Top := Float (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Top (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Top (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (Value) (A_TYPE_CONVERSION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Margin_Right (This : out Instance; Value : Natural) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Margin_Right := Float (Value);
+| |                          end Set_Margin_Right;
+| | +-A_DEFINING_NAME:       Set_Margin_Right (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Natural (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Natural (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Margin_Right := Float (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Right (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Right (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (Value) (A_TYPE_CONVERSION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Margin_Bottom (This : out Instance; Value : Natural) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Margin_Bottom := Float (Value);
+| |                          end Set_Margin_Bottom;
+| | +-A_DEFINING_NAME:       Set_Margin_Bottom (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Natural (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Natural (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Margin_Bottom := Float (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Bottom (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Bottom (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (Value) (A_TYPE_CONVERSION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Margin_Left (This : out Instance; Value : Natural) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Margin_Left := Float (Value);
+| |                          end Set_Margin_Left;
+| | +-A_DEFINING_NAME:       Set_Margin_Left (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Natural (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Natural (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Margin_Left := Float (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Left (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Left (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (Value) (A_TYPE_CONVERSION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Margin (This : out Instance; Value : Natural) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Margin_Top    := Float (Value);
+| |                             This.Margin_Right  := Float (Value);
+| |                             This.Margin_Bottom := Float (Value);
+| |                             This.Margin_Left   := Float (Value);
+| |                          end Set_Margin;
+| | +-A_DEFINING_NAME:       Set_Margin (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Natural (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Natural (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Margin_Top    := Float (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Top (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Top (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (Value) (A_TYPE_CONVERSION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Value (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Margin_Right  := Float (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Right (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Right (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (Value) (A_TYPE_CONVERSION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Value (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Margin_Bottom := Float (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Bottom (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Bottom (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (Value) (A_TYPE_CONVERSION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Value (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Margin_Left   := Float (Value); (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Margin_Left (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Margin_Left (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (Value) (A_TYPE_CONVERSION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Medium (This  : out Instance; (A_PROCEDURE_BODY_DECLARATION)
+| |                                           Value : LSE.Model.IO.Drawing_Area.Drawing_Area_Ptr.Holder)
+| |                          is
+| |                          begin
+| |                             This.Medium := Value;
+| |                          end Set_Medium;
+| | +-A_DEFINING_NAME:       Set_Medium (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This  : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : LSE.Model.IO.Drawing_Area.Drawing_Area_Ptr.Holder (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       LSE.Model.IO.Drawing_Area.Drawing_Area_Ptr.Holder (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     LSE.Model.IO.Drawing_Area.Drawing_Area_Ptr (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   LSE.Model.IO.Drawing_Area (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: LSE.Model.IO (A_SELECTED_COMPONENT)
+| | | | | | | +-AN_EXPRESSION:         LSE.Model (A_SELECTED_COMPONENT)
+| | | | | | | | +-AN_EXPRESSION:       LSE (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       Model (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         IO (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Drawing_Area (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Drawing_Area_Ptr (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Holder (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Medium := Value; (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Medium (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Medium (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Set_Dry_Run (This : out Instance; Value : Boolean) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             This.Dry_Run := Value;
+| |                          end Set_Dry_Run;
+| | +-A_DEFINING_NAME:       Set_Dry_Run (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Value : Boolean (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Value (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Boolean (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Dry_Run := Value; (AN_ASSIGNMENT_STATEMENT)
+| | | +-AN_EXPRESSION:       This.Dry_Run (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Dry_Run (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Value (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Put (This : Instance) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                             use Ada.Text_IO;
+| |                             use Ada.Float_Text_IO;
+| |                          begin
+| |                             Put_Line ("Turtle:");
+| |                             Put_Line ("    Width            :" & Positive'Image (This.Width));
+| |                             Put_Line ("    Height           :" & Positive'Image (This.Height));
+| |                             Put_Line ("    Background_Color : " & To_String (This.Background_Color));
+| |                             Put_Line ("    Foreground_Color : " & To_String (This.Foreground_Color));
+| |                             Put ("    Line_Size        : ");
+| |                             Put (Item => This.Line_Size, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                             Put ("    Angle            :");
+| |                             Put (Item => This.Angle, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Max_X            :");
+| |                             Put (Item => This.Max_X, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Max_Y            :");
+| |                             Put (Item => This.Max_Y, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Min_X            :");
+| |                             Put (Item => This.Min_X, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Min_Y            :");
+| |                             Put (Item => This.Min_Y, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Ratio            :");
+| |                             Put (Item => This.Ratio, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Offset_X         :");
+| |                             Put (Item => This.Offset_X, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Offset_Y         :");
+| |                             Put (Item => This.Offset_Y, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Margin_Top       :");
+| |                             Put (Item => This.Margin_Top, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Margin_Right     :");
+| |                             Put (Item => This.Margin_Right, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Margin_Bottom    :");
+| |                             Put (Item => This.Margin_Bottom, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          
+| |                             Put ("    Margin_Left      :");
+| |                             Put (Item => This.Margin_Left, Aft => 2, Exp => 0);
+| |                             New_Line;
+| |                          end Put;
+| | +-A_DEFINING_NAME:       Put (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_CLAUSE:              use Ada.Text_IO; (A_USE_PACKAGE_CLAUSE)
+| | | +-AN_EXPRESSION:       Ada.Text_IO (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     Ada (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Text_IO (AN_IDENTIFIER)
+| | +-A_CLAUSE:              use Ada.Float_Text_IO; (A_USE_PACKAGE_CLAUSE)
+| | | +-AN_EXPRESSION:       Ada.Float_Text_IO (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     Ada (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Float_Text_IO (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put_Line ("Turtle:"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put_Line (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "Turtle:" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "Turtle:" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put_Line ("    Width            :" & Positive'Image (This.Width)); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put_Line (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Width            :" & Positive'Image (This.Width) (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Width            :" & Positive'Image (This.Width) (A_FUNCTION_CALL)
+| | | | | +-AN_ASSOCIATION:  "    Width            :" (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: "    Width            :" (A_STRING_LITERAL)
+| | | | | +-AN_EXPRESSION:   & (AN_OPERATOR_SYMBOL)
+| | | | | +-AN_ASSOCIATION:  Positive'Image (This.Width) (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: Positive'Image (This.Width) (A_FUNCTION_CALL)
+| | | | | | | +-AN_EXPRESSION:         Positive'Image (AN_ATTRIBUTE_REFERENCE)
+| | | | | | | | +-AN_EXPRESSION:       Positive (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       Image (AN_IDENTIFIER)
+| | | | | | | +-AN_ASSOCIATION:        This.Width (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Width (A_SELECTED_COMPONENT)
+| | | | | | | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     Width (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put_Line ("    Height           :" & Positive'Image (This.Height)); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put_Line (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Height           :" & Positive'Image (This.Height) (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Height           :" & Positive'Image (This.Height) (A_FUNCTION_CALL)
+| | | | | +-AN_ASSOCIATION:  "    Height           :" (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: "    Height           :" (A_STRING_LITERAL)
+| | | | | +-AN_EXPRESSION:   & (AN_OPERATOR_SYMBOL)
+| | | | | +-AN_ASSOCIATION:  Positive'Image (This.Height) (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: Positive'Image (This.Height) (A_FUNCTION_CALL)
+| | | | | | | +-AN_EXPRESSION:         Positive'Image (AN_ATTRIBUTE_REFERENCE)
+| | | | | | | | +-AN_EXPRESSION:       Positive (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       Image (AN_IDENTIFIER)
+| | | | | | | +-AN_ASSOCIATION:        This.Height (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Height (A_SELECTED_COMPONENT)
+| | | | | | | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     Height (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put_Line ("    Background_Color : " & To_String (This.Background_Color)); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put_Line (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Background_Color : " & To_String (This.Background_Color) (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Background_Color : " & To_String (This.Background_Color) (A_FUNCTION_CALL)
+| | | | | +-AN_ASSOCIATION:  "    Background_Color : " (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: "    Background_Color : " (A_STRING_LITERAL)
+| | | | | +-AN_EXPRESSION:   & (AN_OPERATOR_SYMBOL)
+| | | | | +-AN_ASSOCIATION:  To_String (This.Background_Color) (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: To_String (This.Background_Color) (A_FUNCTION_CALL)
+| | | | | | | +-AN_EXPRESSION:         To_String (AN_IDENTIFIER)
+| | | | | | | +-AN_ASSOCIATION:        This.Background_Color (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Background_Color (A_SELECTED_COMPONENT)
+| | | | | | | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     Background_Color (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put_Line ("    Foreground_Color : " & To_String (This.Foreground_Color)); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put_Line (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Foreground_Color : " & To_String (This.Foreground_Color) (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Foreground_Color : " & To_String (This.Foreground_Color) (A_FUNCTION_CALL)
+| | | | | +-AN_ASSOCIATION:  "    Foreground_Color : " (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: "    Foreground_Color : " (A_STRING_LITERAL)
+| | | | | +-AN_EXPRESSION:   & (AN_OPERATOR_SYMBOL)
+| | | | | +-AN_ASSOCIATION:  To_String (This.Foreground_Color) (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: To_String (This.Foreground_Color) (A_FUNCTION_CALL)
+| | | | | | | +-AN_EXPRESSION:         To_String (AN_IDENTIFIER)
+| | | | | | | +-AN_ASSOCIATION:        This.Foreground_Color (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Foreground_Color (A_SELECTED_COMPONENT)
+| | | | | | | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     Foreground_Color (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Line_Size        : "); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Line_Size        : " (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Line_Size        : " (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Line_Size, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Line_Size (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Line_Size (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Line_Size (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Angle            :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Angle            :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Angle            :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Angle, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Angle (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Angle (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Angle (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Max_X            :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Max_X            :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Max_X            :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Max_X, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Max_X (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Max_X (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Max_X (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Max_Y            :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Max_Y            :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Max_Y            :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Max_Y, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Max_Y (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Max_Y (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Max_Y (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Min_X            :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Min_X            :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Min_X            :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Min_X, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Min_X (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Min_X (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Min_X (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Min_Y            :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Min_Y            :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Min_Y            :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Min_Y, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Min_Y (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Min_Y (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Min_Y (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Ratio            :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Ratio            :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Ratio            :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Ratio, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Ratio (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Ratio (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Ratio (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Offset_X         :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Offset_X         :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Offset_X         :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Offset_X, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Offset_X (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Offset_X (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Offset_X (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Offset_Y         :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Offset_Y         :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Offset_Y         :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Offset_Y, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Offset_Y (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Offset_Y (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Offset_Y (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Margin_Top       :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Margin_Top       :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Margin_Top       :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Margin_Top, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Margin_Top (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Margin_Top (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Margin_Top (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Margin_Right     :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Margin_Right     :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Margin_Right     :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Margin_Right, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Margin_Right (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Margin_Right (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Margin_Right (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Margin_Bottom    :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Margin_Bottom    :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Margin_Bottom    :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Margin_Bottom, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Margin_Bottom (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Margin_Bottom (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Margin_Bottom (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| | +-A_STATEMENT:           Put ("    Margin_Left      :"); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      "    Margin_Left      :" (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     "    Margin_Left      :" (A_STRING_LITERAL)
+| | +-A_STATEMENT:           Put (Item => This.Margin_Left, Aft => 2, Exp => 0); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       Put (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Item => This.Margin_Left (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Margin_Left (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Margin_Left (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      Aft => 2 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Aft (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     2 (AN_INTEGER_LITERAL)
+| | | +-AN_ASSOCIATION:      Exp => 0 (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     Exp (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     0 (AN_INTEGER_LITERAL)
+| | +-A_STATEMENT:           New_Line; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_EXPRESSION:       New_Line (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Make_Offset (This : in out Instance) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                             Boxed_Width : constant Float :=
+| |                               Float (This.Width) - This.Margin_Right - This.Margin_Left;
+| |                             Boxed_Height : constant Float :=
+| |                               Float (This.Height) - This.Margin_Top - This.Margin_Bottom;
+| |                          begin
+| |                             if This.Max_X - This.Min_X = 0.0 or This.Max_Y - This.Min_Y = 0.0
+| |                             then
+| |                                raise Divide_By_Zero;
+| |                             end if;
+| |                          
+| |                             if Boxed_Width / (This.Max_X - This.Min_X) <=
+| |                               Boxed_Height / (This.Max_Y - This.Min_Y)
+| |                             then
+| |                                --  X has the smallest delta
+| |                                This.Ratio := Boxed_Width / (This.Max_X - This.Min_X);
+| |                             else
+| |                                --  Y has the smallest delta
+| |                                This.Ratio := Boxed_Height / (This.Max_Y - This.Min_Y);
+| |                             end if;
+| |                          
+| |                             This.Offset_X := Boxed_Width / 2.0 -
+| |                               ((This.Ratio * This.Max_X
+| |                                -  This.Ratio * This.Min_X) / 2.0
+| |                                + This.Ratio * This.Min_X);
+| |                          
+| |                             This.Offset_Y := Boxed_Height / 2.0 -
+| |                               ((This.Ratio * This.Max_Y
+| |                                - This.Ratio * This.Min_Y) / 2.0
+| |                                + This.Ratio * This.Min_Y);
+| |                          end Make_Offset;
+| | +-A_DEFINING_NAME:       Make_Offset (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : in out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Boxed_Width : constant Float := (A_CONSTANT_DECLARATION)
+| | |                          Float (This.Width) - This.Margin_Right - This.Margin_Left;
+| | | +-A_DEFINING_NAME:     Boxed_Width (A_DEFINING_IDENTIFIER)
+| | | +-A_DEFINITION:        Float (A_SUBTYPE_INDICATION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (This.Width) - This.Margin_Right - This.Margin_Left (A_FUNCTION_CALL)
+| | | | +-AN_ASSOCIATION:    Float (This.Width) - This.Margin_Right (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   Float (This.Width) - This.Margin_Right (A_FUNCTION_CALL)
+| | | | | | +-AN_ASSOCIATION:          Float (This.Width) (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         Float (This.Width) (A_TYPE_CONVERSION)
+| | | | | | | | +-AN_EXPRESSION:       Float (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       This.Width (A_SELECTED_COMPONENT)
+| | | | | | | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     Width (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: - (AN_OPERATOR_SYMBOL)
+| | | | | | +-AN_ASSOCIATION:          This.Margin_Right (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         This.Margin_Right (A_SELECTED_COMPONENT)
+| | | | | | | | +-AN_EXPRESSION:       This (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       Margin_Right (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     - (AN_OPERATOR_SYMBOL)
+| | | | +-AN_ASSOCIATION:    This.Margin_Left (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   This.Margin_Left (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Margin_Left (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Boxed_Height : constant Float := (A_CONSTANT_DECLARATION)
+| | |                          Float (This.Height) - This.Margin_Top - This.Margin_Bottom;
+| | | +-A_DEFINING_NAME:     Boxed_Height (A_DEFINING_IDENTIFIER)
+| | | +-A_DEFINITION:        Float (A_SUBTYPE_INDICATION)
+| | | | +-AN_EXPRESSION:     Float (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Float (This.Height) - This.Margin_Top - This.Margin_Bottom (A_FUNCTION_CALL)
+| | | | +-AN_ASSOCIATION:    Float (This.Height) - This.Margin_Top (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   Float (This.Height) - This.Margin_Top (A_FUNCTION_CALL)
+| | | | | | +-AN_ASSOCIATION:          Float (This.Height) (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         Float (This.Height) (A_TYPE_CONVERSION)
+| | | | | | | | +-AN_EXPRESSION:       Float (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       This.Height (A_SELECTED_COMPONENT)
+| | | | | | | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     Height (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: - (AN_OPERATOR_SYMBOL)
+| | | | | | +-AN_ASSOCIATION:          This.Margin_Top (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         This.Margin_Top (A_SELECTED_COMPONENT)
+| | | | | | | | +-AN_EXPRESSION:       This (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       Margin_Top (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     - (AN_OPERATOR_SYMBOL)
+| | | | +-AN_ASSOCIATION:    This.Margin_Bottom (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   This.Margin_Bottom (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Margin_Bottom (AN_IDENTIFIER)
+| | +-A_STATEMENT:           if This.Max_X - This.Min_X = 0.0 or This.Max_Y - This.Min_Y = 0.0 (AN_IF_STATEMENT)
+| | |                        then
+| | |                           raise Divide_By_Zero;
+| | |                        end if;
+| | | +-A_PATH:              if This.Max_X - This.Min_X = 0.0 or This.Max_Y - This.Min_Y = 0.0 (AN_IF_PATH)
+| | | |                      then
+| | | |                         raise Divide_By_Zero;
+| | | | +-AN_EXPRESSION:     This.Max_X - This.Min_X = 0.0 or This.Max_Y - This.Min_Y = 0.0 (A_FUNCTION_CALL)
+| | | | | +-AN_ASSOCIATION:  This.Max_X - This.Min_X = 0.0 (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: This.Max_X - This.Min_X = 0.0 (A_FUNCTION_CALL)
+| | | | | | | +-AN_ASSOCIATION:        This.Max_X - This.Min_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Max_X - This.Min_X (A_FUNCTION_CALL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Max_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Max_X (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Max_X (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     - (AN_OPERATOR_SYMBOL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Min_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Min_X (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Min_X (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         = (AN_OPERATOR_SYMBOL)
+| | | | | | | +-AN_ASSOCIATION:        0.0 (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       0.0 (A_REAL_LITERAL)
+| | | | | +-AN_EXPRESSION:   or (AN_OPERATOR_SYMBOL)
+| | | | | +-AN_ASSOCIATION:  This.Max_Y - This.Min_Y = 0.0 (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: This.Max_Y - This.Min_Y = 0.0 (A_FUNCTION_CALL)
+| | | | | | | +-AN_ASSOCIATION:        This.Max_Y - This.Min_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Max_Y - This.Min_Y (A_FUNCTION_CALL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Max_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Max_Y (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Max_Y (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     - (AN_OPERATOR_SYMBOL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Min_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Min_Y (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Min_Y (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         = (AN_OPERATOR_SYMBOL)
+| | | | | | | +-AN_ASSOCIATION:        0.0 (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       0.0 (A_REAL_LITERAL)
+| | | | +-A_STATEMENT:       raise Divide_By_Zero; (A_RAISE_STATEMENT)
+| | | | | +-AN_EXPRESSION:   Divide_By_Zero (AN_IDENTIFIER)
+| | +-A_STATEMENT:           if Boxed_Width / (This.Max_X - This.Min_X) <= (AN_IF_STATEMENT)
+| | |                          Boxed_Height / (This.Max_Y - This.Min_Y)
+| | |                        then
+| | |                           --  X has the smallest delta
+| | |                           This.Ratio := Boxed_Width / (This.Max_X - This.Min_X);
+| | |                        else
+| | |                           --  Y has the smallest delta
+| | |                           This.Ratio := Boxed_Height / (This.Max_Y - This.Min_Y);
+| | |                        end if;
+| | | +-A_PATH:              if Boxed_Width / (This.Max_X - This.Min_X) <= (AN_IF_PATH)
+| | | |                        Boxed_Height / (This.Max_Y - This.Min_Y)
+| | | |                      then
+| | | |                         --  X has the smallest delta
+| | | |                         This.Ratio := Boxed_Width / (This.Max_X - This.Min_X);
+| | | | +-AN_EXPRESSION:     Boxed_Width / (This.Max_X - This.Min_X) <= (A_FUNCTION_CALL)
+| | | | |                            Boxed_Height / (This.Max_Y - This.Min_Y)
+| | | | | +-AN_ASSOCIATION:  Boxed_Width / (This.Max_X - This.Min_X) (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: Boxed_Width / (This.Max_X - This.Min_X) (A_FUNCTION_CALL)
+| | | | | | | +-AN_ASSOCIATION:        Boxed_Width (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       Boxed_Width (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         / (AN_OPERATOR_SYMBOL)
+| | | | | | | +-AN_ASSOCIATION:        (This.Max_X - This.Min_X) (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       (This.Max_X - This.Min_X) (A_PARENTHESIZED_EXPRESSION)
+| | | | | | | | | +-AN_EXPRESSION:     This.Max_X - This.Min_X (A_FUNCTION_CALL)
+| | | | | | | | | | +-AN_ASSOCIATION:  This.Max_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | +-AN_EXPRESSION: This.Max_X (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | +-AN_EXPRESSION:         This (AN_IDENTIFIER)
+| | | | | | | | | | | | +-AN_EXPRESSION:         Max_X (AN_IDENTIFIER)
+| | | | | | | | | | +-AN_EXPRESSION:   - (AN_OPERATOR_SYMBOL)
+| | | | | | | | | | +-AN_ASSOCIATION:  This.Min_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | +-AN_EXPRESSION: This.Min_X (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | +-AN_EXPRESSION:         This (AN_IDENTIFIER)
+| | | | | | | | | | | | +-AN_EXPRESSION:         Min_X (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   <= (AN_OPERATOR_SYMBOL)
+| | | | | +-AN_ASSOCIATION:  Boxed_Height / (This.Max_Y - This.Min_Y) (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: Boxed_Height / (This.Max_Y - This.Min_Y) (A_FUNCTION_CALL)
+| | | | | | | +-AN_ASSOCIATION:        Boxed_Height (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       Boxed_Height (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         / (AN_OPERATOR_SYMBOL)
+| | | | | | | +-AN_ASSOCIATION:        (This.Max_Y - This.Min_Y) (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       (This.Max_Y - This.Min_Y) (A_PARENTHESIZED_EXPRESSION)
+| | | | | | | | | +-AN_EXPRESSION:     This.Max_Y - This.Min_Y (A_FUNCTION_CALL)
+| | | | | | | | | | +-AN_ASSOCIATION:  This.Max_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | +-AN_EXPRESSION: This.Max_Y (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | +-AN_EXPRESSION:         This (AN_IDENTIFIER)
+| | | | | | | | | | | | +-AN_EXPRESSION:         Max_Y (AN_IDENTIFIER)
+| | | | | | | | | | +-AN_EXPRESSION:   - (AN_OPERATOR_SYMBOL)
+| | | | | | | | | | +-AN_ASSOCIATION:  This.Min_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | +-AN_EXPRESSION: This.Min_Y (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | +-AN_EXPRESSION:         This (AN_IDENTIFIER)
+| | | | | | | | | | | | +-AN_EXPRESSION:         Min_Y (AN_IDENTIFIER)
+| | | | +-A_STATEMENT:       This.Ratio := Boxed_Width / (This.Max_X - This.Min_X); (AN_ASSIGNMENT_STATEMENT)
+| | | | | +-AN_EXPRESSION:   This.Ratio (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Ratio (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Boxed_Width / (This.Max_X - This.Min_X) (A_FUNCTION_CALL)
+| | | | | | +-AN_ASSOCIATION:          Boxed_Width (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         Boxed_Width (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: / (AN_OPERATOR_SYMBOL)
+| | | | | | +-AN_ASSOCIATION:          (This.Max_X - This.Min_X) (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         (This.Max_X - This.Min_X) (A_PARENTHESIZED_EXPRESSION)
+| | | | | | | | +-AN_EXPRESSION:       This.Max_X - This.Min_X (A_FUNCTION_CALL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Max_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Max_X (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Max_X (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     - (AN_OPERATOR_SYMBOL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Min_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Min_X (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Min_X (AN_IDENTIFIER)
+| | | +-A_PATH:              else (AN_ELSE_PATH)
+| | | |                         --  Y has the smallest delta
+| | | |                         This.Ratio := Boxed_Height / (This.Max_Y - This.Min_Y);
+| | | | +-A_STATEMENT:       This.Ratio := Boxed_Height / (This.Max_Y - This.Min_Y); (AN_ASSIGNMENT_STATEMENT)
+| | | | | +-AN_EXPRESSION:   This.Ratio (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Ratio (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Boxed_Height / (This.Max_Y - This.Min_Y) (A_FUNCTION_CALL)
+| | | | | | +-AN_ASSOCIATION:          Boxed_Height (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         Boxed_Height (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: / (AN_OPERATOR_SYMBOL)
+| | | | | | +-AN_ASSOCIATION:          (This.Max_Y - This.Min_Y) (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         (This.Max_Y - This.Min_Y) (A_PARENTHESIZED_EXPRESSION)
+| | | | | | | | +-AN_EXPRESSION:       This.Max_Y - This.Min_Y (A_FUNCTION_CALL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Max_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Max_Y (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Max_Y (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     - (AN_OPERATOR_SYMBOL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Min_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Min_Y (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Min_Y (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Offset_X := Boxed_Width / 2.0 - (AN_ASSIGNMENT_STATEMENT)
+| | |                          ((This.Ratio * This.Max_X
+| | |                           -  This.Ratio * This.Min_X) / 2.0
+| | |                           + This.Ratio * This.Min_X);
+| | | +-AN_EXPRESSION:       This.Offset_X (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Offset_X (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Boxed_Width / 2.0 - (A_FUNCTION_CALL)
+| | | |                              ((This.Ratio * This.Max_X
+| | | |                               -  This.Ratio * This.Min_X) / 2.0
+| | | |                               + This.Ratio * This.Min_X)
+| | | | +-AN_ASSOCIATION:    Boxed_Width / 2.0 (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   Boxed_Width / 2.0 (A_FUNCTION_CALL)
+| | | | | | +-AN_ASSOCIATION:          Boxed_Width (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         Boxed_Width (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: / (AN_OPERATOR_SYMBOL)
+| | | | | | +-AN_ASSOCIATION:          2.0 (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         2.0 (A_REAL_LITERAL)
+| | | | +-AN_EXPRESSION:     - (AN_OPERATOR_SYMBOL)
+| | | | +-AN_ASSOCIATION:    ((This.Ratio * This.Max_X (A_PARAMETER_ASSOCIATION)
+| | | | |                     -  This.Ratio * This.Min_X) / 2.0
+| | | | |                     + This.Ratio * This.Min_X)
+| | | | | +-AN_EXPRESSION:   ((This.Ratio * This.Max_X (A_PARENTHESIZED_EXPRESSION)
+| | | | | |                   -  This.Ratio * This.Min_X) / 2.0
+| | | | | |                   + This.Ratio * This.Min_X)
+| | | | | | +-AN_EXPRESSION: (This.Ratio * This.Max_X (A_FUNCTION_CALL)
+| | | | | | |                -  This.Ratio * This.Min_X) / 2.0
+| | | | | | |                + This.Ratio * This.Min_X
+| | | | | | | +-AN_ASSOCIATION:        (This.Ratio * This.Max_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | |              -  This.Ratio * This.Min_X) / 2.0
+| | | | | | | | +-AN_EXPRESSION:       (This.Ratio * This.Max_X (A_FUNCTION_CALL)
+| | | | | | | | |            -  This.Ratio * This.Min_X) / 2.0
+| | | | | | | | | +-AN_ASSOCIATION:    (This.Ratio * This.Max_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | |          -  This.Ratio * This.Min_X)
+| | | | | | | | | | +-AN_EXPRESSION:   (This.Ratio * This.Max_X (A_PARENTHESIZED_EXPRESSION)
+| | | | | | | | | | |        -  This.Ratio * This.Min_X)
+| | | | | | | | | | | +-AN_EXPRESSION: This.Ratio * This.Max_X (A_FUNCTION_CALL)
+| | | | | | | | | | | |               -  This.Ratio * This.Min_X
+| | | | | | | | | | | | +-AN_ASSOCIATION:        This.Ratio * This.Max_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | +-AN_EXPRESSION:       This.Ratio * This.Max_X (A_FUNCTION_CALL)
+| | | | | | | | | | | | | | +-AN_ASSOCIATION:    This.Ratio (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | | | +-AN_EXPRESSION:   This.Ratio (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: Ratio (AN_IDENTIFIER)
+| | | | | | | | | | | | | | +-AN_EXPRESSION:     * (AN_OPERATOR_SYMBOL)
+| | | | | | | | | | | | | | +-AN_ASSOCIATION:    This.Max_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | | | +-AN_EXPRESSION:   This.Max_X (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: Max_X (AN_IDENTIFIER)
+| | | | | | | | | | | | +-AN_EXPRESSION:         - (AN_OPERATOR_SYMBOL)
+| | | | | | | | | | | | +-AN_ASSOCIATION:        This.Ratio * This.Min_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | +-AN_EXPRESSION:       This.Ratio * This.Min_X (A_FUNCTION_CALL)
+| | | | | | | | | | | | | | +-AN_ASSOCIATION:    This.Ratio (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | | | +-AN_EXPRESSION:   This.Ratio (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: Ratio (AN_IDENTIFIER)
+| | | | | | | | | | | | | | +-AN_EXPRESSION:     * (AN_OPERATOR_SYMBOL)
+| | | | | | | | | | | | | | +-AN_ASSOCIATION:    This.Min_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | | | +-AN_EXPRESSION:   This.Min_X (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: Min_X (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     / (AN_OPERATOR_SYMBOL)
+| | | | | | | | | +-AN_ASSOCIATION:    2.0 (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   2.0 (A_REAL_LITERAL)
+| | | | | | | +-AN_EXPRESSION:         + (AN_OPERATOR_SYMBOL)
+| | | | | | | +-AN_ASSOCIATION:        This.Ratio * This.Min_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Ratio * This.Min_X (A_FUNCTION_CALL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Ratio (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Ratio (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Ratio (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     * (AN_OPERATOR_SYMBOL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Min_X (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Min_X (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Min_X (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Offset_Y := Boxed_Height / 2.0 - (AN_ASSIGNMENT_STATEMENT)
+| | |                          ((This.Ratio * This.Max_Y
+| | |                           - This.Ratio * This.Min_Y) / 2.0
+| | |                           + This.Ratio * This.Min_Y);
+| | | +-AN_EXPRESSION:       This.Offset_Y (A_SELECTED_COMPONENT)
+| | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Offset_Y (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Boxed_Height / 2.0 - (A_FUNCTION_CALL)
+| | | |                              ((This.Ratio * This.Max_Y
+| | | |                               - This.Ratio * This.Min_Y) / 2.0
+| | | |                               + This.Ratio * This.Min_Y)
+| | | | +-AN_ASSOCIATION:    Boxed_Height / 2.0 (A_PARAMETER_ASSOCIATION)
+| | | | | +-AN_EXPRESSION:   Boxed_Height / 2.0 (A_FUNCTION_CALL)
+| | | | | | +-AN_ASSOCIATION:          Boxed_Height (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         Boxed_Height (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: / (AN_OPERATOR_SYMBOL)
+| | | | | | +-AN_ASSOCIATION:          2.0 (A_PARAMETER_ASSOCIATION)
+| | | | | | | +-AN_EXPRESSION:         2.0 (A_REAL_LITERAL)
+| | | | +-AN_EXPRESSION:     - (AN_OPERATOR_SYMBOL)
+| | | | +-AN_ASSOCIATION:    ((This.Ratio * This.Max_Y (A_PARAMETER_ASSOCIATION)
+| | | | |                     - This.Ratio * This.Min_Y) / 2.0
+| | | | |                     + This.Ratio * This.Min_Y)
+| | | | | +-AN_EXPRESSION:   ((This.Ratio * This.Max_Y (A_PARENTHESIZED_EXPRESSION)
+| | | | | |                   - This.Ratio * This.Min_Y) / 2.0
+| | | | | |                   + This.Ratio * This.Min_Y)
+| | | | | | +-AN_EXPRESSION: (This.Ratio * This.Max_Y (A_FUNCTION_CALL)
+| | | | | | |                - This.Ratio * This.Min_Y) / 2.0
+| | | | | | |                + This.Ratio * This.Min_Y
+| | | | | | | +-AN_ASSOCIATION:        (This.Ratio * This.Max_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | |              - This.Ratio * This.Min_Y) / 2.0
+| | | | | | | | +-AN_EXPRESSION:       (This.Ratio * This.Max_Y (A_FUNCTION_CALL)
+| | | | | | | | |            - This.Ratio * This.Min_Y) / 2.0
+| | | | | | | | | +-AN_ASSOCIATION:    (This.Ratio * This.Max_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | |          - This.Ratio * This.Min_Y)
+| | | | | | | | | | +-AN_EXPRESSION:   (This.Ratio * This.Max_Y (A_PARENTHESIZED_EXPRESSION)
+| | | | | | | | | | |        - This.Ratio * This.Min_Y)
+| | | | | | | | | | | +-AN_EXPRESSION: This.Ratio * This.Max_Y (A_FUNCTION_CALL)
+| | | | | | | | | | | |               - This.Ratio * This.Min_Y
+| | | | | | | | | | | | +-AN_ASSOCIATION:        This.Ratio * This.Max_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | +-AN_EXPRESSION:       This.Ratio * This.Max_Y (A_FUNCTION_CALL)
+| | | | | | | | | | | | | | +-AN_ASSOCIATION:    This.Ratio (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | | | +-AN_EXPRESSION:   This.Ratio (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: Ratio (AN_IDENTIFIER)
+| | | | | | | | | | | | | | +-AN_EXPRESSION:     * (AN_OPERATOR_SYMBOL)
+| | | | | | | | | | | | | | +-AN_ASSOCIATION:    This.Max_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | | | +-AN_EXPRESSION:   This.Max_Y (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: Max_Y (AN_IDENTIFIER)
+| | | | | | | | | | | | +-AN_EXPRESSION:         - (AN_OPERATOR_SYMBOL)
+| | | | | | | | | | | | +-AN_ASSOCIATION:        This.Ratio * This.Min_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | +-AN_EXPRESSION:       This.Ratio * This.Min_Y (A_FUNCTION_CALL)
+| | | | | | | | | | | | | | +-AN_ASSOCIATION:    This.Ratio (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | | | +-AN_EXPRESSION:   This.Ratio (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: Ratio (AN_IDENTIFIER)
+| | | | | | | | | | | | | | +-AN_EXPRESSION:     * (AN_OPERATOR_SYMBOL)
+| | | | | | | | | | | | | | +-AN_ASSOCIATION:    This.Min_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | | | | | | +-AN_EXPRESSION:   This.Min_Y (A_SELECTED_COMPONENT)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | | | | | | +-AN_EXPRESSION: Min_Y (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     / (AN_OPERATOR_SYMBOL)
+| | | | | | | | | +-AN_ASSOCIATION:    2.0 (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   2.0 (A_REAL_LITERAL)
+| | | | | | | +-AN_EXPRESSION:         + (AN_OPERATOR_SYMBOL)
+| | | | | | | +-AN_ASSOCIATION:        This.Ratio * This.Min_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Ratio * This.Min_Y (A_FUNCTION_CALL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Ratio (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Ratio (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Ratio (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     * (AN_OPERATOR_SYMBOL)
+| | | | | | | | | +-AN_ASSOCIATION:    This.Min_Y (A_PARAMETER_ASSOCIATION)
+| | | | | | | | | | +-AN_EXPRESSION:   This.Min_Y (A_SELECTED_COMPONENT)
+| | | | | | | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | | | | | | +-AN_EXPRESSION: Min_Y (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Configure (This : in out Instance) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             if not This.Dry_Run then
+| |                                This.Make_Offset;
+| |                             end if;
+| |                             This.Stack_Angle.Clear;
+| |                             This.Stack_Coordinate.Clear;
+| |                          
+| |                             if This.Dry_Run then
+| |                                This.Max_X := 0.0;
+| |                                This.Max_Y := 0.0;
+| |                                This.Min_X := 0.0;
+| |                                This.Min_Y := 0.0;
+| |                             else
+| |                                --  Configure the medium
+| |                                This.Medium.Reference.Configure (This);
+| |                             end if;
+| |                          
+| |                             This.Stack_Angle.Append (LSE.Utils.Angle.To_Angle (90.0));
+| |                             This.Stack_Coordinate.Append (
+| |                                                           LSE.Utils.Coordinate_2D_Ptr.To_Holder (
+| |                                                             LSE.Utils.Coordinate_2D.Initialize));
+| |                          end Configure;
+| | +-A_DEFINING_NAME:       Configure (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : in out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_STATEMENT:           if not This.Dry_Run then (AN_IF_STATEMENT)
+| | |                           This.Make_Offset;
+| | |                        end if;
+| | | +-A_PATH:              if not This.Dry_Run then (AN_IF_PATH)
+| | | |                         This.Make_Offset;
+| | | | +-AN_EXPRESSION:     not This.Dry_Run (A_FUNCTION_CALL)
+| | | | | +-AN_EXPRESSION:   not (AN_OPERATOR_SYMBOL)
+| | | | | +-AN_ASSOCIATION:  This.Dry_Run (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: This.Dry_Run (A_SELECTED_COMPONENT)
+| | | | | | | +-AN_EXPRESSION:         This (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Dry_Run (AN_IDENTIFIER)
+| | | | +-A_STATEMENT:       This.Make_Offset; (A_PROCEDURE_CALL_STATEMENT)
+| | | | | +-AN_ASSOCIATION:  This (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Make_Offset (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Stack_Angle.Clear; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_ASSOCIATION:      This.Stack_Angle (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     This.Stack_Angle (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Stack_Angle (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Clear (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Stack_Coordinate.Clear; (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_ASSOCIATION:      This.Stack_Coordinate (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     This.Stack_Coordinate (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Stack_Coordinate (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Clear (AN_IDENTIFIER)
+| | +-A_STATEMENT:           if This.Dry_Run then (AN_IF_STATEMENT)
+| | |                           This.Max_X := 0.0;
+| | |                           This.Max_Y := 0.0;
+| | |                           This.Min_X := 0.0;
+| | |                           This.Min_Y := 0.0;
+| | |                        else
+| | |                           --  Configure the medium
+| | |                           This.Medium.Reference.Configure (This);
+| | |                        end if;
+| | | +-A_PATH:              if This.Dry_Run then (AN_IF_PATH)
+| | | |                         This.Max_X := 0.0;
+| | | |                         This.Max_Y := 0.0;
+| | | |                         This.Min_X := 0.0;
+| | | |                         This.Min_Y := 0.0;
+| | | | +-AN_EXPRESSION:     This.Dry_Run (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Dry_Run (AN_IDENTIFIER)
+| | | | +-A_STATEMENT:       This.Max_X := 0.0; (AN_ASSIGNMENT_STATEMENT)
+| | | | | +-AN_EXPRESSION:   This.Max_X (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Max_X (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   0.0 (A_REAL_LITERAL)
+| | | | +-A_STATEMENT:       This.Max_Y := 0.0; (AN_ASSIGNMENT_STATEMENT)
+| | | | | +-AN_EXPRESSION:   This.Max_Y (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Max_Y (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   0.0 (A_REAL_LITERAL)
+| | | | +-A_STATEMENT:       This.Min_X := 0.0; (AN_ASSIGNMENT_STATEMENT)
+| | | | | +-AN_EXPRESSION:   This.Min_X (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Min_X (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   0.0 (A_REAL_LITERAL)
+| | | | +-A_STATEMENT:       This.Min_Y := 0.0; (AN_ASSIGNMENT_STATEMENT)
+| | | | | +-AN_EXPRESSION:   This.Min_Y (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Min_Y (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   0.0 (A_REAL_LITERAL)
+| | | +-A_PATH:              else (AN_ELSE_PATH)
+| | | |                         --  Configure the medium
+| | | |                         This.Medium.Reference.Configure (This);
+| | | | +-A_STATEMENT:       This.Medium.Reference.Configure (This); (A_PROCEDURE_CALL_STATEMENT)
+| | | | | +-AN_ASSOCIATION:  This.Medium.Reference (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: This.Medium.Reference (A_FUNCTION_CALL)
+| | | | | | | +-AN_ASSOCIATION:        This.Medium (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Medium (A_SELECTED_COMPONENT)
+| | | | | | | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     Medium (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Reference (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Configure (AN_IDENTIFIER)
+| | | | | +-AN_ASSOCIATION:  This (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: This (AN_IDENTIFIER)
+| | +-A_STATEMENT:           This.Stack_Angle.Append (LSE.Utils.Angle.To_Angle (90.0)); (A_PROCEDURE_CALL_STATEMENT)
+| | | +-AN_ASSOCIATION:      This.Stack_Angle (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     This.Stack_Angle (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Stack_Angle (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Append (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      LSE.Utils.Angle.To_Angle (90.0) (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     LSE.Utils.Angle.To_Angle (90.0) (A_FUNCTION_CALL)
+| | | | | +-AN_EXPRESSION:   LSE.Utils.Angle.To_Angle (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: LSE.Utils.Angle (A_SELECTED_COMPONENT)
+| | | | | | | +-AN_EXPRESSION:         LSE.Utils (A_SELECTED_COMPONENT)
+| | | | | | | | +-AN_EXPRESSION:       LSE (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       Utils (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Angle (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: To_Angle (AN_IDENTIFIER)
+| | | | | +-AN_ASSOCIATION:  90.0 (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: 90.0 (A_REAL_LITERAL)
+| | +-A_STATEMENT:           This.Stack_Coordinate.Append ( (A_PROCEDURE_CALL_STATEMENT)
+| | |                                                      LSE.Utils.Coordinate_2D_Ptr.To_Holder (
+| | |                                                        LSE.Utils.Coordinate_2D.Initialize));
+| | | +-AN_ASSOCIATION:      This.Stack_Coordinate (A_PARAMETER_ASSOCIATION)
+| | | | +-AN_EXPRESSION:     This.Stack_Coordinate (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   This (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Stack_Coordinate (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Append (AN_IDENTIFIER)
+| | | +-AN_ASSOCIATION:      LSE.Utils.Coordinate_2D_Ptr.To_Holder ( (A_PARAMETER_ASSOCIATION)
+| | | |                        LSE.Utils.Coordinate_2D.Initialize)
+| | | | +-AN_EXPRESSION:     LSE.Utils.Coordinate_2D_Ptr.To_Holder ( (A_FUNCTION_CALL)
+| | | | |                      LSE.Utils.Coordinate_2D.Initialize)
+| | | | | +-AN_EXPRESSION:   LSE.Utils.Coordinate_2D_Ptr.To_Holder (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: LSE.Utils.Coordinate_2D_Ptr (A_SELECTED_COMPONENT)
+| | | | | | | +-AN_EXPRESSION:         LSE.Utils (A_SELECTED_COMPONENT)
+| | | | | | | | +-AN_EXPRESSION:       LSE (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       Utils (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Coordinate_2D_Ptr (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: To_Holder (AN_IDENTIFIER)
+| | | | | +-AN_ASSOCIATION:  LSE.Utils.Coordinate_2D.Initialize (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: LSE.Utils.Coordinate_2D.Initialize (A_FUNCTION_CALL)
+| | | | | | | +-AN_EXPRESSION:         LSE.Utils.Coordinate_2D.Initialize (A_SELECTED_COMPONENT)
+| | | | | | | | +-AN_EXPRESSION:       LSE.Utils.Coordinate_2D (A_SELECTED_COMPONENT)
+| | | | | | | | | +-AN_EXPRESSION:     LSE.Utils (A_SELECTED_COMPONENT)
+| | | | | | | | | | +-AN_EXPRESSION:   LSE (AN_IDENTIFIER)
+| | | | | | | | | | +-AN_EXPRESSION:   Utils (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     Coordinate_2D (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       Initialize (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Draw (This : in out Instance) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          begin
+| |                             if not This.Dry_Run then
+| |                                This.Medium.Reference.Draw;
+| |                             end if;
+| |                          end Draw;
+| | +-A_DEFINING_NAME:       Draw (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : in out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_STATEMENT:           if not This.Dry_Run then (AN_IF_STATEMENT)
+| | |                           This.Medium.Reference.Draw;
+| | |                        end if;
+| | | +-A_PATH:              if not This.Dry_Run then (AN_IF_PATH)
+| | | |                         This.Medium.Reference.Draw;
+| | | | +-AN_EXPRESSION:     not This.Dry_Run (A_FUNCTION_CALL)
+| | | | | +-AN_EXPRESSION:   not (AN_OPERATOR_SYMBOL)
+| | | | | +-AN_ASSOCIATION:  This.Dry_Run (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: This.Dry_Run (A_SELECTED_COMPONENT)
+| | | | | | | +-AN_EXPRESSION:         This (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Dry_Run (AN_IDENTIFIER)
+| | | | +-A_STATEMENT:       This.Medium.Reference.Draw; (A_PROCEDURE_CALL_STATEMENT)
+| | | | | +-AN_ASSOCIATION:  This.Medium.Reference (A_PARAMETER_ASSOCIATION)
+| | | | | | +-AN_EXPRESSION: This.Medium.Reference (A_FUNCTION_CALL)
+| | | | | | | +-AN_ASSOCIATION:        This.Medium (A_PARAMETER_ASSOCIATION)
+| | | | | | | | +-AN_EXPRESSION:       This.Medium (A_SELECTED_COMPONENT)
+| | | | | | | | | +-AN_EXPRESSION:     This (AN_IDENTIFIER)
+| | | | | | | | | +-AN_EXPRESSION:     Medium (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Reference (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Draw (AN_IDENTIFIER)
+| +-A_DECLARATION:           procedure Forward (This : in out Instance; Trace : Boolean := False) (A_PROCEDURE_BODY_DECLARATION)
+| |                          is
+| |                          
+| |                             ------------------------
+| |                             --  Methods prototype --
+| |                             ------------------------
+| |                          
+| |                             --  Callback of Update_Element of Stack_Coordinate
+| |                             procedure Update (Item : in out LSE.Utils.Coordinate_2D_Ptr.Holder);
+| |                          
+| |                             --  Update all corners of the L-System edges
+| |                             procedure Update_Corners (This : in out Instance);
+| |                          
+| |                             -----------------------------
+| |                             --  Declaration of methods --
+| |                             -----------------------------
+| |                          
+| |                             procedure Update (Item : in out LSE.Utils.Coordinate_2D_Ptr.Holder)
+| |                             is
+| |                                use Ada.Numerics.Elementary_Functions;
+| |                          
+| |                                Copy : LSE.Utils.Coordinate_2D_Ptr.Holder := Item;
+| |                          
+| |                                X    : constant Float := This.Ratio *
+| |                                  This.Line_Size * Cos (This.Stack_Angle.Last_Element, Degrees_Cycle);
+| |                                Y    : constant Float := This.Ratio *
+| |                                  This.Line_Size * Sin (This.Stack_Angle.Last_Element, Degrees_Cycle);
+| |                             begin
+| |                                Copy.Reference.Set_X (X);
+| |                                Copy.Reference.Set_Y (Y);
+| |                          
+| |                                Item.Move (Copy);
+| |                             end Update;
+| |                          
+| |                             procedure Update_Corners (This : in out Instance)
+| |                             is
+| |                                X, Y : Float := 0.0;
+| |                             begin
+| |                                for H : LSE.Utils.Coordinate_2D_Ptr.Holder
+| |                                  of reverse This.Stack_Coordinate
+| |                                loop
+| |                                   X := X + H.Reference.Get_X;
+| |                                   Y := Y + H.Reference.Get_Y;
+| |                                end loop;
+| |                          
+| |                                if X < This.Min_X then
+| |                                   This.Min_X := X;
+| |                                elsif X > This.Max_X then
+| |                                   This.Max_X := X;
+| |                                end if;
+| |                          
+| |                                if Y < This.Min_Y then
+| |                                   This.Min_Y := Y;
+| |                                elsif Y > This.Max_Y then
+| |                                   This.Max_Y := Y;
+| |                                end if;
+| |                             end Update_Corners;
+| |                          
+| |                             ---------------
+| |                             -- Variables --
+| |                             ---------------
+| |                          
+| |                             Copy   : LSE.Utils.Coordinate_2D_Ptr.Holder :=
+| |                               This.Stack_Coordinate.Last_Element.Copy;
+| |                          begin  -- Forward
+| |                             This.Stack_Coordinate.Update_Element
+| |                               (Index   => This.Stack_Coordinate.Last_Index,
+| |                                Process => Update'Access);
+| |                          
+| |                             if not This.Dry_Run then
+| |                                This.Medium.Reference.Forward
+| |                                  (This.Stack_Coordinate.Last_Element.Element, Trace);
+| |                             end if;
+| |                          
+| |                             Copy.Reference.Set_X (This.Stack_Coordinate.Last_Element.Element.Get_X +
+| |                                                     Copy.Reference.Get_X);
+| |                             Copy.Reference.Set_Y (This.Stack_Coordinate.Last_Element.Element.Get_Y +
+| |                                                     Copy.Reference.Get_Y);
+| |                          
+| |                             This.Stack_Coordinate.Delete_Last;
+| |                          
+| |                             This.Stack_Coordinate.Append (Copy);
+| |                          
+| |                             if This.Dry_Run then
+| |                                Update_Corners (This);
+| |                             end if;
+| |                          end Forward;
+| | +-A_DEFINING_NAME:       Forward (A_DEFINING_IDENTIFIER)
+| | +-A_DECLARATION:         This : in out Instance (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     This (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         Trace : Boolean := False (A_PARAMETER_SPECIFICATION)
+| | | +-A_DEFINING_NAME:     Trace (A_DEFINING_IDENTIFIER)
+| | | +-AN_EXPRESSION:       Boolean (AN_IDENTIFIER)
+| | | +-AN_EXPRESSION:       False (AN_ENUMERATION_LITERAL)
+| | +-A_DECLARATION:         procedure Update (Item : in out LSE.Utils.Coordinate_2D_Ptr.Holder); (A_PROCEDURE_DECLARATION)
+| | | +-A_DEFINING_NAME:     Update (A_DEFINING_IDENTIFIER)
+| | | +-A_DECLARATION:       Item : in out LSE.Utils.Coordinate_2D_Ptr.Holder (A_PARAMETER_SPECIFICATION)
+| | | | +-A_DEFINING_NAME:   Item (A_DEFINING_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     LSE.Utils.Coordinate_2D_Ptr.Holder (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   LSE.Utils.Coordinate_2D_Ptr (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: LSE.Utils (A_SELECTED_COMPONENT)
+| | | | | | | +-AN_EXPRESSION:         LSE (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Utils (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Coordinate_2D_Ptr (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Holder (AN_IDENTIFIER)
+| | +-A_DECLARATION:         procedure Update_Corners (This : in out Instance); (A_PROCEDURE_DECLARATION)
+| | | +-A_DEFINING_NAME:     Update_Corners (A_DEFINING_IDENTIFIER)
+| | | +-A_DECLARATION:       This : in out Instance (A_PARAMETER_SPECIFICATION)
+| | | | +-A_DEFINING_NAME:   This (A_DEFINING_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Instance (AN_IDENTIFIER)
+| | +-A_DECLARATION:         procedure Update (Item : in out LSE.Utils.Coordinate_2D_Ptr.Holder) (A_PROCEDURE_BODY_DECLARATION)
+| | |                        is
+| | |                           use Ada.Numerics.Elementary_Functions;
+| | |                        
+| | |                           Copy : LSE.Utils.Coordinate_2D_Ptr.Holder := Item;
+| | |                        
+| | |                           X    : constant Float := This.Ratio *
+| | |                             This.Line_Size * Cos (This.Stack_Angle.Last_Element, Degrees_Cycle);
+| | |                           Y    : constant Float := This.Ratio *
+| | |                             This.Line_Size * Sin (This.Stack_Angle.Last_Element, Degrees_Cycle);
+| | |                        begin
+| | |                           Copy.Reference.Set_X (X);
+| | |                           Copy.Reference.Set_Y (Y);
+| | |                        
+| | |                           Item.Move (Copy);
+| | |                        end Update;
+| | | +-A_DEFINING_NAME:     Update (A_DEFINING_IDENTIFIER)
+| | | +-A_DECLARATION:       Item : in out LSE.Utils.Coordinate_2D_Ptr.Holder (A_PARAMETER_SPECIFICATION)
+| | | | +-A_DEFINING_NAME:   Item (A_DEFINING_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     LSE.Utils.Coordinate_2D_Ptr.Holder (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   LSE.Utils.Coordinate_2D_Ptr (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: LSE.Utils (A_SELECTED_COMPONENT)
+| | | | | | | +-AN_EXPRESSION:         LSE (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Utils (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Coordinate_2D_Ptr (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Holder (AN_IDENTIFIER)
+| | | +-A_CLAUSE:            use Ada.Numerics.Elementary_Functions; (A_USE_PACKAGE_CLAUSE)
+| | | | +-AN_EXPRESSION:     Ada.Numerics.Elementary_Functions (A_SELECTED_COMPONENT)
+| | | | | +-AN_EXPRESSION:   Ada.Numerics (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: Ada (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Numerics (AN_IDENTIFIER)
+| | | | | +-AN_EXPRESSION:   Elementary_Functions (AN_IDENTIFIER)
+| | | +-A_DECLARATION:       Copy : LSE.Utils.Coordinate_2D_Ptr.Holder := Item; (A_VARIABLE_DECLARATION)
+| | | | +-A_DEFINING_NAME:   Copy (A_DEFINING_IDENTIFIER)
+| | | | +-A_DEFINITION:      LSE.Utils.Coordinate_2D_Ptr.Holder (A_SUBTYPE_INDICATION)
+| | | | | +-AN_EXPRESSION:   LSE.Utils.Coordinate_2D_Ptr.Holder (A_SELECTED_COMPONENT)
+| | | | | | +-AN_EXPRESSION: LSE.Utils.Coordinate_2D_Ptr (A_SELECTED_COMPONENT)
+| | | | | | | +-AN_EXPRESSION:         LSE.Utils (A_SELECTED_COMPONENT)
+| | | | | | | | +-AN_EXPRESSION:       LSE (AN_IDENTIFIER)
+| | | | | | | | +-AN_EXPRESSION:       Utils (AN_IDENTIFIER)
+| | | | | | | +-AN_EXPRESSION:         Coordinate_2D_Ptr (AN_IDENTIFIER)
+| | | | | | +-AN_EXPRESSION: Holder (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     Item (AN_IDENTIFIER)
+| | | +-A_DECLARATION:       X    : constant Float := This.Ratio * (A_CONSTANT_DECLARATION)
+| | | |                        This.Line_Size * Cos (This.Stack_Angle.Last_Element, Degrees_Cycle);
+| | | | +-A_DEFINING_NAME:   X (A_DEFINING_IDENTIFIER)
+| | | | +-A_DEFINITION:      Float (A_SUBTYPE_INDICATION)
+| | | | | +-AN_EXPRESSION:   Float (AN_IDENTIFIER)
+| | | | +-AN_EXPRESSION:     This.Ratio * (A_FUNCTION_CALL)
+| | | | |                               This.Line_Size * Cos (This.Stack_Angle.Last_Element, Degrees_Cycle)
+| | | | | +-AN_ASSOCIATION:  This.Ratio * (A_PARAMETER_ASSOCIATION)
+| | | | | |                  

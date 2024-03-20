@@ -1,0 +1,5 @@
+t_declarations_variables.adb:41:4: Error: DECLARATIONS: use of declaration "uninitialized_variable"
+t_declarations_variables.adb:44:4: Error: DECLARATIONS: use of declaration "uninitialized_variable"
+t_declarations_variables.adb:48:4: Error: DECLARATIONS: use of declaration "uninitialized_variable"
+t_declarations_variables.adb:52:4: Error: DECLARATIONS: use of declaration "uninitialized_variable"
+t_declarations_variables.adb:56:4: Error: DECLARATIONS: use of declaration "uninitialized_variable"

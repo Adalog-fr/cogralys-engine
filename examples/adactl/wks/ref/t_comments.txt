@@ -1,0 +1,49 @@
+t_comments-test_pattern.adb:5:7: Error: Pattern: "TBSL"
+t_comments-test_pattern.adb:6:7: Error: Pattern: "TBSL=To be supplied later"
+t_comments-test_pattern.adb:7:6: Error: Rule_Off: "## rule off all"
+t_comments-test_position.adb:5:1: Found: Position: comment start position is not in 1 .. 40
+t_comments-test_position.adb:6:1: Found: Position: comment start position is not in 1 .. 40
+t_comments-test_position.adb:7:1: Error: Position: comment start position is not in 1 .. 42
+t_comments-test_terminating.adb:14:18: Error: Terminating: Not an allowed terminating comment
+t_comments-test_terminating.adb:17:14: Error: Terminating: Not an allowed terminating comment
+t_comments-test_unnamed_begin.adb:83:6: Found: Begin: "begin" has no comment naming Test_Unnamed_Begin
+t_comments-test_unnamed_begin.adb:83:6: Insert
+!  -- Test_Unnamed_Begin
+t_comments-test_unnamed_begin.adb:23:9: Found: Begin: "begin" has no comment naming P4
+t_comments-test_unnamed_begin.adb:23:9: Insert
+!  -- P4
+t_comments-test_unnamed_begin.adb:69:9: Found: Begin: "begin" has no comment naming Pack1
+t_comments-test_unnamed_begin.adb:69:9: Insert
+!  -- Pack1
+t_comments-test_unnamed_begin.adb:34:12: Found: Begin: "begin" comment does not name P3
+t_comments-test_unnamed_begin.adb:34:32: Replace:34:34
+!P3
+t_comments-test_unnamed_begin.adb:49:12: Found: Begin: "begin" has no comment naming F2
+t_comments-test_unnamed_begin.adb:49:12: Insert
+!  -- F2
+t_comments-test_unnamed_begin.adb:64:12: Found: Begin: "begin" comment does not name F4
+t_comments-test_unnamed_begin.adb:64:19: Replace:64:20
+!F4
+t_comments-test_unnamed_begin.adb:5:42: Error: Terminating: Not an allowed terminating comment
+t_comments-test_unnamed_end_record.adb:29:21: Found: End_Record: "end record" has no comment naming Bad_1
+t_comments-test_unnamed_end_record.adb:29:21: Insert
+!  -- Bad_1
+t_comments-test_unnamed_end_record.adb:35:18: Error: End_Record: "end record" comment does not name Bad_2
+t_comments-test_unnamed_end_record.adb:35:28: Replace:35:38
+!Bad_2
+t_comments-test_unnamed_end_record.adb:41:18: Found: End_Record: "end record" has no comment naming Bad_3
+t_comments-test_unnamed_end_record.adb:41:27: Insert
+! Bad_3
+t_comments-test_unnamed_end_record.adb:48:18: Error: End_Record: "end record" has no comment naming Bad_4
+t_comments-test_unnamed_end_record.adb:48:18: Insert
+!  -- Bad_4
+t_comments-test_unnamed_end_record.adb:54:18: Found: End_Record: "end record" has no comment naming Bad_5
+t_comments-test_unnamed_end_record.adb:54:18: Insert
+!  -- Bad_5
+t_comments-test_unnamed_end_record.adb:61:18: Error: End_Record: "end record" has no comment naming Bad_6
+t_comments-test_unnamed_end_record.adb:61:18: Insert
+!  -- Bad_6
+
+Counts summary:
+All_End_Record: 8
+Not_Col_4: 32

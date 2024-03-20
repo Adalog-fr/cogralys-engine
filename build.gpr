@@ -1,0 +1,41 @@
+with "asis";
+with "gnatcoll";
+project Build is
+   for Languages use ("Ada");
+   for Source_Dirs use ("src/");
+   for Object_Dir use "src/";
+   for Exec_Dir use ".";
+   for Main use ("adactl", "ptree", "pfni", "adactl_fix");
+
+   Std_Options := ("-O2", "-gnatws", "-gnat12", "-gnato", "-gnatf", "-g");
+   Std_Options := Std_Options & External_As_List ("ADAFLAGS", " ");
+   package Compiler is
+      for Default_Switches ("ada") use Std_Options;
+   end Compiler;
+
+   package Linker is
+      for Leading_Switches ("ada") use External_As_List ("LDFLAGS", " ");
+      for Default_Switches ("ada") use ("-g");
+   end Linker;
+
+   package Binder is
+      for Default_Switches ("ada") use ("-E");
+   end Binder;
+
+   package Builder is
+      for Default_Switches ("ada") use ("-m", "-k", "-g");
+   end Builder;
+
+   package Install is
+      for mode use "usage";
+      for install_name use "adacontrol";
+      for artifacts ("share/gps/plug-ins") use ("GPS/*");
+      for artifacts ("share/gprconfig")    use ("GPS/adacontrol.xml");
+      for artifacts ("share/doc/gps/html") use ("doc/*.html");
+      for artifacts ("share/doc/gps/pdf")  use ("doc/*.pdf");
+      for artifacts ("share/doc/gps/info") use ("doc/*.info*");
+      for artifacts ("share/doc/gps/txt")  use ("/*.txt");
+      for artifacts ("share/doc/gps/html") use ("doc/*.html");
+   end Install;
+end Build;
+

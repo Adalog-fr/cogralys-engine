@@ -1,0 +1,50 @@
+-- First, Last
+       check  array_declarations (first, min -10, max 0);
+       search array_declarations (first, 1);
+Not_2: count  array_declarations (first, 2);
+       check  array_declarations (last, max 1e3);
+
+-- Dimensions
+               check  array_declarations (dimensions, min 1, max 3);
+               search array_declarations (dimensions, 1);
+"1 or 4 dims": count  array_declarations (dimensions, min 2, max 3);
+
+-- Length
+          check  array_declarations (    length, min 1, max 5);
+          search array_declarations (all length, min 2, max 4);
+Too_Long: count  array_declarations (    length, max 5);
+
+-- Component
+compo_ident:      check array_declarations (component, standard.character);
+compo_ident_base: check array_declarations (component, standard.character'base);
+compo_array:      check array_declarations (component, Array);
+compo_tagged:     check array_declarations (component, tagged);
+compo_access:     check array_declarations (component, ACCESS);
+compo_task:       check array_declarations (component, task);
+compo_protected:  check array_declarations (component, protected);
+compo_private:    check array_declarations (component, private);
+compo_record:     check array_declarations (component, record);
+compo_delta:      check array_declarations (component, delta);
+compo_float:      check array_declarations (component, digits);
+compo_enum_np_ns: check array_declarations (component, (), not pack, not size);
+compo_enum_p_ns:  check array_declarations (component, (), not size, pack);
+compo_enum_np_s:  check array_declarations (component, (), not pack, size);
+compo_enum_p_s:   check array_declarations (component, (), pack, size);
+compo_enum_cs:    check array_declarations (component, (), component_size);
+
+-- Index
+Index_T1: check array_declarations (index, T_Array_Declarations.Index_Types.enum);
+Index_T2: check array_declarations (index, T_Array_Declarations.Index_Types.int);
+Index_T3: check array_declarations (index, T_Array_Declarations.Index_Types.uns);
+Index_T4: check array_declarations (index, T_Array_Declarations.Index_Types.sub_int);
+
+Index_T5: check array_declarations (index, ());
+Index_T6: check array_declarations (index, range);
+Index_T7: check array_declarations (index, mod);
+
+Index_TT1: check array_declarations (index, T_Array_Declarations.Index_Types.enum, range);
+
+Index_TTT1: check array_declarations (index, <>, range, T_Array_Declarations.Index_Types.uns);
+Index_TTT2: check array_declarations (index, range, range, <>);
+Index_TTT3: check array_declarations (index, T_Array_Declarations.Index_Types.int, range, <>);
+Index_TTT4: check array_declarations (index, <>, <>, <>);

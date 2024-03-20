@@ -1,0 +1,554 @@
+
+
+
+
+
+Units processed: 5
+Lines processed: 0
+Issued messages: Errors = 0, Warnings = 0
+lse-model-io-drawing_area-postscript.adb:58:13: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.B, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:10: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.G, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.R, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:43:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Initialize, variable, not initialized, written, read
+lse-model-io-drawing_area-postscript.adb:159:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Position_Restore.R, variable, not initialized, written, read
+lse-model-io-drawing_area_factory.adb:42:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area_Factory.Make.Found, variable, initialized, written, read
+lse-model-io-text_file.adb:125:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:126:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:96:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_LSystem, variable, not initialized, written, read
+lse-model-io-text_file.adb:116:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Save_To_File.File, variable, not initialized, written, read
+lse-model-io-turtle.adb:428:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:402:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.X, variable, initialized, written, read
+lse-model-io-turtle.adb:402:13: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.Y, variable, initialized, written, read
+lse-model-io-turtle.adb:387:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:40:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Initialize, variable, not initialized, not written, read (never given a value)
+lse-model-io-turtle.adb:507:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Item, variable, not initialized, written, read
+lse-model-io-turtle.adb:508:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.X, variable, not initialized, written, read
+lse-model-io-turtle.adb:509:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Y, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:261:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Concat.Result, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:229:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Error, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:212:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Product, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:50:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Axiom, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:52:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Error, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:51:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Rules, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:310:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:309:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:340:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:339:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:375:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:374:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:389:13: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:73:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:76:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:75:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:78:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:14: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:77:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:72:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:119:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:117:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:276:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Search_For_Pattern.Result, variable, not initialized, written, read
+lse-model-l_system-factory.adb:98:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:108:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:128:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:139:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:150:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:161:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:172:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:58:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-factory.adb:210:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Symbol_List, variable, not initialized, written, read
+lse-model-l_system-factory.ads:74:4: Found: USAGE: (normal) LSE.Model.L_System.Factory.Symbol_List, private, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:150:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Found, variable, initialized, written, read
+lse-model-l_system-l_system.adb:153:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:149:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Position, variable, initialized, written, read
+lse-model-l_system-l_system.adb:152:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Rule_Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:151:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Tmp_Index, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:107:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:93:10: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, initialized, written, read
+lse-model-l_system-l_system.adb:211:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_Symbol_List, variable, initialized, written, read
+lse-utils-angle.adb:33:7: Found: USAGE: (normal) LSE.Utils.Angle.Is_Angle, variable, not initialized, written, not read
+lse-utils-angle.adb:45:7: Found: USAGE: (normal) LSE.Utils.Angle.To_Angle, variable, initialized, written, read
+lse-utils-colors.adb:159:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:158:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:157:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:44:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:43:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:110:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+lse-utils-colors.adb:82:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+
+Units processed: 48
+Lines processed: 5690
+Issued messages: Errors = 0, Warnings = 71
+lse-model-io-drawing_area-postscript.adb:58:13: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.B, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:10: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.G, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.R, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:43:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Initialize, variable, not initialized, written, read
+lse-model-io-drawing_area-postscript.adb:159:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Position_Restore.R, variable, not initialized, written, read
+lse-model-io-drawing_area_factory.adb:42:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area_Factory.Make.Found, variable, initialized, written, read
+lse-model-io-text_file.adb:125:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:126:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:96:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_LSystem, variable, not initialized, written, read
+lse-model-io-text_file.adb:116:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Save_To_File.File, variable, not initialized, written, read
+lse-model-io-turtle.adb:428:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:402:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.X, variable, initialized, written, read
+lse-model-io-turtle.adb:402:13: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.Y, variable, initialized, written, read
+lse-model-io-turtle.adb:387:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:40:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Initialize, variable, not initialized, not written, read (never given a value)
+lse-model-io-turtle.adb:507:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Item, variable, not initialized, written, read
+lse-model-io-turtle.adb:508:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.X, variable, not initialized, written, read
+lse-model-io-turtle.adb:509:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Y, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:261:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Concat.Result, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:229:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Error, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:212:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Product, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:50:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Axiom, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:52:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Error, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:51:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Rules, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:310:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:309:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:340:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:339:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:375:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:374:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:389:13: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:73:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:76:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:75:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:78:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:14: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:77:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:72:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:119:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:117:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:276:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Search_For_Pattern.Result, variable, not initialized, written, read
+lse-model-l_system-factory.adb:98:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:108:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:128:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:139:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:150:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:161:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:172:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:58:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-factory.adb:210:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Symbol_List, variable, not initialized, written, read
+lse-model-l_system-factory.ads:74:4: Found: USAGE: (normal) LSE.Model.L_System.Factory.Symbol_List, private, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:150:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Found, variable, initialized, written, read
+lse-model-l_system-l_system.adb:153:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:149:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Position, variable, initialized, written, read
+lse-model-l_system-l_system.adb:152:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Rule_Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:151:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Tmp_Index, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:107:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:93:10: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, initialized, written, read
+lse-model-l_system-l_system.adb:211:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_Symbol_List, variable, initialized, written, read
+lse-utils-angle.adb:33:7: Found: USAGE: (normal) LSE.Utils.Angle.Is_Angle, variable, not initialized, written, not read
+lse-utils-angle.adb:45:7: Found: USAGE: (normal) LSE.Utils.Angle.To_Angle, variable, initialized, written, read
+lse-utils-colors.adb:159:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:158:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:157:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:44:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:43:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:110:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+lse-utils-colors.adb:82:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+
+Units processed: 48
+Lines processed: 5690
+Issued messages: Errors = 0, Warnings = 71
+
+Found: UNCHECKABLE: missing specification for LSE.IO
+Found: UNCHECKABLE: missing body for LSE.IO
+Found: UNCHECKABLE: missing specification for LSE.IO.DRAWING_AREA
+Found: UNCHECKABLE: missing body for LSE.IO.DRAWING_AREA
+Found: UNCHECKABLE: missing specification for LSE.IO.EXPORT_FACTORY
+Found: UNCHECKABLE: missing body for LSE.IO.EXPORT_FACTORY
+lse-model-grammar-symbol.ads:45:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-grammar-symbol.ads:45:4: Insert
+!not overriding 
+lse-model-grammar-symbol.ads:49:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-grammar-symbol.ads:49:4: Insert
+!not overriding 
+lse-model-grammar-symbol.ads:52:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-grammar-symbol.ads:52:4: Insert
+!not overriding 
+lse-model-grammar-symbol-othersymbol.ads:43:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-grammar-symbol-othersymbol.ads:43:4: Insert
+!not overriding 
+lse-model-io-drawing_area-postscript.ads:45:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-io-drawing_area-postscript.ads:45:4: Insert
+!not overriding 
+lse-model-io-turtle.adb:349:10: Found: PARAMETER_ALIASING: Possible false negative: Dispatching call
+lse-model-io-turtle.adb:377:33: Found: LOCAL_HIDING: "This" hides declaration at lse-model-io-turtle.ads:186:23
+lse-model-io-turtle.adb:400:33: Found: LOCAL_HIDING: "This" hides declaration at lse-model-io-turtle.ads:186:23
+lse-model-io-turtle.adb:436:10: Found: PARAMETER_ALIASING: Possible false negative: Dispatching call
+lse-model-io-turtle.adb:519:10: Found: PARAMETER_ALIASING: Possible false negative: Dispatching call
+lse-model-io-turtle_utils.ads:32:10: Error: REDUCEABLE_SCOPE: "use type" clause for LSE.Model.IO.Turtle.Instance is not necessary
+lse-model-io-turtle_utils.ads:32:1: Delete:32:38
+lse-model-io-turtle_utils.ads:32:10: Error: UNNECESSARY_USE_CLAUSE: Unused: "use type" clause for LSE.Model.IO.Turtle.Instance
+lse-model-io-turtle_utils.ads:32:1: Delete:32:38
+lse-model-l_system-error-invalid_rule.ads:43:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-error-invalid_rule.ads:43:4: Insert
+!not overriding 
+lse-model-l_system-error-missing_restore.ads:39:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-error-missing_restore.ads:39:4: Insert
+!not overriding 
+lse-model-l_system-error-missing_save.ads:39:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-error-missing_save.ads:39:4: Insert
+!not overriding 
+lse-model-l_system-error-unexpected_character.ads:43:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-error-unexpected_character.ads:43:4: Insert
+!not overriding 
+lse-model-l_system-factory.adb:75:16: Error: NAMING_CONVENTION: Name does not follow naming rule for "all": "make_LogoAngleMinus"
+lse-model-l_system-factory.adb:75:16: Refactor:75:34
+lse-model-l_system-factory.adb:77:16: Error: NAMING_CONVENTION: Name does not follow naming rule for "all": "make_LogoAnglePlus"
+lse-model-l_system-factory.adb:77:16: Refactor:77:33
+lse-model-l_system-factory.adb:79:16: Error: NAMING_CONVENTION: Name does not follow naming rule for "all": "make_LogoForward"
+lse-model-l_system-factory.adb:79:16: Refactor:79:31
+lse-model-l_system-factory.adb:81:16: Error: NAMING_CONVENTION: Name does not follow naming rule for "all": "make_LogoForwardTrace"
+lse-model-l_system-factory.adb:81:16: Refactor:81:36
+lse-model-l_system-factory.adb:83:16: Error: NAMING_CONVENTION: Name does not follow naming rule for "all": "make_LogoPositionRestore"
+lse-model-l_system-factory.adb:83:16: Refactor:83:39
+lse-model-l_system-factory.adb:85:16: Error: NAMING_CONVENTION: Name does not follow naming rule for "all": "make_LogoPositionSave"
+lse-model-l_system-factory.adb:85:16: Refactor:85:36
+lse-model-l_system-factory.adb:87:16: Error: NAMING_CONVENTION: Name does not follow naming rule for "all": "make_LogoUTurn"
+lse-model-l_system-factory.adb:87:16: Refactor:87:29
+lse-model-l_system-factory.adb:89:16: Error: NAMING_CONVENTION: Name does not follow naming rule for "all": "make_OtherSymbol"
+lse-model-l_system-factory.adb:89:16: Refactor:89:31
+lse-model-l_system-factory.adb:89:34: Found: LOCAL_HIDING: "Key" hides declaration at lse-model-l_system-factory.ads:79:25
+lse-model-l_system-factory.adb:169:34: Found: LOCAL_HIDING: "Key" hides declaration at lse-model-l_system-factory.ads:79:25
+lse-model-l_system-l_system.ads:47:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-l_system.ads:47:4: Insert
+!not overriding 
+lse-model-l_system-l_system.ads:55:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-l_system.ads:55:4: Insert
+!not overriding 
+lse-model-l_system-l_system.ads:58:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-l_system.ads:58:4: Insert
+!not overriding 
+lse-model-l_system-l_system.ads:61:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-l_system.ads:61:4: Insert
+!not overriding 
+lse-model-l_system-l_system.ads:64:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-l_system.ads:64:4: Insert
+!not overriding 
+lse-model-l_system-l_system.ads:67:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-l_system.ads:67:4: Insert
+!not overriding 
+lse-model-l_system-l_system.ads:71:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-l_system.ads:71:4: Insert
+!not overriding 
+lse-model-l_system-l_system.ads:75:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-l_system.ads:75:4: Insert
+!not overriding 
+lse-model-l_system-l_system.ads:79:4: Error: DERIVATIONS: Missing not overriding indicator
+lse-model-l_system-l_system.ads:79:4: Insert
+!not overriding 
+lse-model-l_system-l_system.adb:79:27: Found: LOCAL_HIDING: "This" hides declaration at lse-model-l_system-l_system.ads:61:26
+lse-model-l_system-l_system.adb:87:27: Found: LOCAL_HIDING: "This" hides declaration at lse-model-l_system-l_system.ads:61:26
+lse-model-l_system-l_system.adb:238:10: Found: PARAMETER_ALIASING: Possible false negative: Dispatching call
+lse-model-l_system-l_system.adb:247:7: Error: PARAMETER_ALIASING: Certain aliasing between parameters "This => This" and "T => This.Turtle"
+
+Units processed: 48
+Lines processed: 5690
+Issued messages: Errors = 29, Warnings = 16
+lse-model-io-drawing_area-postscript.adb:58:13: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.B, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:10: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.G, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.R, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:43:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Initialize, variable, not initialized, written, read
+lse-model-io-drawing_area-postscript.adb:159:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Position_Restore.R, variable, not initialized, written, read
+lse-model-io-drawing_area_factory.adb:42:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area_Factory.Make.Found, variable, initialized, written, read
+lse-model-io-text_file.adb:125:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:126:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:96:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_LSystem, variable, not initialized, written, read
+lse-model-io-text_file.adb:116:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Save_To_File.File, variable, not initialized, written, read
+lse-model-io-turtle.adb:428:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:402:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.X, variable, initialized, written, read
+lse-model-io-turtle.adb:402:13: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.Y, variable, initialized, written, read
+lse-model-io-turtle.adb:387:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:40:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Initialize, variable, not initialized, not written, read (never given a value)
+lse-model-io-turtle.adb:507:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Item, variable, not initialized, written, read
+lse-model-io-turtle.adb:508:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.X, variable, not initialized, written, read
+lse-model-io-turtle.adb:509:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Y, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:261:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Concat.Result, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:229:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Error, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:212:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Product, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:50:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Axiom, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:52:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Error, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:51:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Rules, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:310:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:309:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:340:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:339:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:375:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:374:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:389:13: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:73:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:76:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:75:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:78:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:14: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:77:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:72:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:119:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:117:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:276:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Search_For_Pattern.Result, variable, not initialized, written, read
+lse-model-l_system-factory.adb:98:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:108:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:128:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:139:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:150:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:161:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:172:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:58:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-factory.adb:210:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Symbol_List, variable, not initialized, written, read
+lse-model-l_system-factory.ads:74:4: Found: USAGE: (normal) LSE.Model.L_System.Factory.Symbol_List, private, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:150:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Found, variable, initialized, written, read
+lse-model-l_system-l_system.adb:153:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:149:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Position, variable, initialized, written, read
+lse-model-l_system-l_system.adb:152:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Rule_Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:151:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Tmp_Index, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:107:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:93:10: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, initialized, written, read
+lse-model-l_system-l_system.adb:211:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_Symbol_List, variable, initialized, written, read
+lse-utils-angle.adb:33:7: Found: USAGE: (normal) LSE.Utils.Angle.Is_Angle, variable, not initialized, written, not read
+lse-utils-angle.adb:45:7: Found: USAGE: (normal) LSE.Utils.Angle.To_Angle, variable, initialized, written, read
+lse-utils-colors.adb:159:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:158:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:157:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:44:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:43:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:110:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+lse-utils-colors.adb:82:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+
+Units processed: 48
+Lines processed: 5690
+Issued messages: Errors = 0, Warnings = 71
+lse-model-io-drawing_area-postscript.adb:58:13: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.B, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:10: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.G, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.R, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:43:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Initialize, variable, not initialized, written, read
+lse-model-io-drawing_area-postscript.adb:159:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Position_Restore.R, variable, not initialized, written, read
+lse-model-io-drawing_area_factory.adb:42:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area_Factory.Make.Found, variable, initialized, written, read
+lse-model-io-text_file.adb:125:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:126:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:96:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_LSystem, variable, not initialized, written, read
+lse-model-io-text_file.adb:116:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Save_To_File.File, variable, not initialized, written, read
+lse-model-io-turtle.adb:428:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:402:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.X, variable, initialized, written, read
+lse-model-io-turtle.adb:402:13: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.Y, variable, initialized, written, read
+lse-model-io-turtle.adb:387:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:40:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Initialize, variable, not initialized, not written, read (never given a value)
+lse-model-io-turtle.adb:507:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Item, variable, not initialized, written, read
+lse-model-io-turtle.adb:508:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.X, variable, not initialized, written, read
+lse-model-io-turtle.adb:509:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Y, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:261:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Concat.Result, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:229:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Error, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:212:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Product, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:50:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Axiom, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:52:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Error, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:51:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Rules, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:310:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:309:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:340:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:339:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:375:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:374:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:389:13: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:73:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:76:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:75:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:78:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:14: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:77:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:72:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:119:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:117:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:276:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Search_For_Pattern.Result, variable, not initialized, written, read
+lse-model-l_system-factory.adb:98:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:108:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:128:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:139:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:150:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:161:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:172:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:58:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-factory.adb:210:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Symbol_List, variable, not initialized, written, read
+lse-model-l_system-factory.ads:74:4: Found: USAGE: (normal) LSE.Model.L_System.Factory.Symbol_List, private, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:150:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Found, variable, initialized, written, read
+lse-model-l_system-l_system.adb:153:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:149:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Position, variable, initialized, written, read
+lse-model-l_system-l_system.adb:152:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Rule_Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:151:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Tmp_Index, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:107:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:93:10: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, initialized, written, read
+lse-model-l_system-l_system.adb:211:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_Symbol_List, variable, initialized, written, read
+lse-utils-angle.adb:33:7: Found: USAGE: (normal) LSE.Utils.Angle.Is_Angle, variable, not initialized, written, not read
+lse-utils-angle.adb:45:7: Found: USAGE: (normal) LSE.Utils.Angle.To_Angle, variable, initialized, written, read
+lse-utils-colors.adb:159:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:158:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:157:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:44:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:43:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:110:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+lse-utils-colors.adb:82:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+
+Units processed: 45
+Lines processed: 5690
+Issued messages: Errors = 0, Warnings = 71
+lse-model-io-drawing_area-postscript.adb:58:13: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.B, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:10: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.G, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.R, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:43:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Initialize, variable, not initialized, written, read
+lse-model-io-drawing_area-postscript.adb:159:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Position_Restore.R, variable, not initialized, written, read
+lse-model-io-drawing_area_factory.adb:42:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area_Factory.Make.Found, variable, initialized, written, read
+lse-model-io-text_file.adb:125:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:126:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:96:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_LSystem, variable, not initialized, written, read
+lse-model-io-text_file.adb:116:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Save_To_File.File, variable, not initialized, written, read
+lse-model-io-turtle.adb:428:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:402:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.X, variable, initialized, written, read
+lse-model-io-turtle.adb:402:13: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.Y, variable, initialized, written, read
+lse-model-io-turtle.adb:387:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:40:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Initialize, variable, not initialized, not written, read (never given a value)
+lse-model-io-turtle.adb:507:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Item, variable, not initialized, written, read
+lse-model-io-turtle.adb:508:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.X, variable, not initialized, written, read
+lse-model-io-turtle.adb:509:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Y, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:261:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Concat.Result, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:229:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Error, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:212:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Product, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:50:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Axiom, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:52:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Error, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:51:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Rules, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:310:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:309:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:340:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:339:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:375:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:374:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:389:13: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:73:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:76:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:75:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:78:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:14: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:77:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:72:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:119:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:117:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:276:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Search_For_Pattern.Result, variable, not initialized, written, read
+lse-model-l_system-factory.adb:98:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:108:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:128:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:139:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:150:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:161:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:172:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:58:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-factory.adb:210:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Symbol_List, variable, not initialized, written, read
+lse-model-l_system-factory.ads:74:4: Found: USAGE: (normal) LSE.Model.L_System.Factory.Symbol_List, private, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:150:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Found, variable, initialized, written, read
+lse-model-l_system-l_system.adb:153:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:149:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Position, variable, initialized, written, read
+lse-model-l_system-l_system.adb:152:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Rule_Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:151:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Tmp_Index, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:107:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:93:10: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, initialized, written, read
+lse-model-l_system-l_system.adb:211:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_Symbol_List, variable, initialized, written, read
+lse-utils-angle.adb:33:7: Found: USAGE: (normal) LSE.Utils.Angle.Is_Angle, variable, not initialized, written, not read
+lse-utils-angle.adb:45:7: Found: USAGE: (normal) LSE.Utils.Angle.To_Angle, variable, initialized, written, read
+lse-utils-colors.adb:159:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:158:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:157:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:44:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:43:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:110:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+lse-utils-colors.adb:82:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+
+Units processed: 45
+Lines processed: 5690
+Issued messages: Errors = 0, Warnings = 71
+lse-model-io-drawing_area-postscript.adb:58:13: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.B, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:10: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.G, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:58:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Configure.R, variable, initialized, written, read
+lse-model-io-drawing_area-postscript.adb:43:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Initialize, variable, not initialized, written, read
+lse-model-io-drawing_area-postscript.adb:159:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area.PostScript.Position_Restore.R, variable, not initialized, written, read
+lse-model-io-drawing_area_factory.adb:42:7: Found: USAGE: (normal) LSE.Model.IO.Drawing_Area_Factory.Make.Found, variable, initialized, written, read
+lse-model-io-text_file.adb:125:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:126:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_From_File, variable, not initialized, written, read
+lse-model-io-text_file.adb:96:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Read_LSystem, variable, not initialized, written, read
+lse-model-io-text_file.adb:116:7: Found: USAGE: (normal) LSE.Model.IO.Text_File.Save_To_File.File, variable, not initialized, written, read
+lse-model-io-turtle.adb:428:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:402:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.X, variable, initialized, written, read
+lse-model-io-turtle.adb:402:13: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update_Corners.Y, variable, initialized, written, read
+lse-model-io-turtle.adb:387:10: Found: USAGE: (normal) LSE.Model.IO.Turtle.Forward.Update.Copy, variable, initialized, written, read
+lse-model-io-turtle.adb:40:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Initialize, variable, not initialized, not written, read (never given a value)
+lse-model-io-turtle.adb:507:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Item, variable, not initialized, written, read
+lse-model-io-turtle.adb:508:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.X, variable, not initialized, written, read
+lse-model-io-turtle.adb:509:7: Found: USAGE: (normal) LSE.Model.IO.Turtle.Position_Restore.Y, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:261:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Concat.Result, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:229:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Error, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:212:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Get_Product, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:50:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Axiom, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:52:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Error, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:51:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Initialize.Rules, variable, not initialized, not written, read (never given a value)
+lse-model-l_system-concrete_builder.adb:310:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:309:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Angle, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:340:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:339:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Axiom, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:375:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:374:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:389:13: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:73:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:76:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:75:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:78:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:74:14: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:77:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:72:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, not initialized, written, read
+lse-model-l_system-concrete_builder.adb:119:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:117:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Make, variable, initialized, written, read
+lse-model-l_system-concrete_builder.adb:276:7: Found: USAGE: (normal) LSE.Model.L_System.Concrete_Builder.Search_For_Pattern.Result, variable, not initialized, written, read
+lse-model-l_system-factory.adb:98:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:108:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:128:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:118:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:139:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:150:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:161:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:172:10: Found: USAGE: (normal) LSE.Model.L_System.Factory.Get_Symbol, variable, not initialized, written, read
+lse-model-l_system-factory.adb:58:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Rule, variable, not initialized, written, read
+lse-model-l_system-factory.adb:210:7: Found: USAGE: (normal) LSE.Model.L_System.Factory.Make_Symbol_List, variable, not initialized, written, read
+lse-model-l_system-factory.ads:74:4: Found: USAGE: (normal) LSE.Model.L_System.Factory.Symbol_List, private, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:150:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Found, variable, initialized, written, read
+lse-model-l_system-l_system.adb:153:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:149:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Position, variable, initialized, written, read
+lse-model-l_system-l_system.adb:152:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Rule_Item, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:151:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Develop.Tmp_Index, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:107:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, not initialized, written, read
+lse-model-l_system-l_system.adb:93:10: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_LSystem, variable, initialized, written, read
+lse-model-l_system-l_system.adb:211:7: Found: USAGE: (normal) LSE.Model.L_System.L_System.Get_Symbol_List, variable, initialized, written, read
+lse-utils-angle.adb:33:7: Found: USAGE: (normal) LSE.Utils.Angle.Is_Angle, variable, not initialized, written, not read
+lse-utils-angle.adb:45:7: Found: USAGE: (normal) LSE.Utils.Angle.To_Angle, variable, initialized, written, read
+lse-utils-colors.adb:159:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:158:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:157:7: Found: USAGE: (normal) LSE.Utils.Colors.RGB_To_Hex_String, variable, not initialized, written, read
+lse-utils-colors.adb:44:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:43:7: Found: USAGE: (normal) LSE.Utils.Colors.Str_Hex_To_Int, variable, initialized, written, read
+lse-utils-colors.adb:110:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+lse-utils-colors.adb:82:7: Found: USAGE: (normal) LSE.Utils.Colors.To_RGB.Index, variable, initialized, written, read
+
+Units processed: 45
+Lines processed: 5690
+Issued messages: Errors = 0, Warnings = 71

@@ -1,0 +1,50 @@
+with "gnatcoll";
+with "aws";
+with "./lib/Comps/adalog_comps.gpr";
+with "./lib/Asiscomps/adalog_asiscomps.gpr";
+with "./lib/Dotenv/dotenv.gpr";
+with "./lib/ada-util/utilada_base.gpr";
+with "./lib/EVIL/evil.gpr";
+
+project Atgdb is
+   type OS_Kind is ("windows", "cygwin", "GNU/Linux", "linux-gnu", "unix", "osx", "darwin");
+   OS : OS_Kind := external ("OS", external ("OSTYPE", "windows"));
+
+   for Languages use ("Ada");
+
+   case OS is
+      when "windows" | "cygwin" =>
+         for Exec_Dir use "bin";
+         for Object_Dir use "adalib";
+      when "GNU/Linux" | "linux-gnu" | "unix" =>
+         for Exec_Dir use "bin_linux";
+         for Object_Dir use "adalib_linux";
+      when "darwin" | "osx" =>
+         for Exec_Dir use "bin_darwin";
+         for Object_Dir use "adalib_darwin";
+   end case;
+
+   for Main use ("atgdb.adb", "ptree_to_dot.adb");
+   for Source_Dirs use ("src");
+
+   package Builder is
+      for Default_Switches ("ada") use ("-k", "-g", "-s", "-m");
+   end Builder;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnatn", "-gnatQ", "-gnatf", "-gnato", "-fstack-check", "-g", "-gnatwcfkmruvz", "-gnatyabfhnM120", "-O2", "-gnat12");
+   end Compiler;
+
+   package Binder is
+      for Default_Switches ("ada") use ("-E");
+   end Binder;
+
+   package Linker is
+      for Default_Switches ("ada") use ("-g");
+   end Linker;
+
+   package Pretty_Printer is
+      for Default_Switches ("ada") use ("-A1", "-A2", "-A3", "-A4", "-M120");
+   end Pretty_Printer;
+
+end Atgdb;

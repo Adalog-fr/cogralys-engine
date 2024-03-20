@@ -1,0 +1,12 @@
+[submodule "lib/Comps"]
+	path = lib/Comps
+	url = https://github.com/Adalog-fr/Comps
+[submodule "lib/Asiscomps"]
+	path = lib/Asiscomps
+	url = https://github.com/Adalog-fr/Asiscomps
+[submodule "lib/Dotenv"]
+	path = lib/Dotenv
+	url = https://github.com/Heziode/ada-dotenv
+[submodule "lib/EVIL"]
+	path = lib/EVIL
+	url = https://github.com/OneWingedShark/EVIL

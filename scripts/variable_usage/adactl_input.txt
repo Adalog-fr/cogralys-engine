@@ -1,0 +1,60 @@
+t_usage-guards.adb:004:7: Found: USAGE: (normal) T_Usage.Guards.P.I, variable, initialized, written, read
+t_usage-guards.adb:005:7: Found: USAGE: (normal) T_Usage.Guards.P.J, variable, not initialized, written, read
+t_usage-guards.adb:006:7: Found: USAGE: (normal) T_Usage.Guards.P.K, variable, not initialized, written, read
+t_usage-guards.adb:007:7: Found: USAGE: (normal) T_Usage.Guards.P.L, variable, not initialized, not written, read (never given a value)
+t_usage-guards.adb:008:7: Found: USAGE: (normal) T_Usage.Guards.P.M, variable, initialized, written, read
+t_usage-guards.adb:009:7: Found: USAGE: (normal) T_Usage.Guards.P.N, variable, initialized, written, read
+t_usage-parameters.adb:028:4: Found: USAGE: (normal) T_Usage.Parameters.V1, variable, not initialized, written, not read
+t_usage-parameters.adb:028:8: Found: USAGE: (normal) T_Usage.Parameters.V2, variable, not initialized, written, read
+t_usage.adb:015:4: Found: USAGE: (normal) T_Usage.Local, variable, not initialized, not written, not read (can be removed)
+t_usage.adb:020:7: Found: USAGE: (generic) T_Usage.Gen.Y1, visible, variable, initialized, written, not read
+t_usage.adb:021:7: Found: USAGE: (generic) T_Usage.Gen.Y2, visible, variable, not initialized, written, not read
+t_usage.adb:022:7: Found: USAGE: (generic) T_Usage.Gen.Y3, visible, variable, initialized, not written, read (can be declared constant)
+t_usage.adb:028:7: Found: USAGE: (generic) T_Usage.Gen.Y4, private, variable, not initialized, written, not read
+t_usage.adb:034:7: Found: USAGE: (generic) T_Usage.Gen2.V1, visible, variable, initialized, not written, not read (can be removed)
+t_usage.adb:035:7: Found: USAGE: (generic) T_Usage.Gen2.V2, visible, variable, not initialized, not written, not read (can be removed)
+t_usage.adb:036:7: Found: USAGE: (generic) T_Usage.Gen2.V3, visible, variable, initialized, not written, not read (can be removed)
+t_usage.adb:045:4: Found: USAGE: (instance) T_Usage.Inst1.Y1, visible, variable, initialized, written, not read
+t_usage.adb:045:4: Found: USAGE: (instance) T_Usage.Inst1.Y2, visible, variable, not initialized, written, not read
+t_usage.adb:045:4: Found: USAGE: (instance) T_Usage.Inst1.Y3, visible, variable, initialized, not written, not read
+t_usage.adb:045:4: Found: USAGE: (instance) T_Usage.Inst1.Y4, private, variable, not initialized, written, not read
+t_usage.adb:046:4: Found: USAGE: (instance) T_Usage.Inst2.Y1, visible, variable, initialized, not written, not read
+t_usage.adb:046:4: Found: USAGE: (instance) T_Usage.Inst2.Y2, visible, variable, not initialized, written, not read
+t_usage.adb:046:4: Found: USAGE: (instance) T_Usage.Inst2.Y3, visible, variable, initialized, not written, read
+t_usage.adb:046:4: Found: USAGE: (instance) T_Usage.Inst2.Y4, private, variable, not initialized, written, not read
+t_usage.adb:049:11: Found: USAGE: (normal) T_Usage.Pack.A2, visible, variable, not initialized, written, not read
+t_usage.adb:049:7: Found: USAGE: (normal) T_Usage.Pack.A1, visible, variable, not initialized, written, read
+t_usage.adb:050:7: Found: USAGE: (normal) T_Usage.Pack.A3, visible, variable, initialized, not written, read (can be declared constant)
+t_usage.adb:051:7: Found: USAGE: (normal) T_Usage.Pack.A4, visible, variable, not initialized, not written, not read (can be removed)
+t_usage.adb:054:11: Found: USAGE: (normal) T_Usage.Pack.F, visible, variable, not initialized, written, read
+t_usage.adb:054:7: Found: USAGE: (normal) T_Usage.Pack.D, visible, variable, not initialized, not written, read (never given a value)
+t_usage.adb:054:9: Found: USAGE: (normal) T_Usage.Pack.E, visible, variable, not initialized, written, not read
+t_usage.adb:060:12: Found: USAGE: (normal) T_Usage.Pack.VR2, visible, variable, not initialized, written, not read
+t_usage.adb:060:7: Found: USAGE: (normal) T_Usage.Pack.VR1, visible, variable, not initialized, written, not read
+t_usage.adb:061:7: Found: USAGE: (normal) T_Usage.Pack.Ac, visible, variable, initialized, not written, read (can be declared constant)
+t_usage.adb:065:7: Found: USAGE: (normal) T_Usage.Pack.V1, visible, variable, initialized, not written, not read (can be removed)
+t_usage.adb:068:7: Found: USAGE: (normal) T_Usage.Pack.V2, visible, variable, initialized, not written, not read (can be removed)
+t_usage.adb:069:7: Found: USAGE: (normal) T_Usage.Pack.V3, visible, variable, initialized, not written, not read (can be removed)
+t_usage.adb:070:7: Found: USAGE: (normal) T_Usage.Pack.Y, visible, variable, initialized, not written, not read (can be removed)
+t_usage.adb:071:7: Found: USAGE: (normal) T_Usage.Pack.Z, visible, variable, initialized, not written, not read (can be removed)
+t_usage.adb:074:7: Found: USAGE: (normal) T_Usage.Pack.V4, visible, variable, not initialized, not written, not read (can be removed)
+t_usage.adb:077:7: Found: USAGE: (normal) T_Usage.Pack.V5, visible, variable, initialized, not written, not read (can be removed)
+t_usage.adb:080:7: Found: USAGE: (normal) T_Usage.Pack.XX, private, variable, not initialized, not written, not read (can be removed)
+t_usage.adb:081:7: Found: USAGE: (normal) T_Usage.Pack.YY, private, variable, not initialized, written, not read
+t_usage.adb:098:7: Found: USAGE: (instance) T_Usage.Gen_Gen.P1.Y1, visible, variable, initialized, written, not read
+t_usage.adb:099:7: Found: USAGE: (instance) T_Usage.Gen_Gen.P2.Y3, visible, variable, initialized, not written, read
+t_usage.adb:171:7: Found: USAGE: (normal) T_Usage.Pseudo_Const.Empty, variable, read (pseudo constant)
+t_usage.adb:172:7: Found: USAGE: (normal) T_Usage.Pseudo_Const.S, variable, not initialized, not written, read (never given a value)
+t_usage.adb:173:7: Found: USAGE: (normal) T_Usage.Pseudo_Const.I, variable, read (pseudo constant)
+t_usage.adb:174:7: Found: USAGE: (normal) T_Usage.Pseudo_Const.I2, variable, not read (can be removed)
+t_usage.adb:179:7: Found: USAGE: (normal) T_Usage.Pseudo_Const.Nothing, variable, read (pseudo constant)
+t_usage.adb:180:7: Found: USAGE: (normal) T_Usage.Pseudo_Const.Something, variable, not initialized, not written, read (never given a value)
+t_usage.adb:197:7: Found: USAGE: (normal) T_Usage._anonymous_.V1, variable, not initialized, not written, not read (can be removed)
+t_usage.adb:201:7: Found: USAGE: (normal) T_Usage._anonymous_.V2, variable, not initialized, not written, not read (can be removed)
+t_usage.adb:217:7: Found: USAGE: (normal) T_Usage._anonymous_.AP, variable, initialized, written, not read
+t_usage.adb:218:7: Found: USAGE: (normal) T_Usage._anonymous_.AF, variable, not initialized, written, not read
+t_usage.adb:220:7: Found: USAGE: (normal) T_Usage._anonymous_.I, variable, not initialized, written, not read
+t_usage.adb:256:7: Found: USAGE: (normal) T_Usage._anonymous_.Idx, variable, initialized, not written, read (can be declared constant)
+t_usage.adb:260:19: Found: USAGE: (normal) T_Usage._anonymous_.My_Pack.My_Sub_Pack.Tab, visible, variable, initialized, written, read
+t_usage.adb:261:19: Found: USAGE: (normal) T_Usage._anonymous_.My_Pack.My_Sub_Pack.Tab2, visible, variable, initialized, written, read
+x_usage.ads:2:4: Found: USAGE: (normal) X_Usage.Not_Included, visible, variable, not initialized, written, not read

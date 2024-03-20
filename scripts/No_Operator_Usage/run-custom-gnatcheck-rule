@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gnatcheck -Pprj --rules-dir=. -rules +Rno_operator_usage

@@ -1,0 +1,77 @@
+t_uncheckable-allocators.adb:8:14: Error: Uncheckable: in rule ALLOCATORS: Possible false negative: Unable to determine the designated type of the allocator
+t_uncheckable-allocators.adb:11:17: Error: Uncheckable: in rule ALLOCATORS: Possible false negative: Unable to determine the designated type of the allocator
+t_uncheckable-allocators.adb:12:21: Error: Uncheckable: in rule ALLOCATORS: Possible false negative: Unable to determine the designated type of the allocator
+t_uncheckable-case_statement.adb:15:15: Error: Uncheckable: in rule CASE_STATEMENT: Possible false negative: (others_span) Could not evaluate bounds of expression
+t_uncheckable-case_statement.adb:19:15: Error: Uncheckable: in rule CASE_STATEMENT: Possible false negative: (others_span) Could not evaluate bounds of expression
+t_uncheckable-case_statement.adb:24:15: Error: Uncheckable: in rule CASE_STATEMENT: Possible false negative: (others_span) Could not evaluate bounds of expression
+t_uncheckable-case_statement.adb:37:9: Error: Uncheckable: in rule CASE_STATEMENT: Possible false negative: (values) Expression is of a subtype with static predicate
+t_uncheckable-case_statement.adb:37:9: Error: Uncheckable: in rule CASE_STATEMENT: Possible false negative: (others_span) Expression is of a subtype with static predicate
+t_uncheckable-case_statement.adb:44:12: Error: Uncheckable: in rule CASE_STATEMENT: Possible false negative: (others_span) Use of subtype with static predicate
+t_uncheckable-case_statement.adb:44:12: Error: Uncheckable: in rule CASE_STATEMENT: Possible false negative: (range_span) Range is of a subtype with static predicate
+t_uncheckable-declarations.adb:4:21: Error: Uncheckable: in rule DECLARATIONS: Possible false negative: unable to evaluate mod expression
+t_uncheckable-directly_accessed_globals.adb:19:15: Error: Uncheckable: in rule DIRECTLY_ACCESSED_GLOBALS: Possible false negative: Name is dynamic renaming
+t_uncheckable-directly_accessed_globals.adb:25:30: Error: Uncheckable: in rule DIRECTLY_ACCESSED_GLOBALS: Possible false positive: variable "K" used as parameter of dispatching call, treated as in-out
+t_uncheckable-directly_accessed_globals.adb:25:30: Error: DIRECTLY_ACCESSED_GLOBALS: variable "K" is already read from P at t_uncheckable-directly_accessed_globals.adb:17:7
+t_uncheckable-directly_accessed_globals.adb:25:30: Error: DIRECTLY_ACCESSED_GLOBALS: variable "K" is already written from P at t_uncheckable-directly_accessed_globals.adb:17:7
+t_uncheckable-directly_accessed_globals.adb:30:10: Error: DIRECTLY_ACCESSED_GLOBALS: variable "J" is already written from P at t_uncheckable-directly_accessed_globals.adb:17:7
+t_uncheckable-duplicate_initialization_calls.adb:12:14: Error: Uncheckable: in rule DUPLICATE_INITIALIZATION_CALLS: Possible false negative: non statically determinable out parameter
+t_uncheckable-exception_propagation.adb:12:16: Error: Uncheckable: in rule EXCEPTION_PROPAGATION: Possible false negative: Prefix of attribute is not statically determinable
+t_uncheckable-exception_propagation.adb:13:16: Error: Uncheckable: in rule EXCEPTION_PROPAGATION: Possible false negative: Prefix of attribute is not statically determinable
+x_uncheckable_proc.ads:1:1: Error: Uncheckable: in rule EXCEPTION_PROPAGATION: Possible false negative: Body not available, assuming no risk
+t_uncheckable-exception_propagation.adb:15:4: Error: Uncheckable: in rule EXCEPTION_PROPAGATION: Possible false negative: Dispatching call
+t_uncheckable-generic_aliasing.adb:9:38: Error: Uncheckable: in rule GENERIC_ALIASING: Possible false positive: several undistinguishable "+" operators
+t_uncheckable-generic_aliasing.adb:9:38: Error: GENERIC_ALIASING: Parameter is same as parameter #1 at t_uncheckable-generic_aliasing.adb:9:33 (Certain)
+t_uncheckable-global_references.adb:4:4: Error: Uncheckable: in rule GLOBAL_REFERENCES: Possible false negative: Dispatching call or call to dynamic entity; assuming no global references
+t_uncheckable-global_references.adb:5:4: Error: Uncheckable: in rule GLOBAL_REFERENCES: Possible false negative: Dispatching call or call to dynamic entity; assuming no global references
+t_uncheckable-global_references.adb:6:4: Error: Uncheckable: in rule GLOBAL_REFERENCES: Possible false negative: Dispatching call or call to dynamic entity; assuming no global references
+t_uncheckable-global_references.adb:6:14: Error: Uncheckable: in rule GLOBAL_REFERENCES: Possible false negative: Dispatching call or call to dynamic entity; assuming not an [in] out parameter
+t_uncheckable-max_call_depth.adb:6:4: Error: Uncheckable: in rule MAX_CALL_DEPTH: Possible false negative: dynamic or dispatching call; assuming depth of 1
+t_uncheckable-max_call_depth.adb:7:4: Error: Uncheckable: in rule MAX_CALL_DEPTH: Possible false negative: dynamic or dispatching call; assuming depth of 1
+t_uncheckable-max_call_depth.adb:8:4: Error: Uncheckable: in rule MAX_CALL_DEPTH: Possible false negative: dynamic or dispatching call; assuming depth of 1
+t_uncheckable-max_call_depth.adb:9:4: Error: Uncheckable: in rule MAX_CALL_DEPTH: Possible false negative: call to a subprogram whose body is not available (imported, predefined...); assuming depth of 1
+t_uncheckable-object_declarations.adb:6:21: Error: Uncheckable: in rule OBJECT_DECLARATIONS: Possible false negative: pragma ignored for types covered by T in subrule Volatile_No_Address
+t_uncheckable-object_declarations.adb:6:21: Error: Uncheckable: in rule OBJECT_DECLARATIONS: Possible false positive: pragma ignored for types covered by T in subrule Address_Not_Volatile
+t_uncheckable-object_declarations.adb:9:4: Error: OBJECT_DECLARATIONS: variable has address clause and is not volatile
+t_uncheckable-object_declarations.adb:11:4: Error: OBJECT_DECLARATIONS: variable is volatile and has no address clause
+t_uncheckable-parameter_aliasing.adb:21:4: Error: Uncheckable: in rule PARAMETER_ALIASING: Possible false negative: Dispatching call
+t_uncheckable-parameter_aliasing.adb:24:4: Error: Uncheckable: in rule PARAMETER_ALIASING: Possible false negative: Dispatching call
+t_uncheckable-potentially_blocking_operations.adb:9:10: Error: Uncheckable: in rule POTENTIALLY_BLOCKING_OPERATIONS: Possible false negative: Dispatching call or call to dynamic entity; assuming not blocking
+t_uncheckable-potentially_blocking_operations.adb:10:10: Error: Uncheckable: in rule POTENTIALLY_BLOCKING_OPERATIONS: Possible false negative: Dispatching call or call to dynamic entity; assuming not blocking
+t_uncheckable-potentially_blocking_operations.adb:11:10: Error: Uncheckable: in rule POTENTIALLY_BLOCKING_OPERATIONS: Possible false negative: Dispatching call or call to dynamic entity; assuming not blocking
+t_uncheckable-potentially_blocking_operations.adb:26:28: Error: Uncheckable: in rule POTENTIALLY_BLOCKING_OPERATIONS: Possible false negative: Call to formal generic subprogram; assuming not blocking
+t_uncheckable-potentially_blocking_operations.adb:28:13: Error: Uncheckable: in rule POTENTIALLY_BLOCKING_OPERATIONS: Possible false negative: Call to formal generic subprogram; assuming not blocking
+t_uncheckable-potentially_blocking_operations.adb:53:10: Error: Uncheckable: in rule POTENTIALLY_BLOCKING_OPERATIONS: Possible false positive: limited class-wide object
+t_uncheckable-potentially_blocking_operations.adb:53:10: Error: POTENTIALLY_BLOCKING_OPERATIONS: possible task declaration
+t_uncheckable-potentially_blocking_operations.adb:54:10: Error: Uncheckable: in rule POTENTIALLY_BLOCKING_OPERATIONS: Possible false positive: limited class-wide object
+t_uncheckable-potentially_blocking_operations.adb:54:10: Error: POTENTIALLY_BLOCKING_OPERATIONS: possible task declaration
+t_uncheckable-record_declarations.adb:9:10: Error: Uncheckable: in rule RECORD_DECLARATIONS: Possible false positive: unable to evaluate component position, assuming not aligned
+t_uncheckable-record_declarations.adb:5:10: Error: RECORD_DECLARATIONS: Component S is unaligned "array"
+t_uncheckable-record_declarations.adb:17:10: Error: Uncheckable: in rule RECORD_DECLARATIONS: Possible false positive: unable to evaluate component position, assuming aligned
+t_uncheckable-record_declarations.adb:13:10: Error: RECORD_DECLARATIONS: Component I is aligned "range"
+t_uncheckable-representation_clauses.adb:5:20: Error: Uncheckable: in rule REPRESENTATION_CLAUSES: Possible false negative: unable to evaluate size for fractional_size/non_power2_size subrule
+t_uncheckable-representation_clauses.adb:17:10: Error: Uncheckable: in rule REPRESENTATION_CLAUSES: Possible false negative: unable to evaluate component position for non_contiguous_layout and non_aligned_component subrules
+t_uncheckable-representation_clauses.adb:18:10: Error: Uncheckable: in rule REPRESENTATION_CLAUSES: Possible false negative: unable to evaluate component position for non_contiguous_layout and non_aligned_component subrules
+t_uncheckable-representation_clauses.adb:19:10: Error: Uncheckable: in rule REPRESENTATION_CLAUSES: Possible false negative: unable to evaluate component position for non_contiguous_layout and non_aligned_component subrules
+t_uncheckable-representation_clauses.adb:21:20: Error: Uncheckable: in rule REPRESENTATION_CLAUSES: Possible false negative: unable to evaluate size for fractional_size/non_power2_size subrule
+t_uncheckable-style.adb:3:58: Error: Uncheckable: in rule STYLE: Possible false negative: renaming of attribute
+t_uncheckable-style.adb:4:69: Error: Uncheckable: in rule STYLE: Possible false negative: renaming of predefined operation
+t_uncheckable-unsafe_paired_calls.adb:15:4: Error: Uncheckable: in rule UNSAFE_PAIRED_CALLS: Possible false negative: Dispatching call
+t_uncheckable-unsafe_paired_calls.adb:17:4: Error: Uncheckable: in rule UNSAFE_PAIRED_CALLS: Possible false negative: Dispatching call
+t_uncheckable-unsafe_paired_calls.adb:20:7: Error: Uncheckable: in rule UNSAFE_PAIRED_CALLS: Possible false negative: Dispatching call
+t_uncheckable-unsafe_paired_calls.adb:22:7: Error: Uncheckable: in rule UNSAFE_PAIRED_CALLS: Possible false negative: Dispatching call
+t_uncheckable-unsafe_paired_calls.adb:23:7: Error: Uncheckable: in rule UNSAFE_PAIRED_CALLS: Possible false negative: Dispatching call
+t_uncheckable-unsafe_unchecked_conversion.adb:11:51: Error: Uncheckable: in rule UNSAFE_UNCHECKED_CONVERSION: Possible false positive: unable to evaluate size clause value for T2
+t_uncheckable-unsafe_unchecked_conversion.adb:11:51: Error: UNSAFE_UNCHECKED_CONVERSION: no size clause given for Target
+t_uncheckable-usage.adb:20:31: Error: Uncheckable: in rule USAGE: Possible false negative: Name is dynamic renaming
+t_uncheckable-usage.adb:32:30: Error: Uncheckable: in rule USAGE: Possible false positive: variable "K" used as parameter of dispatching call, treated as in-out
+t_uncheckable-usage.adb:42:9: Error: Uncheckable: in rule USAGE: Possible false negative: Name is dynamic renaming
+t_uncheckable-usage.adb:44:11: Error: Uncheckable: in rule USAGE: Possible false negative: possible access through alias
+t_uncheckable-usage.adb:45:11: Error: Uncheckable: in rule USAGE: Possible false negative: possible access through alias
+t_uncheckable-usage.adb:46:7: Error: Uncheckable: in rule USAGE: Possible false negative: possible access through alias
+Error: Uncheckable: missing body for X_UNCHECKABLE_PROC
+t_uncheckable-allocators.adb:8:4: Error: USAGE: (normal) T_Uncheckable.Allocators.VR, variable, not initialized, written, read
+t_uncheckable-allocators.adb:9:4: Error: USAGE: (normal) T_Uncheckable.Allocators.VT, variable, initialized, written, not read
+t_uncheckable-usage.adb:6:4: Error: USAGE: (normal) T_Uncheckable.Usage.C, constant, not read (can be removed)
+t_uncheckable-usage.adb:28:7: Error: USAGE: (normal) T_Uncheckable.Usage.Pack.K, variable, not initialized, written, read
+t_uncheckable-usage.adb:9:4: Error: USAGE: (normal) T_Uncheckable.Usage.Ptr, variable, initialized, written, read
+t_uncheckable-usage.adb:5:4: Error: USAGE: (normal) T_Uncheckable.Usage.V, variable, not initialized, written, not read

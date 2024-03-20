@@ -1,0 +1,2 @@
+@check
+fun bodies(node) = node is BodyNode

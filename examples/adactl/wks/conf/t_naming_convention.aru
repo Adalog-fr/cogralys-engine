@@ -1,0 +1,100 @@
+-- Rules in String_Matching_Gnat syntax:
+Too_short   : check naming_convention (all,     file "t_naming_convention_1.pat"); -- "...."
+Standard    : check naming_convention (all, not file "t_naming_convention_2.pat"); -- integer
+Global_Only : check naming_convention (global all, not "^l_");
+Local_Only  : check naming_convention (local  all, not "^g_");
+
+Types     : check naming_convention (type, "^T_", "_T$");
+Enum_T    : check naming_convention   (Enumeration_Type, "_enum$");
+Tasks     : check naming_convention   (task_type, "_task$");
+Modular   : check naming_convention   (Modular_Integer_Type, "_mod$");
+Private   : check naming_convention   (private_type, "^priv_");
+Tagged    : check naming_convention   (Tagged_Type, "_tagged$");
+Interface : check naming_convention   (Interface_Type, "_interface$");
+Class     : check naming_convention   (Class_type, "_class$");
+Access    : check naming_convention   (Access_Type, "_access_");
+Access_R  : check naming_convention     (Access_to_regular_type, "_regular$");
+Access_T  : check naming_convention     (Access_to_tagged_type, "_tagged$");
+Access_C  : check naming_convention     (Access_to_class_type, "_class$");
+Access_SP : check naming_convention     (Access_to_sp_type, "_sp$");
+access_Ta : check naming_convention     (access_to_task_type, "_task$");
+
+Title_Case: check naming_convention (variable, case_sensitive "^[A-Z][a-z0-9]*(_[A-Z0-9][a-z0-9]*)*$");
+Bool_Var  : check naming_convention     (others standard.boolean variable, "^Is_", "^Has_");
+Not_Bool  : check naming_convention     (variable, not "^Is_", not "^Has_");
+Discr     : check naming_convention     (Discriminant, "^D_");
+Protec_F  : check naming_convention     (protected_field, "^pf_");
+Rec_F     : check naming_convention     (Record_field, "^rf_");
+Enum_Var  : check naming_convention     (root ()        procedure_formal_out, "^E_");
+Int_Var   : check naming_convention     (root range mod procedure_formal_out, "^I_");
+
+Const1    : check naming_convention (root constant, "^C_");
+Const2    : Check naming_convention (constant, "^Const_");
+Stat_Const: check naming_convention (regular_static_constant, "_Static$");
+Enums     : check naming_convention   (root Enumeration, "^Enum_");
+
+Label     : check naming_convention (label, not "_");
+
+Stmt      : check naming_convention (stmt_name, not "ock$");
+Loop      : check naming_convention   (loop_name, "^G_");
+
+Procs     : check naming_convention (procedure, not "_Gen$");
+Protect   : check naming_convention   (protected_procedure, "^protec_");
+Task_E    : check naming_convention (task_entry, "^task_");
+
+Wide_F    : check naming_convention (standard.wide_string      function, "^Wide_", not "^Wide_Wide_");
+W_Wide_F  : check naming_convention (standard.wide_wide_string function, "^Wide_Wide_");
+Non_Wide_F: check naming_convention (function, not "^Wide_");
+
+Generics1 : check naming_convention (generic, "_Gen$");
+Generics2 : check naming_convention   (others generic_sp, "^SP_");
+Generics3 : check naming_convention     (generic_procedure, "^proc_");
+
+Exc_Ren   : check naming_convention (exception_renaming, "excR$");
+
+
+-- Rules given in String_Matching_Portable syntax:
+-- Too_short   : check naming_convention (all, "????*");
+-- Standard    : check naming_convention (all, not integer);
+-- Global_Only : check naming_convention (all, global not "l_*");
+-- Local_Only  : check naming_convention (all, local  not "g_*");
+
+-- Types     : check naming_convention (type, "T_*", "*_T");
+-- Enum_T    : check_naming_convention   (Enumerated_Type, "*_enum");
+-- Tasks     : check naming_convention   (task_type, "_task");
+-- Modular   : check naming_convention (Modular_Integer_Type, "*_mod");
+-- Private   : check naming_convention (private_type, "priv_*");
+-- Tagged    : check naming_convention (Tagged_Type, "*_tagged");
+-- Interface : check naming_convention   (Interface_Type, "*_interface");
+-- Class     : check naming_convention (Class_type, "*_class");
+-- Access    : check naming_convention (Access_Type, "*_access_*");
+-- Access_R  : check naming_convention   (Access_to_regular_type, "*_regular");
+-- Access_T  : check naming_convention   (Access_to_tagged_type, "*_tagged");
+-- Access_C  : check naming_convention   (Access_to_regular_type, "*_class");
+-- Access_SP : check naming_convention   (Access_to_sp_type, "*_sp");
+-- access_Ta : check naming_convention   (access_to_task_type, "*_task");
+
+-- Bool_Var  : check naming_convention     (standard.boolean variable, "Is_*", "Has_*");
+-- Not_Bool  : check naming_convention     (variable, not "Is_*", not "Has_*");
+-- Discr     : check naming_convention     (Discriminant, "D_*");
+-- Protec_F  : check naming_convention     (protected_field, "pf_*");
+-- Rec_F     : check naming_convention     (Record_field, "rf_*");
+
+-- Const1    : check naming_convention (root constant, "C_*");
+-- Const2    : Check naming_convention (constant, "Const_*");
+-- Enums     : check naming_convention   (root Enumeration, "Enum_*");
+
+-- Label     : check naming_convention (label, not "*_*");
+
+-- Stmt      : check naming_convention (stmt_name, not "*ock");
+-- Loop      : check naming_convention   (loop_name, "G_*");
+
+-- Procs     : check naming_convention (procedure, not "*_Gen");
+-- Protect   : check naming_convention   (protected_procedure, "protec_*");
+-- Task_E    : check naming_convention (task_entry, "task_*");
+
+-- Generics1 : check naming_convention (generic, "*_Gen");
+-- Generics2 : check naming_convention   (others generic_sp, "SP_*");
+-- Generics3 : check naming_convention     (generic_procedure, "proc_*");
+
+-- Exc_Ren   : check naming_convention (exception_renaming, "*excR");

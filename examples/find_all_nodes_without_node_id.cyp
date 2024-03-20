@@ -1,0 +1,1 @@
+MATCH (n) WHERE NOT n:Location AND NOT n:Public_Part AND NOT n:Private_Part AND NOT n:User_Parameters AND NOT n:Normalized_Parameters AND NOT EXISTS(n.node_id) RETURN n
