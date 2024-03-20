@@ -12,10 +12,9 @@ b~*
 *.exe
 *.log
 obj/
-adalib*/
+lib/
+bin/
 alire/
-bin*/
-tmp/
 
 # IntelliJ project files
 .idea
@@ -91,29 +90,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-### Node.js
-node_modules
-
-### Env
-.env
-!sample.env
-
-### Project Specific
-coverage
-examples/adactl/wks/*.txt
-req.json
-.atgdb
-.cogralys
-
-### Misc
-*.stderr
-*.stdout
-*.cswi
-
-gnatinspect.db
-*.dot
-*.out
-*.report
-database*.cypher
-scripts/json2cypher/cypher_http_queries/*

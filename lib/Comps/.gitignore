@@ -1,0 +1,9 @@
+adalib/
+
+/*/*
+!/*/*.ads
+!/*/*.adb
+!/*/*.texi
+
+!/variable_length/*.htm
+!/variable_length/*.html
