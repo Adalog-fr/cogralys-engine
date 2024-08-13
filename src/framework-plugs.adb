@@ -2288,8 +2288,14 @@ package body Framework.Plugs is
                   -- Must be an anonymous formal type
                   return Object_Declaration_View (The_Declaration); -- TODO
                else
-                  return  Corresponding_Name_Declaration
-                    (Declaration_Subtype_Mark (The_Declaration));
+                  declare
+                     Subtype_Mark : Asis.Expression := Declaration_Subtype_Mark (The_Declaration);
+                  begin
+                     if Expression_Kind (Subtype_Mark) = A_Selected_Component then
+                        return Corresponding_Name_Declaration (Selector (Subtype_Mark));
+                     end if;
+                     return  Corresponding_Name_Declaration (Subtype_Mark);
+                  end;
                end if;
             when A_Component_Declaration =>
                Def := Component_Definition_View (Object_Declaration_View (The_Declaration));   -- ASIS 2005
