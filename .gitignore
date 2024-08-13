@@ -117,3 +117,5 @@ gnatinspect.db
 *.report
 database*.cypher
 scripts/json2cypher/cypher_http_queries/*
+.atgbd
+.atdgb
