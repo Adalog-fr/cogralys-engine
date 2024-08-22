@@ -188,17 +188,35 @@ package body Framework.Plugs is
    begin
       if Is_In_Predefined_Unit (E) and then Get_First_Line (Loc) = 0 then
          declare
+            use Asis.Statements;
             CU        : constant Asis.Compilation_Unit := Enclosing_Compilation_Unit (E);
             Unit_Name : constant String                := To_String (Unit_Full_Name (CU));
          begin
             Json_Def_Location.Set_Field ("filename", Unit_Name);
             Json_Def_Location.Set_Field ("column", Natural (0));
 
-            if Element_Kind (E) = A_Declaration then
-               Json_Def_Location.Set_Field ("line", To_String (Full_Name_Image (Names (E) (1))));
-            else
-               Json_Def_Location.Set_Field ("line", To_String (Full_Name_Image (E)));
-            end if;
+            case Element_Kind (E) is
+               when A_Declaration =>
+                  Json_Def_Location.Set_Field ("line", To_String (Full_Name_Image (Names (E) (1))));
+               when A_Statement =>
+                  Json_Def_Location.Set_Field ("line", To_String (Full_Name_Image (Label_Names (E) (1))));
+               when An_Expression =>
+                  case Expression_Kind (E) is
+                     when An_Integer_Literal | A_Real_Literal | A_String_Literal =>
+                        Json_Def_Location.Set_Field ("line", To_String (Asis.Expressions.Value_Image (E)));
+                     when An_Identifier | A_Selected_Component | An_Attribute_Reference =>
+                        Json_Def_Location.Set_Field ("line", To_String (Full_Name_Image (E)));
+                     when others =>
+                        Log.Warn ("Getting line location of "& Expression_Kinds'Image (Expression_Kind (E)) &
+                        " in a predefined unit is currently not implemented");
+                        Json_Def_Location.Set_Field ("line",
+                        To_String (Text_Name (Enclosing_Compilation_Unit (E))) & ":" &
+                        Expression_Kinds'Image (Expression_Kind (E)) & ":" &
+                        To_String (Asis.Elements.Debug_Image (E)));
+                  end case;
+               when others =>
+                  Json_Def_Location.Set_Field ("line", To_String (Full_Name_Image (E)));
+            end case;
          end;
          return Json_Def_Location;
       end if;
@@ -2307,8 +2325,6 @@ package body Framework.Plugs is
                      Expr : constant Asis.Expression :=
                        Asis.Definitions.Subtype_Mark (Simple_Name (Strip_Attributes (Def)));
                   begin
-                     Log.Debug ("Test A_Component_Declaration: ", Expression_Kinds'Image (Expression_Kind (Expr)));
-
                      case Expression_Kind (Expr) is
                      when A_Selected_Component =>
                         return Corresponding_Name_Declaration (Selector (Expr));
@@ -2480,7 +2496,7 @@ package body Framework.Plugs is
             Json_Element.Set_Field (Export_Utils.CORRESPONDING_SPECIFICATION'Image, Json_Def);
          end;
       end Set_Corresponding_Specification;
-      
+
       procedure Set_Corresponding_First_Subtype is
          use Thick_Queries;
          use Asis.Declarations;
