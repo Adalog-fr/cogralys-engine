@@ -62,7 +62,7 @@ with
   Framework.Queries,
   Framework.Reports,
   Framework.Rules_Manager,
-  Framework.Object_Tracker,
+--    Framework.Object_Tracker,
   Scope_Manager;
 --    Framework.Specific_Plugs,
 --    Framework.Symbol_Table,
@@ -970,7 +970,7 @@ package body Framework.Ruler is
 --              Framework.Specific_Plugs.Enter_Statement_List (Element);
 
          when A_Statement =>
-            Object_Tracker.Process_Outer_Statement (Element);
+            --  Object_Tracker.Process_Outer_Statement (Element);
 
             case Statement_Kind (Element) is
                when A_For_Loop_Statement     -- Statements with declarations and statement list
@@ -1007,7 +1007,7 @@ package body Framework.Ruler is
 --                    Framework.Specific_Plugs.Pre_Procedure (Element);
                   null;
             end case;
-            Object_Tracker.Process_Statement (Element);
+            --  Object_Tracker.Process_Statement (Element);
 
          when A_Path =>
             Framework.Plugs.         Pre_Procedure (Element, State);
@@ -1318,29 +1318,30 @@ package body Framework.Ruler is
                   | An_Accept_Statement
                   =>
                   Exit_Scope (Element);
-                  Framework.Object_Tracker.Post_Process_Statement (Element);
+                  --  Framework.Object_Tracker.Post_Process_Statement (Element);
                   Framework.Plugs.         Post_Procedure         (Element);
 --                    Framework.Specific_Plugs.Post_Procedure         (Element);
 
                when A_Procedure_Call_Statement | An_Entry_Call_Statement =>
                   Post_Subprogram;
 
-                  Object_Tracker.          Post_Process_Statement (Element);
+                  --  Object_Tracker.          Post_Process_Statement (Element);
                   Framework.Plugs.         Post_Procedure         (Element);
 
                when An_Assignment_Statement =>
                   State.Corresponding_Assignment_Statement := Nil_Element;
-                  Object_Tracker.          Post_Process_Statement (Element);
+                  --  Object_Tracker.          Post_Process_Statement (Element);
                   Framework.Plugs.         Post_Procedure         (Element);
 
                when others =>
-                  Object_Tracker.          Post_Process_Statement (Element);
+                  --  Object_Tracker.          Post_Process_Statement (Element);
                   Framework.Plugs.         Post_Procedure         (Element);
 --                    Framework.Specific_Plugs.Post_Procedure         (Element);
             end case;
 
          when A_Path =>
-            Object_Tracker.Post_Process_Path (Element);
+            --  Object_Tracker.Post_Process_Path (Element);
+            null;
 
          when An_Expression =>
             case Expression_Kind (Element) is
