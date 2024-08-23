@@ -2310,7 +2310,10 @@ package body Framework.Plugs is
                      Subtype_Mark : Asis.Expression := Declaration_Subtype_Mark (The_Declaration);
                   begin
                      if Expression_Kind (Subtype_Mark) = A_Selected_Component then
-                        return Corresponding_Name_Declaration (Selector (Subtype_Mark));
+                        Subtype_Mark := Selector (Subtype_Mark);
+                     end if;
+                     if Expression_Kind (Subtype_Mark) = An_Attribute_Reference then
+                        Subtype_Mark := Prefix (Subtype_Mark);
                      end if;
                      return  Corresponding_Name_Declaration (Subtype_Mark);
                   end;
